@@ -12,6 +12,7 @@ forms. It is a static demo site; all copy, names, prices, and contact details ar
 | `index.html`   | Home — hero, intro, featured classes, facilities, testimonials, CTA. |
 | `about.html`   | About the centre — story, values, facilities, team preview. |
 | `class.html`   | Class listings with details and a book-a-seat form. |
+| `admissions.html` | Admissions — 4-step process, age groups, fee table, enquiry form. |
 | `team.html`    | Teacher / staff profiles. |
 | `gallery.html` | Photo gallery with Isotope filtering and Lightbox popups. |
 | `blog.html`    | Blog index / article listing. |

@@ -553,5 +553,65 @@ img { max-width: 100%; }
   html { scroll-behavior: auto; }
   .js .reveal { opacity: 1 !important; transform: none !important; transition: none !important; }
   .hero-art, .hero-chip, .hero-blob { animation: none !important; }
-  .btn:hover, .card-hover:hover, .facility:hover { transform: none !important; }
+  .btn:hover, .card-hover:hover, .facility:hover, .fab-btn:hover { transform: none !important; }
 }
+
+/* ---- Announcement bar -------------------------------------------------- */
+.announce {
+  background: linear-gradient(90deg, var(--teal-700), var(--teal));
+  color: #fff;
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 0.92rem;
+}
+.announce .container { padding: 0.5rem 1rem; gap: 0.4rem 0.85rem; }
+.announce-cta { color: #fff; font-weight: 600; text-decoration: underline; }
+.announce-cta:hover { color: var(--amber); }
+.announce-close {
+  background: none; border: none; color: rgba(255, 255, 255, 0.85);
+  font-size: 1.35rem; line-height: 1; cursor: pointer; padding: 0 0.25rem;
+}
+.announce-close:hover { color: #fff; }
+.announce.is-hidden { display: none; }
+
+/* ---- Floating quick-contact (WhatsApp + call) ------------------------- */
+.floating-contact {
+  position: fixed; left: 22px; bottom: 22px; z-index: 1040;
+  display: flex; flex-direction: column; gap: 12px;
+}
+.fab-btn {
+  width: 54px; height: 54px; border-radius: 50%;
+  display: grid; place-items: center; color: #fff; font-size: 1.5rem;
+  box-shadow: var(--shadow);
+  transition: transform 0.25s var(--ease-spring);
+}
+.fab-btn:hover { transform: translateY(-4px) scale(1.05); color: #fff; }
+.fab-wa { background: #25d366; }
+.fab-call { background: var(--teal); }
+@media (max-width: 575.98px) {
+  .floating-contact { left: 14px; bottom: 14px; }
+  .fab-btn { width: 48px; height: 48px; font-size: 1.3rem; }
+}
+
+/* ---- Admissions page: process steps, fee table, checklist ------------- */
+.step-num {
+  width: 52px; height: 52px; border-radius: 50%;
+  display: grid; place-items: center; margin: 0 auto 1rem;
+  font-family: var(--font-display); font-weight: 600; font-size: 1.35rem;
+  color: #fff; background: linear-gradient(145deg, var(--teal), var(--teal-600));
+  box-shadow: 0 10px 20px -10px rgba(19, 164, 184, 0.8);
+}
+.fee-table {
+  width: 100%; border-collapse: separate; border-spacing: 0;
+  background: var(--surface); border-radius: var(--r-lg);
+  overflow: hidden; box-shadow: var(--shadow-sm);
+}
+.fee-table th {
+  background: var(--teal); color: #fff;
+  font-family: var(--font-display); font-weight: 600;
+  padding: 1rem 1.1rem; text-align: left;
+}
+.fee-table td { padding: 0.95rem 1.1rem; border-top: 1px solid var(--line); }
+.fee-table tbody tr:nth-child(even) td { background: var(--soft); }
+.included-list li { padding: 0.55rem 0; display: flex; align-items: flex-start; }
+.included-list i { color: var(--leaf); margin-right: 0.8rem; margin-top: 0.25rem; }

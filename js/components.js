@@ -20,6 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
   // core content is never left stuck at opacity:0.
   initReveal();
   initNavbarScroll();
+  animateCounters();
 
   // Collect every placeholder element that requests an HTML partial.
   // Each such element carries a "data-include" attribute holding the URL.
@@ -64,6 +65,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // navbar elevation state now that the navbar element exists.
     initReveal();
     updateNavbar();
+    applyAnnounce();
 
     // Notify the rest of the app that injected markup is ready. Listeners
     // such as main.js use this to attach navbar/form behaviors at a safe time.
@@ -115,6 +117,65 @@ function initNavbarScroll() {
   }, { passive: true });
   updateNavbar();
 }
+
+/**
+ * animateCounters — counts the stats numbers up from 0 when scrolled into view.
+ * Honors prefers-reduced-motion (shows the final value immediately).
+ */
+function animateCounters() {
+  var els = document.querySelectorAll('[data-target]');
+  if (!els.length) { return; }
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function run(el) {
+    var target = parseInt(el.getAttribute('data-target'), 10) || 0;
+    if (reduce) { el.textContent = target.toLocaleString(); return; }
+    var start = null, dur = 1400;
+    function step(ts) {
+      if (!start) { start = ts; }
+      var p = Math.min((ts - start) / dur, 1);
+      var eased = 1 - Math.pow(1 - p, 3); // easeOutCubic
+      el.textContent = Math.round(eased * target).toLocaleString();
+      if (p < 1) { window.requestAnimationFrame(step); }
+    }
+    window.requestAnimationFrame(step);
+  }
+  if (!('IntersectionObserver' in window)) {
+    Array.prototype.forEach.call(els, run);
+    return;
+  }
+  var io = new IntersectionObserver(function (entries, obs) {
+    entries.forEach(function (e) {
+      if (e.isIntersecting) { run(e.target); obs.unobserve(e.target); }
+    });
+  }, { threshold: 0.4 });
+  Array.prototype.forEach.call(els, function (el) {
+    if (!reduce) { el.textContent = '0'; } // start from 0 to avoid a flash
+    io.observe(el);
+  });
+}
+
+/**
+ * Announcement bar — hide it if dismissed earlier this browser session.
+ */
+function applyAnnounce() {
+  try {
+    if (sessionStorage.getItem('varbok-announce') === 'off') {
+      var a = document.getElementById('announce');
+      if (a) { a.classList.add('is-hidden'); }
+    }
+  } catch (e) { /* sessionStorage unavailable */ }
+}
+
+// Dismiss the announcement bar on close-button click (delegated; the bar is
+// injected with the navbar partial). Remembered for the session.
+document.addEventListener('click', function (e) {
+  var t = e.target;
+  var isClose = t && (t.id === 'announceClose' || (t.closest && t.closest('#announceClose')));
+  if (!isClose) { return; }
+  var a = document.getElementById('announce');
+  if (a) { a.classList.add('is-hidden'); }
+  try { sessionStorage.setItem('varbok-announce', 'off'); } catch (err) {}
+});
 
 /**
  * setActiveNav
