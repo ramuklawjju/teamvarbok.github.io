@@ -2,10 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Varbok - Home of education</title>
+    <title>Our Classes | Varbok Play-Based Early Learning in Bengaluru</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <meta content="Home of education" name="keywords" />
-    <meta content="Home of education" name="description" />
+    <meta
+      content="Explore Varbok's play-based classes in Bengaluru: Little Explorers Playgroup, Curious Buds Nursery and Bright Minds Kindergarten for children aged 1.5 to 5 years. Book a seat today."
+      name="description"
+    />
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon" />
@@ -26,65 +28,13 @@
     <!-- Flaticon Font -->
     <link href="lib/flaticon/font/flaticon.css" rel="stylesheet" />
 
-    <!-- Libraries Stylesheet -->
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
-
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
   </head>
 
   <body>
-    <!-- Navbar Start -->
-    <div class="container-fluid bg-light position-relative shadow">
-      <nav
-        class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0 px-lg-5"
-      >
-        <a
-          href=""
-          class="navbar-brand font-weight-bold text-secondary"
-          style="font-size: 50px"
-        >
-          <i class="icon-header"></i>
-          <span class="text-primary">Varbok</span>
-        </a>
-        <button
-          type="button"
-          class="navbar-toggler"
-          data-toggle="collapse"
-          data-target="#navbarCollapse"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="collapse navbar-collapse justify-content-between"
-          id="navbarCollapse"
-        >
-          <div class="navbar-nav font-weight-bold mx-auto py-0">
-            <a href="index.html" class="nav-item nav-link">Home</a>
-            <a href="about.html" class="nav-item nav-link">About</a>
-            <a href="class.html" class="nav-item nav-link active">Classes</a>
-            <a href="team.html" class="nav-item nav-link">Teachers</a>
-            <a href="gallery.html" class="nav-item nav-link">Gallery</a>
-            <div class="nav-item dropdown">
-              <a
-                href="#"
-                class="nav-link dropdown-toggle"
-                data-toggle="dropdown"
-                >Pages</a
-              >
-              <div class="dropdown-menu rounded-0 m-0">
-                <a href="blog.html" class="dropdown-item">Blog Grid</a>
-                <a href="single.html" class="dropdown-item">Blog Detail</a>
-              </div>
-            </div>
-            <a href="contact.html" class="nav-item nav-link">Contact</a>
-          </div>
-          <a href="" class="btn btn-primary px-4">Join Class</a>
-        </div>
-      </nav>
-    </div>
-    <!-- Navbar End -->
+    <!-- Navbar (injected from partials/navbar.html) -->
+    <div data-include="partials/navbar.html"></div>
 
     <!-- Header Start -->
     <div class="container-fluid bg-primary mb-5">
@@ -92,141 +42,182 @@
         class="d-flex flex-column align-items-center justify-content-center"
         style="min-height: 400px"
       >
-        <h3 class="display-3 font-weight-bold text-white">Our Classes</h3>
-        <div class="d-inline-flex text-white">
-          <p class="m-0"><a class="text-white" href="">Home</a></p>
-          <p class="m-0 px-2">/</p>
-          <p class="m-0">Our Classes</p>
-        </div>
+        <h1 class="display-3 font-weight-bold text-white">Our Classes</h1>
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb bg-transparent mb-0 d-inline-flex text-white">
+            <li class="breadcrumb-item">
+              <a class="text-white" href="index.html">Home</a>
+            </li>
+            <li class="breadcrumb-item active text-white" aria-current="page">
+              Our Classes
+            </li>
+          </ol>
+        </nav>
       </div>
     </div>
     <!-- Header End -->
 
-    <!-- Class Start -->
+    <!-- Class -->
     <div class="container-fluid pt-5">
       <div class="container">
         <div class="text-center pb-2">
           <p class="section-title px-5">
-            <span class="px-2">Popular Classes</span>
+            <span class="px-2">Our Programmes</span>
           </p>
-          <h1 class="mb-4">Classes for You</h1>
+          <h2 class="mb-4">Classes That Grow With Your Child</h2>
+          <p class="mb-5">
+            From first goodbyes to school-ready confidence, every Varbok
+            programme blends play, discovery and care, so your little one
+            learns and blooms at their own happy pace.
+          </p>
         </div>
         <div class="row">
           <div class="col-lg-4 mb-5">
-            <div class="card border-0 bg-light shadow-sm pb-2">
-              <img class="card-img-top mb-2" src="img/class-1.jpg" alt="" />
+            <div class="card card-hover border-0 bg-light shadow-sm pb-2 h-100">
+              <img
+                class="card-img-top mb-2"
+                src="img/class-1.jpg"
+                alt="Toddlers enjoying sensory play in the Little Explorers Playgroup"
+                loading="lazy"
+                width="600"
+                height="400"
+              />
               <div class="card-body text-center">
-                <h4 class="card-title">Drawing Class</h4>
+                <h3 class="card-title h4">Little Explorers Playgroup</h3>
                 <p class="card-text">
-                  Justo ea diam stet diam ipsum no sit, ipsum vero et et diam
-                  ipsum duo et no et, ipsum ipsum erat duo amet clita duo
+                  A gentle first step away from home, filled with sensory play,
+                  songs and cuddles. Tiny ones build comfort, curiosity and
+                  their very first friendships.
                 </p>
               </div>
               <div class="card-footer bg-transparent py-4 px-5">
                 <div class="row border-bottom">
                   <div class="col-6 py-1 text-right border-right">
-                    <strong>Age of You</strong>
+                    <strong>Age Range</strong>
                   </div>
-                  <div class="col-6 py-1">3 - 6 Years</div>
+                  <div class="col-6 py-1">1.5 - 2.5 years</div>
                 </div>
                 <div class="row border-bottom">
                   <div class="col-6 py-1 text-right border-right">
                     <strong>Total Seats</strong>
                   </div>
-                  <div class="col-6 py-1">40 Seats</div>
+                  <div class="col-6 py-1">12 seats</div>
                 </div>
                 <div class="row border-bottom">
                   <div class="col-6 py-1 text-right border-right">
                     <strong>Class Time</strong>
                   </div>
-                  <div class="col-6 py-1">08:00 - 10:00</div>
+                  <div class="col-6 py-1">9:00 AM - 11:30 AM</div>
                 </div>
                 <div class="row">
                   <div class="col-6 py-1 text-right border-right">
-                    <strong>Tution Fee</strong>
+                    <strong>Monthly Fee</strong>
                   </div>
-                  <div class="col-6 py-1">$290 / Month</div>
+                  <div class="col-6 py-1">₹6,500 / month</div>
                 </div>
               </div>
-              <a href="" class="btn btn-primary px-4 mx-auto mb-4">Join Now</a>
+              <a href="#book-a-seat" class="btn btn-primary px-4 mx-auto mb-4"
+                >Join Now</a
+              >
             </div>
           </div>
           <div class="col-lg-4 mb-5">
-            <div class="card border-0 bg-light shadow-sm pb-2">
-              <img class="card-img-top mb-2" src="img/class-2.jpg" alt="" />
+            <div class="card card-hover border-0 bg-light shadow-sm pb-2 h-100">
+              <img
+                class="card-img-top mb-2"
+                src="img/class-2.jpg"
+                alt="Children exploring storytelling and art in the Curious Buds Nursery"
+                loading="lazy"
+                width="600"
+                height="400"
+              />
               <div class="card-body text-center">
-                <h4 class="card-title">Language Learning</h4>
+                <h3 class="card-title h4">Curious Buds Nursery</h3>
                 <p class="card-text">
-                  Justo ea diam stet diam ipsum no sit, ipsum vero et et diam
-                  ipsum duo et no et, ipsum ipsum erat duo amet clita duo
+                  Storytelling, art and pretend play spark language, sharing and
+                  imagination. Children grow more independent while learning
+                  routines, colours, numbers and the joy of discovery.
                 </p>
               </div>
               <div class="card-footer bg-transparent py-4 px-5">
                 <div class="row border-bottom">
                   <div class="col-6 py-1 text-right border-right">
-                    <strong>Age of You</strong>
+                    <strong>Age Range</strong>
                   </div>
-                  <div class="col-6 py-1">3 - 6 Years</div>
+                  <div class="col-6 py-1">2.5 - 3.5 years</div>
                 </div>
                 <div class="row border-bottom">
                   <div class="col-6 py-1 text-right border-right">
                     <strong>Total Seats</strong>
                   </div>
-                  <div class="col-6 py-1">40 Seats</div>
+                  <div class="col-6 py-1">16 seats</div>
                 </div>
                 <div class="row border-bottom">
                   <div class="col-6 py-1 text-right border-right">
                     <strong>Class Time</strong>
                   </div>
-                  <div class="col-6 py-1">08:00 - 10:00</div>
+                  <div class="col-6 py-1">9:00 AM - 12:30 PM</div>
                 </div>
                 <div class="row">
                   <div class="col-6 py-1 text-right border-right">
-                    <strong>Tution Fee</strong>
+                    <strong>Monthly Fee</strong>
                   </div>
-                  <div class="col-6 py-1">$290 / Month</div>
+                  <div class="col-6 py-1">₹8,000 / month</div>
                 </div>
               </div>
-              <a href="" class="btn btn-primary px-4 mx-auto mb-4">Join Now</a>
+              <a href="#book-a-seat" class="btn btn-primary px-4 mx-auto mb-4"
+                >Join Now</a
+              >
             </div>
           </div>
           <div class="col-lg-4 mb-5">
-            <div class="card border-0 bg-light shadow-sm pb-2">
-              <img class="card-img-top mb-2" src="img/class-3.jpg" alt="" />
+            <div class="card card-hover border-0 bg-light shadow-sm pb-2 h-100">
+              <img
+                class="card-img-top mb-2"
+                src="img/class-3.jpg"
+                alt="Kindergarteners working on hands-on projects in the Bright Minds class"
+                loading="lazy"
+                width="600"
+                height="400"
+              />
               <div class="card-body text-center">
-                <h4 class="card-title">Basic Science</h4>
+                <h3 class="card-title h4">Bright Minds Kindergarten</h3>
                 <p class="card-text">
-                  Justo ea diam stet diam ipsum no sit, ipsum vero et et diam
-                  ipsum duo et no et, ipsum ipsum erat duo amet clita duo
+                  Phonics, early numbers and hands-on projects prepare
+                  confident, school-ready learners. Through guided play, children
+                  build reading, writing and thinking skills at their own happy
+                  pace.
                 </p>
               </div>
               <div class="card-footer bg-transparent py-4 px-5">
                 <div class="row border-bottom">
                   <div class="col-6 py-1 text-right border-right">
-                    <strong>Age of You</strong>
+                    <strong>Age Range</strong>
                   </div>
-                  <div class="col-6 py-1">3 - 6 Years</div>
+                  <div class="col-6 py-1">3.5 - 5 years</div>
                 </div>
                 <div class="row border-bottom">
                   <div class="col-6 py-1 text-right border-right">
                     <strong>Total Seats</strong>
                   </div>
-                  <div class="col-6 py-1">40 Seats</div>
+                  <div class="col-6 py-1">20 seats</div>
                 </div>
                 <div class="row border-bottom">
                   <div class="col-6 py-1 text-right border-right">
                     <strong>Class Time</strong>
                   </div>
-                  <div class="col-6 py-1">08:00 - 10:00</div>
+                  <div class="col-6 py-1">9:00 AM - 1:30 PM</div>
                 </div>
                 <div class="row">
                   <div class="col-6 py-1 text-right border-right">
-                    <strong>Tution Fee</strong>
+                    <strong>Monthly Fee</strong>
                   </div>
-                  <div class="col-6 py-1">$290 / Month</div>
+                  <div class="col-6 py-1">₹9,500 / month</div>
                 </div>
               </div>
-              <a href="" class="btn btn-primary px-4 mx-auto mb-4">Join Now</a>
+              <a href="#book-a-seat" class="btn btn-primary px-4 mx-auto mb-4"
+                >Join Now</a
+              >
             </div>
           </div>
         </div>
@@ -234,69 +225,98 @@
     </div>
     <!-- Class End -->
 
-    <!-- Registration Start -->
-    <div class="container-fluid py-5">
+    <!-- Book A Seat -->
+    <div class="container-fluid py-5" id="book-a-seat">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-7 mb-5 mb-lg-0">
             <p class="section-title pr-5">
               <span class="pr-2">Book A Seat</span>
             </p>
-            <h1 class="mb-4">Book A Seat For Your Kid</h1>
+            <h2 class="mb-4">Reserve a Place for Your Little One</h2>
             <p>
-              Invidunt lorem justo sanctus clita. Erat lorem labore ea, justo
-              dolor lorem ipsum ut sed eos, ipsum et dolor kasd sit ea justo.
-              Erat justo sed sed diam. Ea et erat ut sed diam sea ipsum est
-              dolor
+              Seats fill quickly because our class sizes stay small and caring.
+              Share a few details and our team will reach out to arrange a warm
+              campus visit and guide you through our paperwork-light enrolment.
             </p>
             <ul class="list-inline m-0">
               <li class="py-2">
-                <i class="fa fa-check text-success mr-3"></i>Labore eos amet
-                dolor amet diam
+                <i class="fa fa-check text-success mr-3"></i>Small classes with
+                trained, loving caregivers
               </li>
               <li class="py-2">
-                <i class="fa fa-check text-success mr-3"></i>Etsea et sit dolor
-                amet ipsum
+                <i class="fa fa-check text-success mr-3"></i>Safe, CCTV-monitored
+                and fully fenced campus
               </li>
               <li class="py-2">
-                <i class="fa fa-check text-success mr-3"></i>Diam dolor diam
-                elitripsum vero.
+                <i class="fa fa-check text-success mr-3"></i>Quick, friendly and
+                paperwork-light admissions
               </li>
             </ul>
-            <a href="" class="btn btn-primary mt-4 py-2 px-4">Book Now</a>
+            <a href="#book-a-seat" class="btn btn-primary mt-4 py-2 px-4"
+              >Book Now</a
+            >
           </div>
           <div class="col-lg-5">
             <div class="card border-0">
               <div class="card-header bg-secondary text-center p-4">
-                <h1 class="text-white m-0">Book A Seat</h1>
+                <h3 class="text-white m-0">Book A Seat</h3>
               </div>
               <div class="card-body rounded-bottom bg-primary p-5">
-                <form>
+                <form
+                  data-formspree
+                  action="https://formspree.io/f/YOUR_FORM_ID"
+                  method="post"
+                >
                   <div class="form-group">
+                    <label for="book-name" class="text-white"
+                      >Parent's Name</label
+                    >
                     <input
                       type="text"
+                      id="book-name"
+                      name="name"
                       class="form-control border-0 p-4"
-                      placeholder="Your Name"
-                      required="required"
+                      placeholder="Your name"
+                      required
                     />
                   </div>
                   <div class="form-group">
+                    <label for="book-email" class="text-white"
+                      >Email Address</label
+                    >
                     <input
                       type="email"
+                      id="book-email"
+                      name="email"
                       class="form-control border-0 p-4"
-                      placeholder="Your Email"
-                      required="required"
+                      placeholder="Your email"
+                      required
                     />
                   </div>
                   <div class="form-group">
+                    <label for="book-class" class="text-white"
+                      >Choose a Class</label
+                    >
                     <select
+                      id="book-class"
+                      name="class"
                       class="custom-select border-0 px-4"
                       style="height: 47px"
+                      required
                     >
-                      <option selected>Select A Class</option>
-                      <option value="1">Class 1</option>
-                      <option value="2">Class 1</option>
-                      <option value="3">Class 1</option>
+                      <option value="" selected disabled>
+                        Select a class
+                      </option>
+                      <option value="Little Explorers Playgroup">
+                        Little Explorers Playgroup (1.5 - 2.5 years)
+                      </option>
+                      <option value="Curious Buds Nursery">
+                        Curious Buds Nursery (2.5 - 3.5 years)
+                      </option>
+                      <option value="Bright Minds Kindergarten">
+                        Bright Minds Kindergarten (3.5 - 5 years)
+                      </option>
                     </select>
                   </div>
                   <div>
@@ -308,171 +328,37 @@
                     </button>
                   </div>
                 </form>
+                <div
+                  class="form-status text-white mt-3"
+                  role="status"
+                  aria-live="polite"
+                ></div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- Registration End -->
+    <!-- Book A Seat End -->
 
-    <!-- Footer Start -->
-    <div
-      class="container-fluid bg-secondary text-white mt-5 py-5 px-sm-3 px-md-5"
-    >
-      <div class="row pt-5">
-        <div class="col-lg-3 col-md-6 mb-5">
-          <a
-            href=""
-            class="navbar-brand font-weight-bold text-primary m-0 mb-4 p-0"
-            style="font-size: 40px; line-height: 40px"
-          >
-            <i class="icon-footer"></i>
-            <span class="text-white">Varbok</span>
-          </a>
-          <p>
-            Labore dolor amet ipsum ea, erat sit ipsum duo eos. Volup amet ea
-            dolor et magna dolor, elitr rebum duo est sed diam elitr. Stet elitr
-            stet diam duo eos rebum ipsum diam ipsum elitr.
-          </p>
-          <div class="d-flex justify-content-start mt-4">
-            <a
-              class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
-              style="width: 38px; height: 38px"
-              href="#"
-              ><i class="fab fa-twitter"></i
-            ></a>
-            <a
-              class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
-              style="width: 38px; height: 38px"
-              href="#"
-              ><i class="fab fa-facebook-f"></i
-            ></a>
-            <a
-              class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
-              style="width: 38px; height: 38px"
-              href="#"
-              ><i class="fab fa-linkedin-in"></i
-            ></a>
-            <a
-              class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
-              style="width: 38px; height: 38px"
-              href="#"
-              ><i class="fab fa-instagram"></i
-            ></a>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 mb-5">
-          <h3 class="text-primary mb-4">Get In Touch</h3>
-          <div class="d-flex">
-            <h4 class="fa fa-map-marker-alt text-primary"></h4>
-            <div class="pl-3">
-              <h5 class="text-white">Address</h5>
-              <p>123 Street, New York, USA</p>
-            </div>
-          </div>
-          <div class="d-flex">
-            <h4 class="fa fa-envelope text-primary"></h4>
-            <div class="pl-3">
-              <h5 class="text-white">Email</h5>
-              <p>info@example.com</p>
-            </div>
-          </div>
-          <div class="d-flex">
-            <h4 class="fa fa-phone-alt text-primary"></h4>
-            <div class="pl-3">
-              <h5 class="text-white">Phone</h5>
-              <p>+012 345 67890</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 mb-5">
-          <h3 class="text-primary mb-4">Quick Links</h3>
-          <div class="d-flex flex-column justify-content-start">
-            <a class="text-white mb-2" href="#"
-              ><i class="fa fa-angle-right mr-2"></i>Home</a
-            >
-            <a class="text-white mb-2" href="#"
-              ><i class="fa fa-angle-right mr-2"></i>About Us</a
-            >
-            <a class="text-white mb-2" href="#"
-              ><i class="fa fa-angle-right mr-2"></i>Our Classes</a
-            >
-            <a class="text-white mb-2" href="#"
-              ><i class="fa fa-angle-right mr-2"></i>Our Teachers</a
-            >
-            <a class="text-white mb-2" href="#"
-              ><i class="fa fa-angle-right mr-2"></i>Our Blog</a
-            >
-            <a class="text-white" href="#"
-              ><i class="fa fa-angle-right mr-2"></i>Contact Us</a
-            >
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 mb-5">
-          <h3 class="text-primary mb-4">Newsletter</h3>
-          <form action="">
-            <div class="form-group">
-              <input
-                type="text"
-                class="form-control border-0 py-4"
-                placeholder="Your Name"
-                required="required"
-              />
-            </div>
-            <div class="form-group">
-              <input
-                type="email"
-                class="form-control border-0 py-4"
-                placeholder="Your Email"
-                required="required"
-              />
-            </div>
-            <div>
-              <button
-                class="btn btn-primary btn-block border-0 py-3"
-                type="submit"
-              >
-                Submit Now
-              </button>
-            </div>
-          </form>
-        </div>
-      </div>
-      <div
-        class="container-fluid pt-5"
-        style="border-top: 1px solid rgba(23, 162, 184, 0.2) ;"
-      >
-        <p class="m-0 text-center text-white">
-          &copy;
-          <a class="text-primary font-weight-bold" href="#">Varbok</a>.
-          All Rights Reserved.
-
-         
-          
-          
-          <br />Distributed By:
-          <a href="https://varbok.com" target="_blank">Varbok</a>
-        </p>
-      </div>
-    </div>
-    <!-- Footer End -->
+    <!-- Footer (injected from partials/footer.html) -->
+    <div data-include="partials/footer.html"></div>
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-primary p-3 back-to-top"
-      ><i class="fa fa-angle-double-up"></i
+    <a
+      href="#"
+      class="btn btn-primary p-3 back-to-top"
+      aria-label="Back to top"
+      ><i class="fa fa-angle-double-up" aria-hidden="true"></i
     ></a>
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/isotope/isotope.pkgd.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="js/components.js"></script>
 
     <!-- Contact Javascript File -->
-    <script src="mail/jqBootstrapValidation.min.js"></script>
     <script src="mail/contact.js"></script>
 
     <!-- Template Javascript -->

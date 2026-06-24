@@ -2,10 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Varbok - Home of education</title>
+    <title>Why Play Is Serious Learning for Young Children | Varbok Blog</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <meta content="Home of education" name="keywords" />
-    <meta content="Home of education" name="description" />
+    <meta
+      content="A warm sample article from Varbok on why play is powerful learning for young children, plus recent posts on parenting, child development and early-childhood education in Bengaluru."
+      name="description"
+    />
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon" />
@@ -28,63 +30,14 @@
 
     <!-- Libraries Stylesheet -->
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
   </head>
 
   <body>
-    <!-- Navbar Start -->
-    <div class="container-fluid bg-light position-relative shadow">
-      <nav
-        class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0 px-lg-5"
-      >
-        <a
-          href=""
-          class="navbar-brand font-weight-bold text-secondary"
-          style="font-size: 50px"
-        >
-          <i class="icon-header"></i>
-          <span class="text-primary">Varbok</span>
-        </a>
-        <button
-          type="button"
-          class="navbar-toggler"
-          data-toggle="collapse"
-          data-target="#navbarCollapse"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="collapse navbar-collapse justify-content-between"
-          id="navbarCollapse"
-        >
-          <div class="navbar-nav font-weight-bold mx-auto py-0">
-            <a href="index.html" class="nav-item nav-link">Home</a>
-            <a href="about.html" class="nav-item nav-link">About</a>
-            <a href="class.html" class="nav-item nav-link">Classes</a>
-            <a href="team.html" class="nav-item nav-link">Teachers</a>
-            <a href="gallery.html" class="nav-item nav-link">Gallery</a>
-            <div class="nav-item dropdown">
-              <a
-                href="#"
-                class="nav-link dropdown-toggle active"
-                data-toggle="dropdown"
-                >Pages</a
-              >
-              <div class="dropdown-menu rounded-0 m-0">
-                <a href="blog.html" class="dropdown-item">Blog Grid</a>
-                <a href="single.html" class="dropdown-item">Blog Detail</a>
-              </div>
-            </div>
-            <a href="contact.html" class="nav-item nav-link">Contact</a>
-          </div>
-          <a href="" class="btn btn-primary px-4">Join Class</a>
-        </div>
-      </nav>
-    </div>
-    <!-- Navbar End -->
+    <!-- Navbar (injected from partials/navbar.html) -->
+    <div data-include="partials/navbar.html"></div>
 
     <!-- Header Start -->
     <div class="container-fluid bg-primary mb-5">
@@ -92,12 +45,22 @@
         class="d-flex flex-column align-items-center justify-content-center"
         style="min-height: 400px"
       >
-        <h3 class="display-3 font-weight-bold text-white">Blog Detail</h3>
-        <div class="d-inline-flex text-white">
-          <p class="m-0"><a class="text-white" href="">Home</a></p>
-          <p class="m-0 px-2">/</p>
-          <p class="m-0">Blog Detail</p>
-        </div>
+        <h1 class="display-4 font-weight-bold text-white text-center px-3">
+          Why Play Is Serious Learning for Young Children
+        </h1>
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb bg-transparent mb-0 d-inline-flex text-white">
+            <li class="breadcrumb-item">
+              <a class="text-white" href="index.html">Home</a>
+            </li>
+            <li class="breadcrumb-item">
+              <a class="text-white" href="blog.html">Blog</a>
+            </li>
+            <li class="breadcrumb-item active text-white" aria-current="page">
+              Blog Detail
+            </li>
+          </ol>
+        </nav>
       </div>
     </div>
     <!-- Header End -->
@@ -106,235 +69,343 @@
     <div class="container py-5">
       <div class="row pt-5">
         <div class="col-lg-8">
-          <div class="d-flex flex-column text-left mb-3">
-            <p class="section-title pr-5">
-              <span class="pr-2">Blog Detail Page</span>
-            </p>
-            <h1 class="mb-3">Diam dolor est ipsum clita lorem</h1>
-            <div class="d-flex">
-              <p class="mr-3"><i class="fa fa-user text-primary"></i> Admin</p>
-              <p class="mr-3">
-                <i class="fa fa-folder text-primary"></i> Web Design
+          <!-- Article -->
+          <article>
+            <div class="d-flex flex-column text-left mb-3">
+              <p class="section-title pr-5">
+                <span class="pr-2">From the Varbok Blog</span>
               </p>
-              <p class="mr-3"><i class="fa fa-comments text-primary"></i> 15</p>
+              <h2 class="mb-3">Why Play Is Serious Learning for Young Children</h2>
+              <div class="d-flex flex-wrap">
+                <p class="mr-3 mb-1">
+                  <i class="fa fa-user text-primary"></i> Ananya Krishnan
+                </p>
+                <p class="mr-3 mb-1">
+                  <i class="fa fa-folder text-primary"></i> Learning
+                </p>
+                <p class="mr-3 mb-1">
+                  <i class="fa fa-calendar-alt text-primary"></i> 15 Jan 2026
+                </p>
+                <p class="mr-3 mb-1">
+                  <i class="fa fa-comments text-primary"></i> 12 Comments
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="mb-5">
-            <img
-              class="img-fluid rounded w-100 mb-4"
-              src="img/detail.jpg"
-              alt="Image"
-            />
-            <p>
-              Sadipscing labore amet rebum est et justo gubergren. Et eirmod
-              ipsum sit diam ut magna lorem. Nonumy vero labore lorem sanctus
-              rebum et lorem magna kasd, stet amet magna accusam consetetur
-              eirmod. Kasd accusam sit ipsum sadipscing et at at sanctus et.
-              Ipsum sit gubergren dolores et, consetetur justo invidunt at et
-              aliquyam ut et vero clita. Diam sea sea no sed dolores diam
-              nonumy, gubergren sit stet no diam kasd vero.
-            </p>
-            <p>
-              Voluptua est takimata stet invidunt sed rebum nonumy stet, clita
-              aliquyam dolores vero stet consetetur elitr takimata rebum
-              sanctus. Sit sed accusam stet sit nonumy kasd diam dolores,
-              sanctus lorem kasd duo dolor dolor vero sit et. Labore ipsum duo
-              sanctus amet eos et. Consetetur no sed et aliquyam ipsum justo et,
-              clita lorem sit vero amet amet est dolor elitr, stet et no diam
-              sit. Dolor erat justo dolore sit invidunt.
-            </p>
-            <h2 class="mb-4">Est dolor lorem et ea</h2>
-            <img
-              class="img-fluid rounded w-50 float-left mr-4 mb-3"
-              src="img/blog-1.jpg"
-              alt="Image"
-            />
-            <p>
-              Diam dolor est labore duo invidunt ipsum clita et, sed et lorem
-              voluptua tempor invidunt at est sanctus sanctus. Clita dolores sit
-              kasd diam takimata justo diam lorem sed. Magna amet sed rebum eos.
-              Clita no magna no dolor erat diam tempor rebum consetetur, sanctus
-              labore sed nonumy diam lorem amet eirmod. No at tempor sea diam
-              kasd, takimata ea nonumy elitr sadipscing gubergren erat.
-              Gubergren at lorem invidunt sadipscing rebum sit amet ut ut,
-              voluptua diam dolores at sadipscing stet. Clita dolor amet dolor
-              ipsum vero ea ea eos. Invidunt sed diam dolores takimata dolor
-              dolore dolore sit. Sit ipsum erat amet lorem et, magna sea at sed
-              et eos. Accusam eirmod kasd lorem clita sanctus ut consetetur et.
-              Et duo tempor sea kasd clita ipsum et. Takimata kasd diam justo
-              est eos erat aliquyam et ut. Ea sed sadipscing no justo et eos
-              labore, gubergren ipsum magna dolor lorem dolore, elitr aliquyam
-              takimata sea kasd dolores diam, amet et est accusam labore eirmod
-              vero et voluptua. Amet labore clita duo et no. Rebum voluptua
-              magna eos magna, justo gubergren labore sit voluptua eos.
-            </p>
-            <h3 class="mb-4">Est dolor lorem et ea</h3>
-            <img
-              class="img-fluid rounded w-50 float-right ml-4 mb-3"
-              src="img/blog-2.jpg"
-              alt="Image"
-            />
-            <p>
-              Diam dolor est labore duo invidunt ipsum clita et, sed et lorem
-              voluptua tempor invidunt at est sanctus sanctus. Clita dolores sit
-              kasd diam takimata justo diam lorem sed. Magna amet sed rebum eos.
-              Clita no magna no dolor erat diam tempor rebum consetetur, sanctus
-              labore sed nonumy diam lorem amet eirmod. No at tempor sea diam
-              kasd, takimata ea nonumy elitr sadipscing gubergren erat.
-              Gubergren at lorem invidunt sadipscing rebum sit amet ut ut,
-              voluptua diam dolores at sadipscing stet. Clita dolor amet dolor
-              ipsum vero ea ea eos. Invidunt sed diam dolores takimata dolor
-              dolore dolore sit. Sit ipsum erat amet lorem et, magna sea at sed
-              et eos. Accusam eirmod kasd lorem clita sanctus ut consetetur et.
-              Et duo tempor sea kasd clita ipsum et. Takimata kasd diam justo
-              est eos erat aliquyam et ut. Ea sed sadipscing no justo et eos
-              labore, gubergren ipsum magna dolor lorem dolore, elitr aliquyam
-              takimata sea kasd dolores diam, amet et est accusam labore eirmod
-              vero et voluptua. Amet labore clita duo et no.
-            </p>
-          </div>
+
+            <!-- Demo notice -->
+            <div class="alert alert-info d-flex align-items-center" role="alert">
+              <span class="demo-badge mr-3">Demo</span>
+              <span>
+                Demo article &mdash; every blog link on the site opens this
+                sample post.
+              </span>
+            </div>
+
+            <div class="mb-5">
+              <img
+                class="img-fluid rounded w-100 mb-4"
+                src="img/detail.jpg"
+                alt="A young child smiling and building a tall tower with colourful wooden blocks"
+                width="800"
+                height="450"
+              />
+              <p>
+                Ask any parent what their child did at preschool today and the
+                answer is often the same: &ldquo;We played.&rdquo; For many
+                grown-ups that word can feel a little worrying. Shouldn&rsquo;t
+                children be learning letters, numbers and getting ready for
+                &ldquo;real&rdquo; school? At Varbok we hear this gently
+                voiced concern every week, and our answer is always the same,
+                with a warm smile: for young children, play <em>is</em> the
+                real learning, and it is some of the most serious work they
+                will ever do.
+              </p>
+              <p>
+                When a toddler stacks blocks until they topple, she is quietly
+                running experiments in balance, gravity, height and cause and
+                effect. When two friends argue over who gets the toy stethoscope
+                in the pretend clinic, they are practising negotiation, empathy
+                and language under real emotional pressure. None of it looks
+                like a lesson, and that is exactly the point. The learning is
+                woven so naturally into the joy that children never feel they
+                are being taught at all.
+              </p>
+
+              <h3 class="mb-4">What is really happening during play</h3>
+              <img
+                class="img-fluid rounded w-50 float-left mr-4 mb-3"
+                src="img/blog-1.jpg"
+                alt="Children sitting together at a low table, painting and sharing art supplies"
+                loading="lazy"
+                width="400"
+                height="300"
+              />
+              <p>
+                Decades of early-childhood research point in one clear
+                direction: young brains grow through active, hands-on,
+                self-directed experience far more than through worksheets or
+                rote repetition. Play builds the very foundations that formal
+                academics later stand upon. A child who has spent a year sorting
+                buttons, pouring water and matching shapes arrives at maths with
+                an intuitive sense of quantity, pattern and measurement. A child
+                who has acted out a hundred stories in the dress-up corner walks
+                into reading already understanding sequence, character and the
+                simple magic that words carry meaning.
+              </p>
+              <p>
+                Play also strengthens what educators call executive function:
+                the ability to focus, remember instructions, control impulses
+                and switch between tasks. When children invent the rules of a
+                game, take turns and adjust when a friend wants something
+                different, they are exercising the same mental muscles they will
+                one day use to plan an essay or solve a tricky problem. These
+                are not soft extras. They are the skills that quietly predict how
+                well a child copes, concentrates and thrives in school and far
+                beyond it.
+              </p>
+
+              <h3 class="mb-4">The four kinds of growth in every playful day</h3>
+              <p>
+                At Varbok we design each day so that play gently stretches
+                children across four connected areas of development:
+              </p>
+              <ul class="mb-4">
+                <li class="py-1">
+                  <strong>Cognitive growth</strong> &mdash; counting, sorting,
+                  problem-solving and early literacy, all discovered through
+                  blocks, puzzles, sand and storytelling.
+                </li>
+                <li class="py-1">
+                  <strong>Language and communication</strong> &mdash; new words,
+                  questions and conversations sparked by pretend play, songs and
+                  picture books shared in cosy circles.
+                </li>
+                <li class="py-1">
+                  <strong>Physical development</strong> &mdash; strong bodies and
+                  steady little hands built through climbing, running, threading
+                  beads and squeezing dough.
+                </li>
+                <li class="py-1">
+                  <strong>Social and emotional skills</strong> &mdash; sharing,
+                  patience, kindness and confidence, learned by playing
+                  alongside caring friends and gentle, attentive teachers.
+                </li>
+              </ul>
+
+              <h3 class="mb-4">How parents can nurture play at home</h3>
+              <img
+                class="img-fluid rounded w-50 float-right ml-4 mb-3"
+                src="img/blog-2.jpg"
+                alt="A parent and toddler reading a picture book together on a soft rug at home"
+                loading="lazy"
+                width="400"
+                height="300"
+              />
+              <p>
+                The good news is that powerful play needs no expensive toys or
+                elaborate setups. A cardboard box becomes a rocket, a spaceship
+                and a cosy cave all in one afternoon. A few pots, a wooden spoon
+                and a little water turn into a busy kitchen. The simplest, most
+                open-ended materials are often the ones that invite the richest
+                imagination, because the child, not the toy, does the thinking.
+              </p>
+              <p>
+                You can gently support your child&rsquo;s play by following their
+                lead rather than directing it, by allowing unhurried stretches of
+                free time, and by resisting the urge to correct every &ldquo;wrong&rdquo;
+                way of doing things. When you sit on the floor, ask open
+                questions and show genuine delight in their make-believe world,
+                you tell your child that their ideas matter. That quiet message
+                of trust is the soil in which curiosity, confidence and a
+                lifelong love of learning take root.
+              </p>
+              <p>
+                So the next time your little one comes home muddy, paint-splashed
+                and bursting with stories about the games they played, you can
+                feel proud rather than anxious. They have not simply been kept
+                busy. They have been thinking, feeling, creating and growing in
+                the most natural way a young child can. At Varbok, that is what
+                we mean when we say every child deserves a childhood that is
+                <em>felt</em> before it is measured.
+              </p>
+            </div>
+          </article>
 
           <!-- Related Post -->
           <div class="mb-5 mx-n3">
-            <h2 class="mb-4 ml-3">Related Post</h2>
-            <div class="owl-carousel post-carousel position-relative">
-              <div
-                class="d-flex align-items-center bg-light shadow-sm rounded overflow-hidden mx-3"
+            <h2 class="mb-4 ml-3">Related Posts</h2>
+            <div
+              class="owl-carousel post-carousel position-relative"
+              aria-label="Related blog posts carousel"
+              aria-roledescription="carousel"
+            >
+              <a
+                href="single.html"
+                class="d-flex align-items-center bg-light shadow-sm rounded overflow-hidden mx-3 text-decoration-none text-dark"
+              >
+                <img
+                  class="img-fluid"
+                  src="img/blog-2.jpg"
+                  alt="A child taking gentle first steps into the classroom on their first day"
+                  loading="lazy"
+                  style="width: 80px; height: 80px"
+                  width="80"
+                  height="80"
+                />
+                <div class="pl-3">
+                  <h3 class="h6 mb-1">
+                    Easing the First-Day Tears: A Parent&rsquo;s Survival Guide
+                  </h3>
+                  <div class="d-flex flex-wrap">
+                    <small class="mr-3"
+                      ><i class="fa fa-user text-primary"></i> Kavya
+                      Pillai</small
+                    >
+                    <small class="mr-3"
+                      ><i class="fa fa-folder text-primary"></i> Parenting</small
+                    >
+                    <small class="mr-3"
+                      ><i class="fa fa-comments text-primary"></i> 9</small
+                    >
+                  </div>
+                </div>
+              </a>
+              <a
+                href="single.html"
+                class="d-flex align-items-center bg-light shadow-sm rounded overflow-hidden mx-3 text-decoration-none text-dark"
+              >
+                <img
+                  class="img-fluid"
+                  src="img/blog-3.jpg"
+                  alt="A toddler and parent talking together to build early vocabulary"
+                  loading="lazy"
+                  style="width: 80px; height: 80px"
+                  width="80"
+                  height="80"
+                />
+                <div class="pl-3">
+                  <h3 class="h6 mb-1">
+                    Five Easy Ways to Build Your Child&rsquo;s Vocabulary at Home
+                  </h3>
+                  <div class="d-flex flex-wrap">
+                    <small class="mr-3"
+                      ><i class="fa fa-user text-primary"></i> Priya Nair</small
+                    >
+                    <small class="mr-3"
+                      ><i class="fa fa-folder text-primary"></i>
+                      Development</small
+                    >
+                    <small class="mr-3"
+                      ><i class="fa fa-comments text-primary"></i> 15</small
+                    >
+                  </div>
+                </div>
+              </a>
+              <a
+                href="single.html"
+                class="d-flex align-items-center bg-light shadow-sm rounded overflow-hidden mx-3 text-decoration-none text-dark"
               >
                 <img
                   class="img-fluid"
                   src="img/post-1.jpg"
+                  alt="Young children playing drums and shakers in a joyful music circle"
+                  loading="lazy"
                   style="width: 80px; height: 80px"
+                  width="80"
+                  height="80"
                 />
                 <div class="pl-3">
-                  <h5 class="">Diam amet eos at no eos</h5>
-                  <div class="d-flex">
+                  <h3 class="h6 mb-1">
+                    The Surprising Benefits of Music for Toddlers
+                  </h3>
+                  <div class="d-flex flex-wrap">
                     <small class="mr-3"
-                      ><i class="fa fa-user text-primary"></i> Admin</small
+                      ><i class="fa fa-user text-primary"></i> Aditya
+                      Sharma</small
                     >
                     <small class="mr-3"
-                      ><i class="fa fa-folder text-primary"></i> Web
-                      Design</small
+                      ><i class="fa fa-folder text-primary"></i>
+                      Development</small
                     >
                     <small class="mr-3"
-                      ><i class="fa fa-comments text-primary"></i> 15</small
+                      ><i class="fa fa-comments text-primary"></i> 7</small
                     >
                   </div>
                 </div>
-              </div>
-              <div
-                class="d-flex align-items-center bg-light shadow-sm rounded overflow-hidden mx-3"
-              >
-                <img
-                  class="img-fluid"
-                  src="img/post-2.jpg"
-                  style="width: 80px; height: 80px"
-                />
-                <div class="pl-3">
-                  <h5 class="">Diam amet eos at no eos</h5>
-                  <div class="d-flex">
-                    <small class="mr-3"
-                      ><i class="fa fa-user text-primary"></i> Admin</small
-                    >
-                    <small class="mr-3"
-                      ><i class="fa fa-folder text-primary"></i> Web
-                      Design</small
-                    >
-                    <small class="mr-3"
-                      ><i class="fa fa-comments text-primary"></i> 15</small
-                    >
-                  </div>
-                </div>
-              </div>
-              <div
-                class="d-flex align-items-center bg-light shadow-sm rounded overflow-hidden mx-3"
-              >
-                <img
-                  class="img-fluid"
-                  src="img/post-3.jpg"
-                  style="width: 80px; height: 80px"
-                />
-                <div class="pl-3">
-                  <h5 class="">Diam amet eos at no eos</h5>
-                  <div class="d-flex">
-                    <small class="mr-3"
-                      ><i class="fa fa-user text-primary"></i> Admin</small
-                    >
-                    <small class="mr-3"
-                      ><i class="fa fa-folder text-primary"></i> Web
-                      Design</small
-                    >
-                    <small class="mr-3"
-                      ><i class="fa fa-comments text-primary"></i> 15</small
-                    >
-                  </div>
-                </div>
-              </div>
+              </a>
             </div>
           </div>
 
           <!-- Comment List -->
           <div class="mb-5">
-            <h2 class="mb-4">3 Comments</h2>
+            <h2 class="mb-4">Comments</h2>
             <div class="media mb-4">
               <img
                 src="img/user.jpg"
-                alt="Image"
+                alt="Profile photo of parent Deepika Rao"
                 class="img-fluid rounded-circle mr-3 mt-1"
+                loading="lazy"
                 style="width: 45px"
+                width="45"
+                height="45"
               />
               <div class="media-body">
-                <h6>
-                  John Doe <small><i>01 Jan 2045 at 12:00pm</i></small>
-                </h6>
+                <h3 class="h6">
+                  Deepika Rao <small><i>16 Jan 2026 at 9:15 AM</i></small>
+                </h3>
                 <p>
-                  Diam amet duo labore stet elitr ea clita ipsum, tempor labore
-                  accusam ipsum et no at. Kasd diam tempor rebum magna dolores
-                  sed sed eirmod ipsum. Gubergren clita aliquyam consetetur
-                  sadipscing, at tempor amet ipsum diam tempor consetetur at
-                  sit.
+                  This put into words exactly what I feel watching my daughter at
+                  Varbok. She comes home every day with new stories and so much
+                  confidence. Thank you for reminding us that play really is
+                  learning.
                 </p>
-                <button class="btn btn-sm btn-light">Reply</button>
+                <a href="#leave-a-comment" class="btn btn-sm btn-light">Reply</a>
               </div>
             </div>
             <div class="media mb-4">
               <img
                 src="img/user.jpg"
-                alt="Image"
+                alt="Profile photo of parent Sandeep Kulkarni"
                 class="img-fluid rounded-circle mr-3 mt-1"
+                loading="lazy"
                 style="width: 45px"
+                width="45"
+                height="45"
               />
               <div class="media-body">
-                <h6>
-                  John Doe <small><i>01 Jan 2045 at 12:00pm</i></small>
-                </h6>
+                <h3 class="h6">
+                  Sandeep Kulkarni <small><i>17 Jan 2026 at 6:40 PM</i></small>
+                </h3>
                 <p>
-                  Diam amet duo labore stet elitr ea clita ipsum, tempor labore
-                  accusam ipsum et no at. Kasd diam tempor rebum magna dolores
-                  sed sed eirmod ipsum. Gubergren clita aliquyam consetetur
-                  sadipscing, at tempor amet ipsum diam tempor consetetur at
-                  sit.
+                  As a working dad I always worried we were not doing enough
+                  &ldquo;academics&rdquo; at home. The cardboard-box idea made me
+                  laugh, because that is genuinely my son&rsquo;s favourite toy.
+                  Very reassuring read.
                 </p>
-                <button class="btn btn-sm btn-light">Reply</button>
+                <a href="#leave-a-comment" class="btn btn-sm btn-light">Reply</a>
                 <div class="media mt-4">
                   <img
                     src="img/user.jpg"
-                    alt="Image"
+                    alt="Profile photo of Varbok founder Ananya Krishnan"
                     class="img-fluid rounded-circle mr-3 mt-1"
+                    loading="lazy"
                     style="width: 45px"
+                    width="45"
+                    height="45"
                   />
                   <div class="media-body">
-                    <h6>
-                      John Doe <small><i>01 Jan 2045 at 12:00pm</i></small>
-                    </h6>
+                    <h3 class="h6">
+                      Ananya Krishnan
+                      <small><i>18 Jan 2026 at 10:05 AM</i></small>
+                    </h3>
                     <p>
-                      Diam amet duo labore stet elitr ea clita ipsum, tempor
-                      labore accusam ipsum et no at. Kasd diam tempor rebum
-                      magna dolores sed sed eirmod ipsum. Gubergren clita
-                      aliquyam consetetur, at tempor amet ipsum diam tempor at
-                      sit.
+                      So glad it helped, Sandeep! That cardboard box is doing
+                      more learning work than any flashcard ever could. Keep
+                      following his lead, you are doing wonderfully.
                     </p>
-                    <button class="btn btn-sm btn-light">Reply</button>
+                    <a href="#leave-a-comment" class="btn btn-sm btn-light"
+                      >Reply</a
+                    >
                   </div>
                 </div>
               </div>
@@ -342,38 +413,63 @@
           </div>
 
           <!-- Comment Form -->
-          <div class="bg-light p-5">
-            <h2 class="mb-4">Leave a comment</h2>
-            <form>
+          <div class="bg-light p-5" id="leave-a-comment">
+            <h2 class="mb-4">Leave a Comment</h2>
+            <form
+              data-formspree
+              action="https://formspree.io/f/YOUR_FORM_ID"
+              method="post"
+            >
               <div class="form-group">
-                <label for="name">Name *</label>
-                <input type="text" class="form-control" id="name" />
+                <label for="comment-name">Name *</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="comment-name"
+                  name="name"
+                  required
+                />
               </div>
               <div class="form-group">
-                <label for="email">Email *</label>
-                <input type="email" class="form-control" id="email" />
+                <label for="comment-email">Email *</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="comment-email"
+                  name="email"
+                  required
+                />
               </div>
               <div class="form-group">
-                <label for="website">Website</label>
-                <input type="url" class="form-control" id="website" />
+                <label for="comment-website">Website</label>
+                <input
+                  type="url"
+                  class="form-control"
+                  id="comment-website"
+                  name="website"
+                />
               </div>
-
               <div class="form-group">
-                <label for="message">Message *</label>
+                <label for="comment-message">Message *</label>
                 <textarea
-                  id="message"
+                  id="comment-message"
+                  name="message"
                   cols="30"
                   rows="5"
                   class="form-control"
+                  required
                 ></textarea>
               </div>
               <div class="form-group mb-0">
-                <input
-                  type="submit"
-                  value="Leave Comment"
-                  class="btn btn-primary px-3"
-                />
+                <button type="submit" class="btn btn-primary px-3">
+                  Leave Comment
+                </button>
               </div>
+              <div
+                class="form-status mt-3"
+                role="status"
+                aria-live="polite"
+              ></div>
             </form>
           </div>
         </div>
@@ -384,31 +480,42 @@
             class="d-flex flex-column text-center bg-primary rounded mb-5 py-5 px-4"
           >
             <img
-              src="img/user.jpg"
+              src="img/team-1.jpg"
+              alt="Portrait of Ananya Krishnan, Founder and Lead Educator at Varbok"
               class="img-fluid rounded-circle mx-auto mb-3"
-              style="width: 100px"
+              loading="lazy"
+              style="width: 100px; height: 100px; object-fit: cover"
+              width="100"
+              height="100"
             />
-            <h3 class="text-secondary mb-3">John Doe</h3>
+            <h2 class="h4 text-secondary mb-3">Ananya Krishnan</h2>
             <p class="text-white m-0">
-              Conset elitr erat vero dolor ipsum et diam, eos dolor lorem ipsum,
-              ipsum ipsum sit no ut est. Guber ea ipsum erat kasd amet est elitr
-              ea sit.
+              A Montessori-trained educator with 18 years of experience, Ananya
+              founded Varbok to give children the joyful, fearless childhood she
+              always believed they deserved.
             </p>
           </div>
 
           <!-- Search Form -->
           <div class="mb-5">
-            <form action="">
+            <form action="blog.html" method="get" role="search">
               <div class="input-group">
+                <label class="sr-only" for="blog-search">Search the blog</label>
                 <input
-                  type="text"
+                  type="search"
+                  id="blog-search"
+                  name="q"
                   class="form-control form-control-lg"
-                  placeholder="Keyword"
+                  placeholder="Search articles"
                 />
                 <div class="input-group-append">
-                  <span class="input-group-text bg-transparent text-primary"
-                    ><i class="fa fa-search"></i
-                  ></span>
+                  <button
+                    type="submit"
+                    class="input-group-text bg-transparent text-primary"
+                    aria-label="Search the blog"
+                  >
+                    <i class="fa fa-search"></i>
+                  </button>
                 </div>
               </div>
             </form>
@@ -421,295 +528,251 @@
               <li
                 class="list-group-item d-flex justify-content-between align-items-center px-0"
               >
-                <a href="">Web Design</a>
-                <span class="badge badge-primary badge-pill">150</span>
+                <a href="blog.html">Learning</a>
+                <span class="badge badge-primary badge-pill">8</span>
               </li>
               <li
                 class="list-group-item d-flex justify-content-between align-items-center px-0"
               >
-                <a href="">Web Development</a>
-                <span class="badge badge-primary badge-pill">131</span>
+                <a href="blog.html">Parenting</a>
+                <span class="badge badge-primary badge-pill">12</span>
               </li>
               <li
                 class="list-group-item d-flex justify-content-between align-items-center px-0"
               >
-                <a href="">Online Marketing</a>
-                <span class="badge badge-primary badge-pill">78</span>
+                <a href="blog.html">Development</a>
+                <span class="badge badge-primary badge-pill">10</span>
               </li>
               <li
                 class="list-group-item d-flex justify-content-between align-items-center px-0"
               >
-                <a href="">Keyword Research</a>
-                <span class="badge badge-primary badge-pill">56</span>
+                <a href="blog.html">Nutrition</a>
+                <span class="badge badge-primary badge-pill">5</span>
               </li>
               <li
                 class="list-group-item d-flex justify-content-between align-items-center px-0"
               >
-                <a href="">Email Marketing</a>
-                <span class="badge badge-primary badge-pill">98</span>
+                <a href="blog.html">Safety &amp; Care</a>
+                <span class="badge badge-primary badge-pill">6</span>
               </li>
             </ul>
           </div>
 
           <!-- Single Image -->
           <div class="mb-5">
-            <img src="img/blog-1.jpg" alt="" class="img-fluid rounded" />
+            <img
+              src="img/portfolio-3.jpg"
+              alt="Children enjoying a lively morning rhythm circle with drums and song"
+              class="img-fluid rounded"
+              loading="lazy"
+              width="400"
+              height="300"
+            />
           </div>
 
           <!-- Recent Post -->
           <div class="mb-5">
-            <h2 class="mb-4">Recent Post</h2>
-            <div
-              class="d-flex align-items-center bg-light shadow-sm rounded overflow-hidden mb-3"
+            <h2 class="mb-4">Recent Posts</h2>
+            <a
+              href="single.html"
+              class="d-flex align-items-center bg-light shadow-sm rounded overflow-hidden mb-3 text-decoration-none text-dark"
+            >
+              <img
+                class="img-fluid"
+                src="img/blog-1.jpg"
+                alt="A child building a tall tower of colourful blocks"
+                loading="lazy"
+                style="width: 80px; height: 80px"
+                width="80"
+                height="80"
+              />
+              <div class="pl-3">
+                <h3 class="h6 mb-1">
+                  Why Play Is Serious Learning for Young Children
+                </h3>
+                <div class="d-flex flex-wrap">
+                  <small class="mr-3"
+                    ><i class="fa fa-user text-primary"></i> Ananya
+                    Krishnan</small
+                  >
+                  <small class="mr-3"
+                    ><i class="fa fa-calendar-alt text-primary"></i> 15 Jan
+                    2026</small
+                  >
+                </div>
+              </div>
+            </a>
+            <a
+              href="single.html"
+              class="d-flex align-items-center bg-light shadow-sm rounded overflow-hidden mb-3 text-decoration-none text-dark"
+            >
+              <img
+                class="img-fluid"
+                src="img/blog-2.jpg"
+                alt="A child taking gentle first steps into the classroom"
+                loading="lazy"
+                style="width: 80px; height: 80px"
+                width="80"
+                height="80"
+              />
+              <div class="pl-3">
+                <h3 class="h6 mb-1">
+                  Easing the First-Day Tears: A Parent&rsquo;s Survival Guide
+                </h3>
+                <div class="d-flex flex-wrap">
+                  <small class="mr-3"
+                    ><i class="fa fa-user text-primary"></i> Kavya Pillai</small
+                  >
+                  <small class="mr-3"
+                    ><i class="fa fa-calendar-alt text-primary"></i> 28 Jan
+                    2026</small
+                  >
+                </div>
+              </div>
+            </a>
+            <a
+              href="single.html"
+              class="d-flex align-items-center bg-light shadow-sm rounded overflow-hidden mb-3 text-decoration-none text-dark"
+            >
+              <img
+                class="img-fluid"
+                src="img/blog-3.jpg"
+                alt="A parent and toddler talking together to grow vocabulary"
+                loading="lazy"
+                style="width: 80px; height: 80px"
+                width="80"
+                height="80"
+              />
+              <div class="pl-3">
+                <h3 class="h6 mb-1">
+                  Five Easy Ways to Build Your Child&rsquo;s Vocabulary at Home
+                </h3>
+                <div class="d-flex flex-wrap">
+                  <small class="mr-3"
+                    ><i class="fa fa-user text-primary"></i> Priya Nair</small
+                  >
+                  <small class="mr-3"
+                    ><i class="fa fa-calendar-alt text-primary"></i> 10 Feb
+                    2026</small
+                  >
+                </div>
+              </div>
+            </a>
+            <a
+              href="single.html"
+              class="d-flex align-items-center bg-light shadow-sm rounded overflow-hidden mb-3 text-decoration-none text-dark"
             >
               <img
                 class="img-fluid"
                 src="img/post-1.jpg"
+                alt="Young children playing drums in a joyful music circle"
+                loading="lazy"
                 style="width: 80px; height: 80px"
+                width="80"
+                height="80"
               />
               <div class="pl-3">
-                <h5 class="">Diam amet eos at no eos</h5>
-                <div class="d-flex">
+                <h3 class="h6 mb-1">
+                  The Surprising Benefits of Music for Toddlers
+                </h3>
+                <div class="d-flex flex-wrap">
                   <small class="mr-3"
-                    ><i class="fa fa-user text-primary"></i> Admin</small
+                    ><i class="fa fa-user text-primary"></i> Aditya Sharma</small
                   >
                   <small class="mr-3"
-                    ><i class="fa fa-folder text-primary"></i> Web Design</small
-                  >
-                  <small class="mr-3"
-                    ><i class="fa fa-comments text-primary"></i> 15</small
+                    ><i class="fa fa-calendar-alt text-primary"></i> 22 Feb
+                    2026</small
                   >
                 </div>
               </div>
-            </div>
-            <div
-              class="d-flex align-items-center bg-light shadow-sm rounded overflow-hidden mb-3"
+            </a>
+            <a
+              href="single.html"
+              class="d-flex align-items-center bg-light shadow-sm rounded overflow-hidden mb-3 text-decoration-none text-dark"
             >
               <img
                 class="img-fluid"
                 src="img/post-2.jpg"
+                alt="A colourful, healthy lunchbox packed for a school day"
+                loading="lazy"
                 style="width: 80px; height: 80px"
+                width="80"
+                height="80"
               />
               <div class="pl-3">
-                <h5 class="">Diam amet eos at no eos</h5>
-                <div class="d-flex">
+                <h3 class="h6 mb-1">
+                  Healthy Lunchbox Ideas Kids Will Actually Eat
+                </h3>
+                <div class="d-flex flex-wrap">
                   <small class="mr-3"
-                    ><i class="fa fa-user text-primary"></i> Admin</small
+                    ><i class="fa fa-user text-primary"></i> Meera Joshi</small
                   >
                   <small class="mr-3"
-                    ><i class="fa fa-folder text-primary"></i> Web Design</small
-                  >
-                  <small class="mr-3"
-                    ><i class="fa fa-comments text-primary"></i> 15</small
+                    ><i class="fa fa-calendar-alt text-primary"></i> 08 Mar
+                    2026</small
                   >
                 </div>
               </div>
-            </div>
-            <div
-              class="d-flex align-items-center bg-light shadow-sm rounded overflow-hidden mb-3"
-            >
-              <img
-                class="img-fluid"
-                src="img/post-3.jpg"
-                style="width: 80px; height: 80px"
-              />
-              <div class="pl-3">
-                <h5 class="">Diam amet eos at no eos</h5>
-                <div class="d-flex">
-                  <small class="mr-3"
-                    ><i class="fa fa-user text-primary"></i> Admin</small
-                  >
-                  <small class="mr-3"
-                    ><i class="fa fa-folder text-primary"></i> Web Design</small
-                  >
-                  <small class="mr-3"
-                    ><i class="fa fa-comments text-primary"></i> 15</small
-                  >
-                </div>
-              </div>
-            </div>
+            </a>
           </div>
 
           <!-- Single Image -->
           <div class="mb-5">
-            <img src="img/blog-2.jpg" alt="" class="img-fluid rounded" />
+            <img
+              src="img/portfolio-2.jpg"
+              alt="Children climbing and giggling together in the outdoor play garden"
+              class="img-fluid rounded"
+              loading="lazy"
+              width="400"
+              height="300"
+            />
           </div>
 
           <!-- Tag Cloud -->
           <div class="mb-5">
             <h2 class="mb-4">Tag Cloud</h2>
             <div class="d-flex flex-wrap m-n1">
-              <a href="" class="btn btn-outline-primary m-1">Design</a>
-              <a href="" class="btn btn-outline-primary m-1">Development</a>
-              <a href="" class="btn btn-outline-primary m-1">Marketing</a>
-              <a href="" class="btn btn-outline-primary m-1">SEO</a>
-              <a href="" class="btn btn-outline-primary m-1">Writing</a>
-              <a href="" class="btn btn-outline-primary m-1">Consulting</a>
+              <a href="blog.html" class="btn btn-outline-primary m-1">Play</a>
+              <a href="blog.html" class="btn btn-outline-primary m-1"
+                >Learning</a
+              >
+              <a href="blog.html" class="btn btn-outline-primary m-1"
+                >Parenting</a
+              >
+              <a href="blog.html" class="btn btn-outline-primary m-1"
+                >Development</a
+              >
+              <a href="blog.html" class="btn btn-outline-primary m-1"
+                >Nutrition</a
+              >
+              <a href="blog.html" class="btn btn-outline-primary m-1"
+                >Kindergarten</a
+              >
             </div>
           </div>
 
-          <!-- Single Image -->
-          <div class="mb-5">
-            <img src="img/blog-3.jpg" alt="" class="img-fluid rounded" />
-          </div>
-
-          <!-- Plain Text -->
-          <div>
-            <h2 class="mb-4">Plain Text</h2>
-            Aliquyam sed lorem stet diam dolor sed ut sit. Ut sanctus erat ea
-            est aliquyam dolor et. Et no consetetur eos labore ea erat voluptua
-            et. Et aliquyam dolore sed erat. Magna sanctus sed eos tempor rebum
-            dolor, tempor takimata clita sit et elitr ut eirmod.
+          <!-- Newsletter Callout -->
+          <div class="bg-primary rounded text-center p-4">
+            <h2 class="h4 text-white mb-3">Join Our Parent Community</h2>
+            <p class="text-white mb-4">
+              Get gentle tips, stories and updates from Varbok, straight to your
+              inbox.
+            </p>
+            <a href="contact.html" class="btn btn-secondary px-4">Get In Touch</a>
           </div>
         </div>
       </div>
     </div>
     <!-- Detail End -->
 
-    <!-- Footer Start -->
-    <div
-      class="container-fluid bg-secondary text-white mt-5 py-5 px-sm-3 px-md-5"
-    >
-      <div class="row pt-5">
-        <div class="col-lg-3 col-md-6 mb-5">
-          <a
-            href=""
-            class="navbar-brand font-weight-bold text-primary m-0 mb-4 p-0"
-            style="font-size: 40px; line-height: 40px"
-          >
-            <i class="icon-footer"></i>
-            <span class="text-white">Varbok</span>
-          </a>
-          <p>
-            Labore dolor amet ipsum ea, erat sit ipsum duo eos. Volup amet ea
-            dolor et magna dolor, elitr rebum duo est sed diam elitr. Stet elitr
-            stet diam duo eos rebum ipsum diam ipsum elitr.
-          </p>
-          <div class="d-flex justify-content-start mt-4">
-            <a
-              class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
-              style="width: 38px; height: 38px"
-              href="#"
-              ><i class="fab fa-twitter"></i
-            ></a>
-            <a
-              class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
-              style="width: 38px; height: 38px"
-              href="#"
-              ><i class="fab fa-facebook-f"></i
-            ></a>
-            <a
-              class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
-              style="width: 38px; height: 38px"
-              href="#"
-              ><i class="fab fa-linkedin-in"></i
-            ></a>
-            <a
-              class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
-              style="width: 38px; height: 38px"
-              href="#"
-              ><i class="fab fa-instagram"></i
-            ></a>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 mb-5">
-          <h3 class="text-primary mb-4">Get In Touch</h3>
-          <div class="d-flex">
-            <h4 class="fa fa-map-marker-alt text-primary"></h4>
-            <div class="pl-3">
-              <h5 class="text-white">Address</h5>
-              <p>123 Street, New York, USA</p>
-            </div>
-          </div>
-          <div class="d-flex">
-            <h4 class="fa fa-envelope text-primary"></h4>
-            <div class="pl-3">
-              <h5 class="text-white">Email</h5>
-              <p>info@example.com</p>
-            </div>
-          </div>
-          <div class="d-flex">
-            <h4 class="fa fa-phone-alt text-primary"></h4>
-            <div class="pl-3">
-              <h5 class="text-white">Phone</h5>
-              <p>+012 345 67890</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 mb-5">
-          <h3 class="text-primary mb-4">Quick Links</h3>
-          <div class="d-flex flex-column justify-content-start">
-            <a class="text-white mb-2" href="#"
-              ><i class="fa fa-angle-right mr-2"></i>Home</a
-            >
-            <a class="text-white mb-2" href="#"
-              ><i class="fa fa-angle-right mr-2"></i>About Us</a
-            >
-            <a class="text-white mb-2" href="#"
-              ><i class="fa fa-angle-right mr-2"></i>Our Classes</a
-            >
-            <a class="text-white mb-2" href="#"
-              ><i class="fa fa-angle-right mr-2"></i>Our Teachers</a
-            >
-            <a class="text-white mb-2" href="#"
-              ><i class="fa fa-angle-right mr-2"></i>Our Blog</a
-            >
-            <a class="text-white" href="#"
-              ><i class="fa fa-angle-right mr-2"></i>Contact Us</a
-            >
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 mb-5">
-          <h3 class="text-primary mb-4">Newsletter</h3>
-          <form action="">
-            <div class="form-group">
-              <input
-                type="text"
-                class="form-control border-0 py-4"
-                placeholder="Your Name"
-                required="required"
-              />
-            </div>
-            <div class="form-group">
-              <input
-                type="email"
-                class="form-control border-0 py-4"
-                placeholder="Your Email"
-                required="required"
-              />
-            </div>
-            <div>
-              <button
-                class="btn btn-primary btn-block border-0 py-3"
-                type="submit"
-              >
-                Submit Now
-              </button>
-            </div>
-          </form>
-        </div>
-      </div>
-      <div
-        class="container-fluid pt-5"
-        style="border-top: 1px solid rgba(23, 162, 184, 0.2) ;"
-      >
-        <p class="m-0 text-center text-white">
-          &copy;
-          <a class="text-primary font-weight-bold" href="#">Varbok</a>.
-          All Rights Reserved.
-
-         
-          
-          
-          <br />Distributed By:
-          <a href="https://varbok.com" target="_blank">Varbok</a>
-        </p>
-      </div>
-    </div>
-    <!-- Footer End -->
+    <!-- Footer (injected from partials/footer.html) -->
+    <div data-include="partials/footer.html"></div>
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-primary p-3 back-to-top"
+    <a
+      href="#"
+      class="btn btn-primary p-3 back-to-top"
+      aria-label="Back to top"
       ><i class="fa fa-angle-double-up"></i
     ></a>
 
@@ -718,11 +781,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/isotope/isotope.pkgd.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="js/components.js"></script>
 
     <!-- Contact Javascript File -->
-    <script src="mail/jqBootstrapValidation.min.js"></script>
     <script src="mail/contact.js"></script>
 
     <!-- Template Javascript -->

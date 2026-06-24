@@ -2,10 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Varbok - Home of education</title>
+    <title>Contact Varbok | Visit Our Play-Based Preschool in Bengaluru</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <meta content="Home of education" name="keywords" />
-    <meta content="Home of education" name="description" />
+    <meta
+      content="Get in touch with Varbok, a warm play-based early-learning centre in Koramangala, Bengaluru. Call, email or visit us to book a campus tour for your child."
+      name="description"
+    />
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon" />
@@ -26,65 +28,13 @@
     <!-- Flaticon Font -->
     <link href="lib/flaticon/font/flaticon.css" rel="stylesheet" />
 
-    <!-- Libraries Stylesheet -->
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
-
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
   </head>
 
   <body>
-    <!-- Navbar Start -->
-    <div class="container-fluid bg-light position-relative shadow">
-      <nav
-        class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0 px-lg-5"
-      >
-        <a
-          href=""
-          class="navbar-brand font-weight-bold text-secondary"
-          style="font-size: 50px"
-        >
-          <i class="icon-header"></i>
-          <span class="text-primary">Varbok</span>
-        </a>
-        <button
-          type="button"
-          class="navbar-toggler"
-          data-toggle="collapse"
-          data-target="#navbarCollapse"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="collapse navbar-collapse justify-content-between"
-          id="navbarCollapse"
-        >
-          <div class="navbar-nav font-weight-bold mx-auto py-0">
-            <a href="index.html" class="nav-item nav-link">Home</a>
-            <a href="about.html" class="nav-item nav-link">About</a>
-            <a href="class.html" class="nav-item nav-link">Classes</a>
-            <a href="team.html" class="nav-item nav-link">Teachers</a>
-            <a href="gallery.html" class="nav-item nav-link">Gallery</a>
-            <div class="nav-item dropdown">
-              <a
-                href="#"
-                class="nav-link dropdown-toggle"
-                data-toggle="dropdown"
-                >Pages</a
-              >
-              <div class="dropdown-menu rounded-0 m-0">
-                <a href="blog.html" class="dropdown-item">Blog Grid</a>
-                <a href="single.html" class="dropdown-item">Blog Detail</a>
-              </div>
-            </div>
-            <a href="contact.html" class="nav-item nav-link active">Contact</a>
-          </div>
-          <a href="" class="btn btn-primary px-4">Join Class</a>
-        </div>
-      </nav>
-    </div>
-    <!-- Navbar End -->
+    <!-- Navbar (injected from partials/navbar.html) -->
+    <div data-include="partials/navbar.html"></div>
 
     <!-- Header Start -->
     <div class="container-fluid bg-primary mb-5">
@@ -92,9 +42,9 @@
         class="d-flex flex-column align-items-center justify-content-center"
         style="min-height: 400px"
       >
-        <h3 class="display-3 font-weight-bold text-white">Contact Us</h3>
+        <h1 class="display-3 font-weight-bold text-white">Contact Us</h1>
         <div class="d-inline-flex text-white">
-          <p class="m-0"><a class="text-white" href="">Home</a></p>
+          <p class="m-0"><a class="text-white" href="index.html">Home</a></p>
           <p class="m-0 px-2">/</p>
           <p class="m-0">Contact Us</p>
         </div>
@@ -109,52 +59,71 @@
           <p class="section-title px-5">
             <span class="px-2">Get In Touch</span>
           </p>
-          <h1 class="mb-4">Contact Us For Any Query</h1>
+          <h2 class="mb-4">We Would Love To Hear From You</h2>
+          <p class="mb-5">
+            Have a question, want to book a campus tour, or simply curious about
+            life at Varbok? Send us a message or reach out directly. Our team is
+            always happy to help your family take the next happy little step.
+          </p>
         </div>
         <div class="row">
           <div class="col-lg-7 mb-5">
             <div class="contact-form">
-              <div id="success"></div>
-              <form name="sentMessage" id="contactForm" novalidate="novalidate">
+              <div id="success" role="status" aria-live="polite"></div>
+              <form
+                name="sentMessage"
+                id="contactForm"
+                action="https://formspree.io/f/YOUR_FORM_ID"
+                method="post"
+                novalidate="novalidate"
+              >
                 <div class="control-group">
+                  <label for="name">Your Name</label>
                   <input
                     type="text"
                     class="form-control"
                     id="name"
-                    placeholder="Your Name"
+                    name="name"
+                    placeholder="e.g. Deepika Rao"
                     required="required"
                     data-validation-required-message="Please enter your name"
                   />
                   <p class="help-block text-danger"></p>
                 </div>
                 <div class="control-group">
+                  <label for="email">Your Email</label>
                   <input
                     type="email"
                     class="form-control"
                     id="email"
-                    placeholder="Your Email"
+                    name="email"
+                    placeholder="e.g. you@example.com"
                     required="required"
                     data-validation-required-message="Please enter your email"
                   />
                   <p class="help-block text-danger"></p>
                 </div>
                 <div class="control-group">
+                  <label for="subject">Subject</label>
                   <input
                     type="text"
                     class="form-control"
                     id="subject"
-                    placeholder="Subject"
+                    name="subject"
+                    placeholder="e.g. Admission enquiry for Nursery"
                     required="required"
                     data-validation-required-message="Please enter a subject"
                   />
                   <p class="help-block text-danger"></p>
                 </div>
                 <div class="control-group">
+                  <label for="message">Message</label>
                   <textarea
                     class="form-control"
                     rows="6"
                     id="message"
-                    placeholder="Message"
+                    name="message"
+                    placeholder="Tell us a little about your child and how we can help"
                     required="required"
                     data-validation-required-message="Please enter your message"
                   ></textarea>
@@ -174,50 +143,57 @@
           </div>
           <div class="col-lg-5 mb-5">
             <p>
-              Labore sea amet kasd diam justo amet ut vero justo. Ipsum ut et
-              kasd duo sit, ipsum sea et erat est dolore, magna ipsum et magna
-              elitr. Accusam accusam lorem magna, eos et sed eirmod dolor est
-              eirmod eirmod amet.
+              Visit our sunlit Koramangala campus, give us a call, or drop us an
+              email. Whether you are planning a tour or just have a quick
+              question, we are here to make every step feel warm and welcoming.
             </p>
             <div class="d-flex">
               <i
                 class="fa fa-map-marker-alt d-inline-flex align-items-center justify-content-center bg-primary text-secondary rounded-circle"
                 style="width: 45px; height: 45px"
+                aria-hidden="true"
               ></i>
               <div class="pl-3">
-                <h5>Address</h5>
-                <p>123 Street, New York, USA</p>
+                <h3 class="h5">Address</h3>
+                <p>
+                  No. 42, 5th Cross, 1st Block, Koramangala, Bengaluru 560034
+                </p>
               </div>
             </div>
             <div class="d-flex">
               <i
                 class="fa fa-envelope d-inline-flex align-items-center justify-content-center bg-primary text-secondary rounded-circle"
                 style="width: 45px; height: 45px"
+                aria-hidden="true"
               ></i>
               <div class="pl-3">
-                <h5>Email</h5>
-                <p>info@example.com</p>
+                <h3 class="h5">Email</h3>
+                <p>
+                  <a href="mailto:hello@varbok.edu.in">hello@varbok.edu.in</a>
+                </p>
               </div>
             </div>
             <div class="d-flex">
               <i
                 class="fa fa-phone-alt d-inline-flex align-items-center justify-content-center bg-primary text-secondary rounded-circle"
                 style="width: 45px; height: 45px"
+                aria-hidden="true"
               ></i>
               <div class="pl-3">
-                <h5>Phone</h5>
-                <p>+012 345 67890</p>
+                <h3 class="h5">Phone</h3>
+                <p><a href="tel:+919845067890">+91 98450 67890</a></p>
               </div>
             </div>
             <div class="d-flex">
               <i
                 class="far fa-clock d-inline-flex align-items-center justify-content-center bg-primary text-secondary rounded-circle"
                 style="width: 45px; height: 45px"
+                aria-hidden="true"
               ></i>
               <div class="pl-3">
-                <h5>Opening Hours</h5>
-                <strong>Sunday - Friday:</strong>
-                <p class="m-0">08:00 AM - 05:00 PM</p>
+                <h3 class="h5">Opening Hours</h3>
+                <p class="m-0">Mon - Fri: 9:00 AM - 5:30 PM</p>
+                <p class="m-0">Sat - Sun: Closed</p>
               </div>
             </div>
           </div>
@@ -226,162 +202,47 @@
     </div>
     <!-- Contact End -->
 
-    <!-- Footer Start -->
-    <div
-      class="container-fluid bg-secondary text-white mt-5 py-5 px-sm-3 px-md-5"
-    >
-      <div class="row pt-5">
-        <div class="col-lg-3 col-md-6 mb-5">
-          <a
-            href=""
-            class="navbar-brand font-weight-bold text-primary m-0 mb-4 p-0"
-            style="font-size: 40px; line-height: 40px"
-          >
-            <i class="icon-footer"></i>
-            <span class="text-white">Varbok</span>
-          </a>
-          <p>
-            Labore dolor amet ipsum ea, erat sit ipsum duo eos. Volup amet ea
-            dolor et magna dolor, elitr rebum duo est sed diam elitr. Stet elitr
-            stet diam duo eos rebum ipsum diam ipsum elitr.
+    <!-- Map -->
+    <div class="container-fluid px-0 mb-5">
+      <div class="container">
+        <div class="text-center pb-2">
+          <p class="section-title px-5">
+            <span class="px-2">Find Us</span>
           </p>
-          <div class="d-flex justify-content-start mt-4">
-            <a
-              class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
-              style="width: 38px; height: 38px"
-              href="#"
-              ><i class="fab fa-twitter"></i
-            ></a>
-            <a
-              class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
-              style="width: 38px; height: 38px"
-              href="#"
-              ><i class="fab fa-facebook-f"></i
-            ></a>
-            <a
-              class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
-              style="width: 38px; height: 38px"
-              href="#"
-              ><i class="fab fa-linkedin-in"></i
-            ></a>
-            <a
-              class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
-              style="width: 38px; height: 38px"
-              href="#"
-              ><i class="fab fa-instagram"></i
-            ></a>
-          </div>
+          <h2 class="mb-4">Our Bengaluru Campus</h2>
         </div>
-        <div class="col-lg-3 col-md-6 mb-5">
-          <h3 class="text-primary mb-4">Get In Touch</h3>
-          <div class="d-flex">
-            <h4 class="fa fa-map-marker-alt text-primary"></h4>
-            <div class="pl-3">
-              <h5 class="text-white">Address</h5>
-              <p>123 Street, New York, USA</p>
-            </div>
-          </div>
-          <div class="d-flex">
-            <h4 class="fa fa-envelope text-primary"></h4>
-            <div class="pl-3">
-              <h5 class="text-white">Email</h5>
-              <p>info@example.com</p>
-            </div>
-          </div>
-          <div class="d-flex">
-            <h4 class="fa fa-phone-alt text-primary"></h4>
-            <div class="pl-3">
-              <h5 class="text-white">Phone</h5>
-              <p>+012 345 67890</p>
-            </div>
-          </div>
+        <div class="position-relative" style="height: 450px">
+          <iframe
+            class="position-relative w-100 h-100 border-0"
+            src="https://www.google.com/maps?q=Koramangala%2C%20Bengaluru&output=embed"
+            title="Map showing Varbok preschool location in Koramangala, Bengaluru"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
-        <div class="col-lg-3 col-md-6 mb-5">
-          <h3 class="text-primary mb-4">Quick Links</h3>
-          <div class="d-flex flex-column justify-content-start">
-            <a class="text-white mb-2" href="#"
-              ><i class="fa fa-angle-right mr-2"></i>Home</a
-            >
-            <a class="text-white mb-2" href="#"
-              ><i class="fa fa-angle-right mr-2"></i>About Us</a
-            >
-            <a class="text-white mb-2" href="#"
-              ><i class="fa fa-angle-right mr-2"></i>Our Classes</a
-            >
-            <a class="text-white mb-2" href="#"
-              ><i class="fa fa-angle-right mr-2"></i>Our Teachers</a
-            >
-            <a class="text-white mb-2" href="#"
-              ><i class="fa fa-angle-right mr-2"></i>Our Blog</a
-            >
-            <a class="text-white" href="#"
-              ><i class="fa fa-angle-right mr-2"></i>Contact Us</a
-            >
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 mb-5">
-          <h3 class="text-primary mb-4">Newsletter</h3>
-          <form action="">
-            <div class="form-group">
-              <input
-                type="text"
-                class="form-control border-0 py-4"
-                placeholder="Your Name"
-                required="required"
-              />
-            </div>
-            <div class="form-group">
-              <input
-                type="email"
-                class="form-control border-0 py-4"
-                placeholder="Your Email"
-                required="required"
-              />
-            </div>
-            <div>
-              <button
-                class="btn btn-primary btn-block border-0 py-3"
-                type="submit"
-              >
-                Submit Now
-              </button>
-            </div>
-          </form>
-        </div>
-      </div>
-      <div
-        class="container-fluid pt-5"
-        style="border-top: 1px solid rgba(23, 162, 184, 0.2) ;"
-      >
-        <p class="m-0 text-center text-white">
-          &copy;
-          <a class="text-primary font-weight-bold" href="#">Varbok</a>.
-          All Rights Reserved.
-
-         
-          
-          
-          <br />Distributed By:
-          <a href="https://varbok.com" target="_blank">Varbok</a>
-        </p>
       </div>
     </div>
-    <!-- Footer End -->
+    <!-- Map End -->
+
+    <!-- Footer (injected from partials/footer.html) -->
+    <div data-include="partials/footer.html"></div>
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-primary p-3 back-to-top"
-      ><i class="fa fa-angle-double-up"></i
+    <a
+      href="#"
+      class="btn btn-primary p-3 back-to-top"
+      aria-label="Back to top"
+      ><i class="fa fa-angle-double-up" aria-hidden="true"></i
     ></a>
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/isotope/isotope.pkgd.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="js/components.js"></script>
 
-    <!-- Contact Javascript File -->
+    <!-- Contact Form Javascript -->
     <script src="mail/jqBootstrapValidation.min.js"></script>
     <script src="mail/contact.js"></script>
 
