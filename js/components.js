@@ -15,6 +15,12 @@
 
 // Wait until the initial HTML document is fully parsed before touching the DOM.
 document.addEventListener('DOMContentLoaded', function () {
+  // Reveal page content + wire navbar elevation immediately. These are vanilla
+  // and same-origin, so they run even if the CDN-hosted jQuery fails to load —
+  // core content is never left stuck at opacity:0.
+  initReveal();
+  initNavbarScroll();
+
   // Collect every placeholder element that requests an HTML partial.
   // Each such element carries a "data-include" attribute holding the URL.
   var includes = document.querySelectorAll('[data-include]');
@@ -54,11 +60,61 @@ document.addEventListener('DOMContentLoaded', function () {
     // All partials are now in the DOM — highlight the correct nav link.
     setActiveNav();
 
+    // Re-scan for reveal targets inside the injected footer, and sync the
+    // navbar elevation state now that the navbar element exists.
+    initReveal();
+    updateNavbar();
+
     // Notify the rest of the app that injected markup is ready. Listeners
     // such as main.js use this to attach navbar/form behaviors at a safe time.
     document.dispatchEvent(new CustomEvent('partials:loaded'));
   });
 });
+
+/**
+ * initReveal — progressive scroll-reveal via IntersectionObserver.
+ *
+ * Elements with class "reveal" fade + rise into view as they enter the
+ * viewport. The hidden start state is gated by the "js" class on <html> (set
+ * inline in <head>), and prefers-reduced-motion shows everything instantly
+ * (handled in CSS). Safe to call multiple times — it only observes elements
+ * not yet revealed.
+ */
+function initReveal() {
+  var els = document.querySelectorAll('.reveal:not(.is-visible)');
+  if (!els.length) { return; }
+  if (!('IntersectionObserver' in window)) {
+    Array.prototype.forEach.call(els, function (el) { el.classList.add('is-visible'); });
+    return;
+  }
+  var io = new IntersectionObserver(function (entries, obs) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        obs.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+  Array.prototype.forEach.call(els, function (el) { io.observe(el); });
+}
+
+/**
+ * Navbar elevation — adds .navbar-scrolled once the page is scrolled past a
+ * small threshold. rAF-throttled; the wrapper is queried lazily because the
+ * navbar is injected from a partial.
+ */
+var navTicking = false;
+function updateNavbar() {
+  var nav = document.querySelector('.container-fluid.bg-light.position-relative');
+  if (nav) { nav.classList.toggle('navbar-scrolled', window.pageYOffset > 12); }
+  navTicking = false;
+}
+function initNavbarScroll() {
+  window.addEventListener('scroll', function () {
+    if (!navTicking) { window.requestAnimationFrame(updateNavbar); navTicking = true; }
+  }, { passive: true });
+  updateNavbar();
+}
 
 /**
  * setActiveNav

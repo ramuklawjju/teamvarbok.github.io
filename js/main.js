@@ -208,4 +208,8 @@
         e.preventDefault();
     });
 
+    // NOTE: scroll-reveal animations and navbar elevation live in
+    // js/components.js (vanilla, same-origin) so they never depend on the
+    // CDN-loaded jQuery — core content can't get stuck hidden if a CDN fails.
+
 })(jQuery);

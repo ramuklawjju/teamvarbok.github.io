@@ -15,7 +15,7 @@
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Handlee&family=Nunito&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Handlee&family=Nunito:wght@400;600;700;800&display=swap"
       rel="stylesheet"
     />
 
@@ -30,6 +30,12 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
+    <link href="css/varbok.css" rel="stylesheet" />
+
+    <!-- Enable progressive scroll-reveal only when JS is available -->
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
   </head>
 
   <body>
@@ -323,6 +329,43 @@
       </div>
     </div>
     <!-- Blog End -->
+
+    <!-- CTA band -->
+    <section class="section">
+      <div class="container">
+        <div class="cta-band text-center reveal">
+          <div
+            class="blob-deco"
+            style="width: 300px; height: 300px; top: -110px; left: -60px;"
+          ></div>
+          <div
+            class="blob-deco"
+            style="width: 240px; height: 240px; bottom: -110px; right: -40px;"
+          ></div>
+          <div class="position-relative">
+            <span class="eyebrow justify-content-center" style="color: #fff;"
+              >Come say hello</span
+            >
+            <h2 class="mb-3">Give your child a joyful place to grow</h2>
+            <p class="mb-4 mx-auto" style="max-width: 560px;">
+              Book a warm campus visit and feel the Varbok difference for
+              yourself. We would love to meet you and your little one.
+            </p>
+            <div
+              class="d-flex flex-wrap justify-content-center"
+              style="gap: 0.8rem;"
+            >
+              <a href="class.html#book-a-seat" class="btn btn-light btn-lg"
+                >Book a visit</a
+              >
+              <a href="contact.html" class="btn btn-outline-light btn-lg"
+                >Contact us</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Footer (injected from partials/footer.html) -->
     <div data-include="partials/footer.html"></div>

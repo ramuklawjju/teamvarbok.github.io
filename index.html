@@ -23,9 +23,10 @@
     <link href="img/favicon.ico" rel="icon" />
 
     <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Handlee&family=Nunito&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Handlee&family=Nunito:wght@400;600;700;800&display=swap"
       rel="stylesheet"
     />
 
@@ -41,53 +42,131 @@
     <!-- Libraries Stylesheet -->
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
 
-    <!-- Customized Bootstrap Stylesheet -->
+    <!-- Bootstrap base + Varbok "Joyful Premium" design system -->
     <link href="css/style.css" rel="stylesheet" />
+    <link href="css/varbok.css" rel="stylesheet" />
+
+    <!-- Enable progressive scroll-reveal only when JS is available -->
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
   </head>
 
   <body>
     <!-- Navbar (injected from partials/navbar.html) -->
     <div data-include="partials/navbar.html"></div>
 
-    <!-- Header -->
-    <div class="container-fluid bg-primary px-0 px-md-5 mb-5">
-      <div class="row align-items-center px-3">
-        <div class="col-lg-6 text-center text-lg-left">
-          <p class="text-white mb-4 mt-5 mt-lg-0">Where little hearts learn to bloom</p>
-          <h1 class="display-3 font-weight-bold text-white">
-            Joyful beginnings for India's youngest learners
-          </h1>
-          <p class="text-white mb-4">
-            At Varbok, every day blends play, discovery and care, so your child
-            grows confident, curious and ready for the world, one happy little
-            step at a time.
-          </p>
-          <a href="about.html" class="btn btn-secondary mt-1 py-3 px-5">Learn More</a>
-        </div>
-        <div class="col-lg-6 text-center text-lg-right">
-          <img
-            class="img-fluid mt-5"
-            src="img/header.png"
-            alt="Cheerful young children playing and learning together at Varbok"
-            width="600"
-            height="600"
-          />
+    <!-- Hero -->
+    <header class="hero">
+      <div
+        class="blob-deco"
+        style="width: 360px; height: 360px; background: var(--coral-50); top: -90px; left: -100px;"
+      ></div>
+      <div
+        class="blob-deco"
+        style="width: 260px; height: 260px; background: var(--amber-50); bottom: -80px; right: 6%;"
+      ></div>
+      <div class="container position-relative">
+        <div class="row align-items-center">
+          <div class="col-lg-6 text-center text-lg-left reveal">
+            <span class="eyebrow">Where little hearts learn to bloom</span>
+            <h1>
+              Joyful beginnings for India's
+              <span class="hl">youngest learners</span>
+            </h1>
+            <p class="lead mb-4">
+              At Varbok, every day blends play, discovery and care, so your
+              child grows confident, curious and kind, one happy little step at
+              a time.
+            </p>
+            <div
+              class="d-flex flex-wrap justify-content-center justify-content-lg-start"
+              style="gap: 0.8rem;"
+            >
+              <a href="#book-a-seat" class="btn btn-primary btn-lg">Book a visit</a>
+              <a href="class.html" class="btn btn-outline-primary btn-lg"
+                >Explore classes</a
+              >
+            </div>
+            <div class="hero-trust">
+              <div class="avatars" aria-hidden="true">
+                <img src="img/testimonial-1.jpg" alt="" loading="lazy" />
+                <img src="img/testimonial-2.jpg" alt="" loading="lazy" />
+                <img src="img/testimonial-3.jpg" alt="" loading="lazy" />
+                <img src="img/testimonial-4.jpg" alt="" loading="lazy" />
+              </div>
+              <small>Loved by <strong>500+ families</strong><br />across Bengaluru</small>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="hero-art-wrap reveal d2">
+              <div class="hero-blob" aria-hidden="true"></div>
+              <img
+                class="img-fluid hero-art"
+                src="img/header1.png"
+                alt="Joyful illustration of a young learner reading and discovering at Varbok"
+                width="600"
+                height="600"
+              />
+              <span class="hero-chip c1" aria-hidden="true"
+                ><i class="fas fa-star"></i
+              ></span>
+              <span class="hero-chip c2" aria-hidden="true"
+                ><i class="fas fa-palette"></i
+              ></span>
+              <span class="hero-chip c3" aria-hidden="true"
+                ><i class="fas fa-music"></i
+              ></span>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    </header>
+
+    <!-- Stats -->
+    <section class="section py-0" style="margin-top: -1.5rem;">
+      <div class="container">
+        <div
+          class="row text-center bg-soft section-rounded reveal"
+          style="padding: 2.6rem 1rem; box-shadow: var(--shadow-sm);"
+        >
+          <div class="col-6 col-lg-3 mb-4 mb-lg-0 stat">
+            <div class="num">12<span class="plus">+</span></div>
+            <div class="label">Years of joyful learning</div>
+          </div>
+          <div class="col-6 col-lg-3 mb-4 mb-lg-0 stat">
+            <div class="num">500<span class="plus">+</span></div>
+            <div class="label">Happy families</div>
+          </div>
+          <div class="col-6 col-lg-3 stat">
+            <div class="num">25<span class="plus">+</span></div>
+            <div class="label">Caring educators</div>
+          </div>
+          <div class="col-6 col-lg-3 stat">
+            <div class="num">15<span class="plus">+</span></div>
+            <div class="label">Activities each week</div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Facilities -->
-    <div class="container-fluid pt-5">
-      <div class="container pb-3">
+    <section class="section">
+      <div class="container">
+        <div class="section-head text-center mx-auto mb-5 reveal">
+          <span class="eyebrow justify-content-center">Everything under one roof</span>
+          <h2>A joyful world built around your child</h2>
+          <p>
+            Thoughtfully designed spaces and gentle care that help little ones
+            feel safe, seen and excited to learn every single day.
+          </p>
+        </div>
         <div class="row">
-          <div class="col-lg-4 col-md-6 pb-1">
-            <div
-              class="card-hover d-flex bg-light shadow-sm border-top rounded mb-4"
-              style="padding: 30px"
-            >
-              <i
-                class="flaticon-050-fence h1 font-weight-normal text-primary mb-3"
-              ></i>
+          <div class="col-lg-4 col-md-6 pb-1 reveal">
+            <div class="facility d-flex">
+              <span class="icon-chip chip-teal">
+                <i class="flaticon-050-fence" aria-hidden="true"></i>
+              </span>
               <div class="pl-4">
                 <h3 class="h4">Safe Outdoor Play</h3>
                 <p class="m-0">
@@ -98,14 +177,11 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 pb-1">
-            <div
-              class="card-hover d-flex bg-light shadow-sm border-top rounded mb-4"
-              style="padding: 30px"
-            >
-              <i
-                class="flaticon-022-drum h1 font-weight-normal text-primary mb-3"
-              ></i>
+          <div class="col-lg-4 col-md-6 pb-1 reveal d1">
+            <div class="facility d-flex">
+              <span class="icon-chip chip-coral">
+                <i class="flaticon-022-drum" aria-hidden="true"></i>
+              </span>
               <div class="pl-4">
                 <h3 class="h4">Music &amp; Movement</h3>
                 <p class="m-0">
@@ -116,14 +192,11 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 pb-1">
-            <div
-              class="card-hover d-flex bg-light shadow-sm border-top rounded mb-4"
-              style="padding: 30px"
-            >
-              <i
-                class="flaticon-030-crayons h1 font-weight-normal text-primary mb-3"
-              ></i>
+          <div class="col-lg-4 col-md-6 pb-1 reveal d2">
+            <div class="facility d-flex">
+              <span class="icon-chip chip-amber">
+                <i class="flaticon-030-crayons" aria-hidden="true"></i>
+              </span>
               <div class="pl-4">
                 <h3 class="h4">Arts &amp; Crafts Studio</h3>
                 <p class="m-0">
@@ -134,14 +207,11 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 pb-1">
-            <div
-              class="card-hover d-flex bg-light shadow-sm border-top rounded mb-4"
-              style="padding: 30px"
-            >
-              <i
-                class="flaticon-017-toy-car h1 font-weight-normal text-primary mb-3"
-              ></i>
+          <div class="col-lg-4 col-md-6 pb-1 reveal">
+            <div class="facility d-flex">
+              <span class="icon-chip chip-violet">
+                <i class="flaticon-017-toy-car" aria-hidden="true"></i>
+              </span>
               <div class="pl-4">
                 <h3 class="h4">Safe Transport</h3>
                 <p class="m-0">
@@ -152,14 +222,11 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 pb-1">
-            <div
-              class="card-hover d-flex bg-light shadow-sm border-top rounded mb-4"
-              style="padding: 30px"
-            >
-              <i
-                class="flaticon-025-sandwich h1 font-weight-normal text-primary mb-3"
-              ></i>
+          <div class="col-lg-4 col-md-6 pb-1 reveal d1">
+            <div class="facility d-flex">
+              <span class="icon-chip chip-leaf">
+                <i class="flaticon-025-sandwich" aria-hidden="true"></i>
+              </span>
               <div class="pl-4">
                 <h3 class="h4">Healthy Meals</h3>
                 <p class="m-0">
@@ -170,14 +237,11 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 pb-1">
-            <div
-              class="card-hover d-flex bg-light shadow-sm border-top rounded mb-4"
-              style="padding: 30px"
-            >
-              <i
-                class="flaticon-047-backpack h1 font-weight-normal text-primary mb-3"
-              ></i>
+          <div class="col-lg-4 col-md-6 pb-1 reveal d2">
+            <div class="facility d-flex">
+              <span class="icon-chip chip-coral">
+                <i class="flaticon-047-backpack" aria-hidden="true"></i>
+              </span>
               <div class="pl-4">
                 <h3 class="h4">Learning Trips</h3>
                 <p class="m-0">
@@ -190,15 +254,15 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- About -->
     <div class="container-fluid py-5">
       <div class="container">
-        <div class="row align-items-center">
+        <div class="row align-items-center reveal">
           <div class="col-lg-5">
             <img
-              class="img-fluid rounded mb-5 mb-lg-0"
+              class="img-fluid rounded-xl mb-5 mb-lg-0"
               src="img/about-1.jpg"
               alt="A Varbok caregiver reading a storybook to attentive young children"
               loading="lazy"
@@ -220,7 +284,7 @@
             <div class="row pt-2 pb-4">
               <div class="col-6 col-md-4">
                 <img
-                  class="img-fluid rounded"
+                  class="img-fluid rounded-xl"
                   src="img/about-2.jpg"
                   alt="Toddlers exploring colourful learning toys at Varbok"
                   loading="lazy"
@@ -250,15 +314,17 @@
     </div>
 
     <!-- Classes -->
-    <div class="container-fluid pt-5">
+    <div class="container-fluid section bg-soft">
       <div class="container">
-        <div class="text-center pb-2">
-          <p class="section-title px-5">
-            <span class="px-2">Popular Classes</span>
+        <div class="section-head text-center mx-auto pb-2 reveal">
+          <span class="eyebrow justify-content-center">Popular programmes</span>
+          <h2 class="mb-2">Programmes for every little stage</h2>
+          <p>
+            Small groups and big hearts — a nurturing path from first steps to
+            school-ready, designed around how young children truly learn.
           </p>
-          <h2 class="mb-4">Programmes for every little stage</h2>
         </div>
-        <div class="row">
+        <div class="row reveal">
           <div class="col-lg-4 mb-5">
             <div class="card card-hover border-0 bg-light shadow-sm pb-2">
               <img
@@ -928,6 +994,41 @@
         </div>
       </div>
     </div>
+
+    <!-- CTA band -->
+    <section class="section">
+      <div class="container">
+        <div class="cta-band text-center reveal">
+          <div
+            class="blob-deco"
+            style="width: 300px; height: 300px; top: -110px; left: -60px;"
+          ></div>
+          <div
+            class="blob-deco"
+            style="width: 240px; height: 240px; bottom: -110px; right: -40px;"
+          ></div>
+          <div class="position-relative">
+            <span class="eyebrow justify-content-center" style="color: #fff;"
+              >Come say hello</span
+            >
+            <h2 class="mb-3">Give your child a joyful place to grow</h2>
+            <p class="mb-4 mx-auto" style="max-width: 560px;">
+              Book a warm campus visit and feel the Varbok difference for
+              yourself. We would love to meet you and your little one.
+            </p>
+            <div
+              class="d-flex flex-wrap justify-content-center"
+              style="gap: 0.8rem;"
+            >
+              <a href="#book-a-seat" class="btn btn-light btn-lg">Book a visit</a>
+              <a href="contact.html" class="btn btn-outline-light btn-lg"
+                >Contact us</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Footer (injected from partials/footer.html) -->
     <div data-include="partials/footer.html"></div>
