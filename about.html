@@ -2,10 +2,22 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Varbok - Home of education</title>
+    <title>About Varbok | Play-Based Early Learning in Bengaluru</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <meta content="Home of education" name="keywords" />
-    <meta content="Home of education" name="description" />
+    <meta
+      content="Meet Varbok, a warm, play-based early-childhood learning centre in Bengaluru. Discover our story, our caring teachers and answers to common parent questions."
+      name="description"
+    />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="About Varbok | Play-Based Early Learning in Bengaluru" />
+    <meta
+      property="og:description"
+      content="Discover the Varbok story, our nurturing play-based philosophy and the caring educators who make our centre a second home for hundreds of Bengaluru families."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="img/header.png" />
+    <meta property="og:url" content="https://teamvarbok.github.io/about.html" />
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon" />
@@ -13,7 +25,7 @@
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Handlee&family=Nunito&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Handlee&family=Nunito:wght@400;600;700;800&display=swap"
       rel="stylesheet"
     />
 
@@ -26,65 +38,19 @@
     <!-- Flaticon Font -->
     <link href="lib/flaticon/font/flaticon.css" rel="stylesheet" />
 
-    <!-- Libraries Stylesheet -->
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
-
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
+    <link href="css/varbok.css" rel="stylesheet" />
+
+    <!-- Enable progressive scroll-reveal only when JS is available -->
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
   </head>
 
   <body>
-    <!-- Navbar Start -->
-    <div class="container-fluid bg-light position-relative shadow">
-      <nav
-        class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0 px-lg-5"
-      >
-        <a
-          href=""
-          class="navbar-brand font-weight-bold text-secondary"
-          style="font-size: 50px"
-        >
-          <i class="icon-header"></i>
-          <span class="text-primary">Varbok</span>
-        </a>
-        <button
-          type="button"
-          class="navbar-toggler"
-          data-toggle="collapse"
-          data-target="#navbarCollapse"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="collapse navbar-collapse justify-content-between"
-          id="navbarCollapse"
-        >
-          <div class="navbar-nav font-weight-bold mx-auto py-0">
-            <a href="index.html" class="nav-item nav-link">Home</a>
-            <a href="about.html" class="nav-item nav-link active">About</a>
-            <a href="class.html" class="nav-item nav-link">Classes</a>
-            <a href="team.html" class="nav-item nav-link">Teachers</a>
-            <a href="gallery.html" class="nav-item nav-link">Gallery</a>
-            <div class="nav-item dropdown">
-              <a
-                href="#"
-                class="nav-link dropdown-toggle"
-                data-toggle="dropdown"
-                >Pages</a
-              >
-              <div class="dropdown-menu rounded-0 m-0">
-                <a href="blog.html" class="dropdown-item">Blog Grid</a>
-                <a href="single.html" class="dropdown-item">Blog Detail</a>
-              </div>
-            </div>
-            <a href="contact.html" class="nav-item nav-link">Contact</a>
-          </div>
-          <a href="" class="btn btn-primary px-4">Join Class</a>
-        </div>
-      </nav>
-    </div>
-    <!-- Navbar End -->
+    <!-- Navbar (injected from partials/navbar.html) -->
+    <div data-include="partials/navbar.html"></div>
 
     <!-- Header Start -->
     <div class="container-fluid bg-primary mb-5">
@@ -92,17 +58,21 @@
         class="d-flex flex-column align-items-center justify-content-center"
         style="min-height: 400px"
       >
-        <h3 class="display-3 font-weight-bold text-white">About Us</h3>
-        <div class="d-inline-flex text-white">
-          <p class="m-0"><a class="text-white" href="">Home</a></p>
-          <p class="m-0 px-2">/</p>
-          <p class="m-0">About Us</p>
-        </div>
+        <h1 class="display-3 font-weight-bold text-white">About Us</h1>
+        <nav aria-label="breadcrumb">
+          <div class="d-inline-flex text-white">
+            <p class="m-0">
+              <a class="text-white" href="index.html">Home</a>
+            </p>
+            <p class="m-0 px-2">/</p>
+            <p class="m-0" aria-current="page">About Us</p>
+          </div>
+        </nav>
       </div>
     </div>
     <!-- Header End -->
 
-    <!-- About Start -->
+    <!-- About -->
     <div class="container-fluid py-5">
       <div class="container">
         <div class="row align-items-center">
@@ -110,150 +80,189 @@
             <img
               class="img-fluid rounded mb-5 mb-lg-0"
               src="img/about-1.jpg"
-              alt=""
+              alt="Young children painting and playing together at the Varbok learning centre"
+              loading="lazy"
+              width="600"
+              height="700"
             />
           </div>
           <div class="col-lg-7">
             <p class="section-title pr-5">
               <span class="pr-2">Learn About Us</span>
             </p>
-            <h1 class="mb-4">Best School For Your You</h1>
+            <h2 class="mb-4">A second home where little hearts learn to bloom</h2>
             <p>
-              Invidunt lorem justo sanctus clita. Erat lorem labore ea, justo
-              dolor lorem ipsum ut sed eos, ipsum et dolor kasd sit ea justo.
-              Erat justo sed sed diam. Ea et erat ut sed diam sea ipsum est
-              dolor
+              Varbok began in 2014 in a sunlit Bengaluru bungalow, founded by
+              three Indian educators who believed childhood should be felt before
+              it is measured. After years inside rigid classrooms, they dreamed
+              of a place where children could climb, paint, sing and ask a
+              hundred questions without ever being told to sit still and stay
+              quiet.
             </p>
             <div class="row pt-2 pb-4">
               <div class="col-6 col-md-4">
-                <img class="img-fluid rounded" src="img/about-2.jpg" alt="" />
+                <img
+                  class="img-fluid rounded"
+                  src="img/about-2.jpg"
+                  alt="A teacher reading a storybook to attentive toddlers"
+                  loading="lazy"
+                  width="300"
+                  height="300"
+                />
               </div>
               <div class="col-6 col-md-8">
                 <ul class="list-inline m-0">
                   <li class="py-2 border-top border-bottom">
-                    <i class="fa fa-check text-primary mr-3"></i>Labore eos amet
-                    dolor amet diam
+                    <i class="fa fa-check text-primary mr-3"></i>Learning through
+                    joyful, hands-on play
                   </li>
                   <li class="py-2 border-bottom">
-                    <i class="fa fa-check text-primary mr-3"></i>Etsea et sit
-                    dolor amet ipsum
+                    <i class="fa fa-check text-primary mr-3"></i>Safe,
+                    CCTV-monitored campuses
                   </li>
                   <li class="py-2 border-bottom">
-                    <i class="fa fa-check text-primary mr-3"></i>Diam dolor diam
-                    elitripsum vero.
+                    <i class="fa fa-check text-primary mr-3"></i>Trained, loving
+                    caregivers and teachers
                   </li>
                 </ul>
               </div>
             </div>
-            <a href="" class="btn btn-primary mt-2 py-2 px-4">Learn More</a>
+            <p>
+              Our philosophy is simple: children learn best through play. Mud
+              kitchens, music circles, storytelling corners and open gardens
+              replace worksheets and rote drills. Every activity is designed to
+              build curiosity, language, motor skills and emotional confidence,
+              gently preparing little ones for school and for life with joy
+              rather than pressure.
+            </p>
+            <p>
+              Above all, Varbok is a community built on trust and safety. With
+              CCTV-monitored campuses, trained caregivers, nutritious home-style
+              meals and an open-door relationship with every parent, we have
+              grown into a second home for hundreds of families who simply want
+              their child to feel safe, seen and celebrated.
+            </p>
+            <a href="class.html#book-a-seat" class="btn btn-primary mt-2 py-2 px-4"
+              >Book A Seat</a
+            >
           </div>
         </div>
       </div>
     </div>
     <!-- About End -->
 
-    <!-- Facilities Start -->
+    <!-- Facilities -->
     <div class="container-fluid pt-5">
-      <div class="container pb-3">
+      <div class="container">
+        <div class="text-center pb-2">
+          <p class="section-title px-5"><span class="px-2">Our Facilities</span></p>
+          <h2 class="mb-4">Everything your child needs to thrive</h2>
+        </div>
         <div class="row">
           <div class="col-lg-4 col-md-6 pb-1">
             <div
-              class="d-flex bg-light shadow-sm border-top rounded mb-4"
+              class="d-flex bg-light shadow-sm border-top rounded mb-4 card-hover"
               style="padding: 30px"
             >
               <i
                 class="flaticon-050-fence h1 font-weight-normal text-primary mb-3"
               ></i>
               <div class="pl-4">
-                <h4>Play Ground</h4>
+                <h3 class="h4">Safe Outdoor Play</h3>
                 <p class="m-0">
-                  Kasd labore kasd et dolor est rebum dolor ut, clita dolor vero
-                  lorem amet elitr vero...
+                  Fenced, soft-surface play gardens with age-appropriate climbers
+                  and swings, where children build strength, balance and
+                  confidence under the watchful eye of trained caregivers.
                 </p>
               </div>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 pb-1">
             <div
-              class="d-flex bg-light shadow-sm border-top rounded mb-4"
+              class="d-flex bg-light shadow-sm border-top rounded mb-4 card-hover"
               style="padding: 30px"
             >
               <i
                 class="flaticon-022-drum h1 font-weight-normal text-primary mb-3"
               ></i>
               <div class="pl-4">
-                <h4>Music and Dance</h4>
+                <h3 class="h4">Music &amp; Movement</h3>
                 <p class="m-0">
-                  Kasd labore kasd et dolor est rebum dolor ut, clita dolor vero
-                  lorem amet elitr vero...
+                  Daily rhythm circles with drums, shakers and song help little
+                  ones develop language, coordination and self-expression,
+                  turning every morning into a joyful celebration of sound.
                 </p>
               </div>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 pb-1">
             <div
-              class="d-flex bg-light shadow-sm border-top rounded mb-4"
+              class="d-flex bg-light shadow-sm border-top rounded mb-4 card-hover"
               style="padding: 30px"
             >
               <i
                 class="flaticon-030-crayons h1 font-weight-normal text-primary mb-3"
               ></i>
               <div class="pl-4">
-                <h4>Arts and Crafts</h4>
+                <h3 class="h4">Arts &amp; Crafts Studio</h3>
                 <p class="m-0">
-                  Kasd labore kasd et dolor est rebum dolor ut, clita dolor vero
-                  lorem amet elitr vero...
+                  A colourful, mess-friendly studio where children paint, mould
+                  and create freely, strengthening fine-motor skills, imagination
+                  and the quiet pride of making something with their own hands.
                 </p>
               </div>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 pb-1">
             <div
-              class="d-flex bg-light shadow-sm border-top rounded mb-4"
+              class="d-flex bg-light shadow-sm border-top rounded mb-4 card-hover"
               style="padding: 30px"
             >
               <i
                 class="flaticon-017-toy-car h1 font-weight-normal text-primary mb-3"
               ></i>
               <div class="pl-4">
-                <h4>Safe Transportation</h4>
+                <h3 class="h4">Safe Transport</h3>
                 <p class="m-0">
-                  Kasd labore kasd et dolor est rebum dolor ut, clita dolor vero
-                  lorem amet elitr vero...
+                  GPS-tracked, attendant-supervised vans with trained drivers
+                  ferry children door to door, giving busy parents complete peace
+                  of mind on every single journey to and from Varbok.
                 </p>
               </div>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 pb-1">
             <div
-              class="d-flex bg-light shadow-sm border-top rounded mb-4"
+              class="d-flex bg-light shadow-sm border-top rounded mb-4 card-hover"
               style="padding: 30px"
             >
               <i
                 class="flaticon-025-sandwich h1 font-weight-normal text-primary mb-3"
               ></i>
               <div class="pl-4">
-                <h4>Healthy food</h4>
+                <h3 class="h4">Healthy Meals</h3>
                 <p class="m-0">
-                  Kasd labore kasd et dolor est rebum dolor ut, clita dolor vero
-                  lorem amet elitr vero...
+                  Freshly cooked, home-style vegetarian meals and snacks, planned
+                  by a nutritionist, nourish growing bodies while gently teaching
+                  children healthy eating habits and happy mealtime manners.
                 </p>
               </div>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 pb-1">
             <div
-              class="d-flex bg-light shadow-sm border-top rounded mb-4"
+              class="d-flex bg-light shadow-sm border-top rounded mb-4 card-hover"
               style="padding: 30px"
             >
               <i
                 class="flaticon-047-backpack h1 font-weight-normal text-primary mb-3"
               ></i>
               <div class="pl-4">
-                <h4>Educational Tour</h4>
+                <h3 class="h4">Learning Trips</h3>
                 <p class="m-0">
-                  Kasd labore kasd et dolor est rebum dolor ut, clita dolor vero
-                  lorem amet elitr vero...
+                  Guided outings to farms, parks and bakeries bring lessons to
+                  life, letting children explore the real world, build vocabulary
+                  and discover wonder far beyond the classroom walls.
                 </p>
               </div>
             </div>
@@ -261,295 +270,456 @@
         </div>
       </div>
     </div>
-    <!-- Facilities Start -->
+    <!-- Facilities End -->
 
-    <!-- Team Start -->
+    <!-- Team -->
     <div class="container-fluid pt-5">
       <div class="container">
         <div class="text-center pb-2">
-          <p class="section-title px-5">
-            <span class="px-2">Our Teachers</span>
-          </p>
-          <h1 class="mb-4">Meet Our Teachers</h1>
+          <p class="section-title px-5"><span class="px-2">Our Teachers</span></p>
+          <h2 class="mb-4">Meet the people who care for your child</h2>
         </div>
         <div class="row">
           <div class="col-md-6 col-lg-3 text-center team mb-5">
+            <div class="card-hover h-100 p-3 rounded">
             <div
               class="position-relative overflow-hidden mb-4"
               style="border-radius: 100%"
             >
-              <img class="img-fluid w-100" src="img/team-1.jpg" alt="" />
+              <img
+                class="img-fluid w-100"
+                src="img/team-1.jpg"
+                alt="Portrait of Ananya Krishnan, Founder and Lead Educator at Varbok"
+                loading="lazy"
+                width="400"
+                height="400"
+              />
               <div
                 class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute"
               >
                 <a
-                  class="btn btn-outline-light text-center mr-2 px-0"
+                  class="btn btn-outline-light text-center mr-2 px-0 coming-soon"
                   style="width: 38px; height: 38px"
                   href="#"
+                  role="button"
+                  aria-label="Twitter (coming soon)"
+                  title="Coming soon"
                   ><i class="fab fa-twitter"></i
                 ></a>
                 <a
-                  class="btn btn-outline-light text-center mr-2 px-0"
+                  class="btn btn-outline-light text-center mr-2 px-0 coming-soon"
                   style="width: 38px; height: 38px"
                   href="#"
+                  role="button"
+                  aria-label="Facebook (coming soon)"
+                  title="Coming soon"
                   ><i class="fab fa-facebook-f"></i
                 ></a>
                 <a
-                  class="btn btn-outline-light text-center px-0"
+                  class="btn btn-outline-light text-center px-0 coming-soon"
                   style="width: 38px; height: 38px"
                   href="#"
+                  role="button"
+                  aria-label="LinkedIn (coming soon)"
+                  title="Coming soon"
                   ><i class="fab fa-linkedin-in"></i
                 ></a>
               </div>
             </div>
-            <h4>Julia Smith</h4>
-            <i>Music Teacher</i>
+            <h3 class="h4">Ananya Krishnan</h3>
+            <i>Founder &amp; Lead Educator</i>
+            </div>
           </div>
           <div class="col-md-6 col-lg-3 text-center team mb-5">
+            <div class="card-hover h-100 p-3 rounded">
             <div
               class="position-relative overflow-hidden mb-4"
               style="border-radius: 100%"
             >
-              <img class="img-fluid w-100" src="img/team-2.jpg" alt="" />
+              <img
+                class="img-fluid w-100"
+                src="img/team-2.jpg"
+                alt="Portrait of Rohan Mehta, Co-Founder and Curriculum Head at Varbok"
+                loading="lazy"
+                width="400"
+                height="400"
+              />
               <div
                 class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute"
               >
                 <a
-                  class="btn btn-outline-light text-center mr-2 px-0"
+                  class="btn btn-outline-light text-center mr-2 px-0 coming-soon"
                   style="width: 38px; height: 38px"
                   href="#"
+                  role="button"
+                  aria-label="Twitter (coming soon)"
+                  title="Coming soon"
                   ><i class="fab fa-twitter"></i
                 ></a>
                 <a
-                  class="btn btn-outline-light text-center mr-2 px-0"
+                  class="btn btn-outline-light text-center mr-2 px-0 coming-soon"
                   style="width: 38px; height: 38px"
                   href="#"
+                  role="button"
+                  aria-label="Facebook (coming soon)"
+                  title="Coming soon"
                   ><i class="fab fa-facebook-f"></i
                 ></a>
                 <a
-                  class="btn btn-outline-light text-center px-0"
+                  class="btn btn-outline-light text-center px-0 coming-soon"
                   style="width: 38px; height: 38px"
                   href="#"
+                  role="button"
+                  aria-label="LinkedIn (coming soon)"
+                  title="Coming soon"
                   ><i class="fab fa-linkedin-in"></i
                 ></a>
               </div>
             </div>
-            <h4>Jhon Doe</h4>
-            <i>Language Teacher</i>
+            <h3 class="h4">Rohan Mehta</h3>
+            <i>Co-Founder &amp; Curriculum Head</i>
+            </div>
           </div>
           <div class="col-md-6 col-lg-3 text-center team mb-5">
+            <div class="card-hover h-100 p-3 rounded">
             <div
               class="position-relative overflow-hidden mb-4"
               style="border-radius: 100%"
             >
-              <img class="img-fluid w-100" src="img/team-3.jpg" alt="" />
+              <img
+                class="img-fluid w-100"
+                src="img/team-3.jpg"
+                alt="Portrait of Priya Nair, Kindergarten Coordinator at Varbok"
+                loading="lazy"
+                width="400"
+                height="400"
+              />
               <div
                 class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute"
               >
                 <a
-                  class="btn btn-outline-light text-center mr-2 px-0"
+                  class="btn btn-outline-light text-center mr-2 px-0 coming-soon"
                   style="width: 38px; height: 38px"
                   href="#"
+                  role="button"
+                  aria-label="Twitter (coming soon)"
+                  title="Coming soon"
                   ><i class="fab fa-twitter"></i
                 ></a>
                 <a
-                  class="btn btn-outline-light text-center mr-2 px-0"
+                  class="btn btn-outline-light text-center mr-2 px-0 coming-soon"
                   style="width: 38px; height: 38px"
                   href="#"
+                  role="button"
+                  aria-label="Facebook (coming soon)"
+                  title="Coming soon"
                   ><i class="fab fa-facebook-f"></i
                 ></a>
                 <a
-                  class="btn btn-outline-light text-center px-0"
+                  class="btn btn-outline-light text-center px-0 coming-soon"
                   style="width: 38px; height: 38px"
                   href="#"
+                  role="button"
+                  aria-label="LinkedIn (coming soon)"
+                  title="Coming soon"
                   ><i class="fab fa-linkedin-in"></i
                 ></a>
               </div>
             </div>
-            <h4>Mollie Ross</h4>
-            <i>Dance Teacher</i>
+            <h3 class="h4">Priya Nair</h3>
+            <i>Kindergarten Coordinator</i>
+            </div>
           </div>
           <div class="col-md-6 col-lg-3 text-center team mb-5">
+            <div class="card-hover h-100 p-3 rounded">
             <div
               class="position-relative overflow-hidden mb-4"
               style="border-radius: 100%"
             >
-              <img class="img-fluid w-100" src="img/team-4.jpg" alt="" />
+              <img
+                class="img-fluid w-100"
+                src="img/team-4.jpg"
+                alt="Portrait of Aditya Sharma, Music and Movement Teacher at Varbok"
+                loading="lazy"
+                width="400"
+                height="400"
+              />
               <div
                 class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute"
               >
                 <a
-                  class="btn btn-outline-light text-center mr-2 px-0"
+                  class="btn btn-outline-light text-center mr-2 px-0 coming-soon"
                   style="width: 38px; height: 38px"
                   href="#"
+                  role="button"
+                  aria-label="Twitter (coming soon)"
+                  title="Coming soon"
                   ><i class="fab fa-twitter"></i
                 ></a>
                 <a
-                  class="btn btn-outline-light text-center mr-2 px-0"
+                  class="btn btn-outline-light text-center mr-2 px-0 coming-soon"
                   style="width: 38px; height: 38px"
                   href="#"
+                  role="button"
+                  aria-label="Facebook (coming soon)"
+                  title="Coming soon"
                   ><i class="fab fa-facebook-f"></i
                 ></a>
                 <a
-                  class="btn btn-outline-light text-center px-0"
+                  class="btn btn-outline-light text-center px-0 coming-soon"
                   style="width: 38px; height: 38px"
                   href="#"
+                  role="button"
+                  aria-label="LinkedIn (coming soon)"
+                  title="Coming soon"
                   ><i class="fab fa-linkedin-in"></i
                 ></a>
               </div>
             </div>
-            <h4>Donald John</h4>
-            <i>Art Teacher</i>
+            <h3 class="h4">Aditya Sharma</h3>
+            <i>Music &amp; Movement Teacher</i>
+            </div>
           </div>
+        </div>
+        <div class="text-center">
+          <a href="team.html" class="btn btn-primary py-2 px-4"
+            >Meet The Whole Team</a
+          >
         </div>
       </div>
     </div>
     <!-- Team End -->
 
-    <!-- Footer Start -->
-    <div
-      class="container-fluid bg-secondary text-white mt-5 py-5 px-sm-3 px-md-5"
-    >
-      <div class="row pt-5">
-        <div class="col-lg-3 col-md-6 mb-5">
-          <a
-            href=""
-            class="navbar-brand font-weight-bold text-primary m-0 mb-4 p-0"
-            style="font-size: 40px; line-height: 40px"
-          >
-            <i class="icon-footer"></i>
-            <span class="text-white">Varbok</span>
-          </a>
-          <p>
-            Labore dolor amet ipsum ea, erat sit ipsum duo eos. Volup amet ea
-            dolor et magna dolor, elitr rebum duo est sed diam elitr. Stet elitr
-            stet diam duo eos rebum ipsum diam ipsum elitr.
-          </p>
-          <div class="d-flex justify-content-start mt-4">
-            <a
-              class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
-              style="width: 38px; height: 38px"
-              href="#"
-              ><i class="fab fa-twitter"></i
-            ></a>
-            <a
-              class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
-              style="width: 38px; height: 38px"
-              href="#"
-              ><i class="fab fa-facebook-f"></i
-            ></a>
-            <a
-              class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
-              style="width: 38px; height: 38px"
-              href="#"
-              ><i class="fab fa-linkedin-in"></i
-            ></a>
-            <a
-              class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
-              style="width: 38px; height: 38px"
-              href="#"
-              ><i class="fab fa-instagram"></i
-            ></a>
+    <!-- FAQ -->
+    <div class="container-fluid py-5">
+      <div class="container py-5">
+        <div class="text-center pb-2">
+          <p class="section-title px-5"><span class="px-2">Got Questions?</span></p>
+          <h2 class="mb-4">Frequently asked questions</h2>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-9">
+            <div class="accordion" id="faqAccordion">
+              <div class="card border-0 shadow-sm mb-3 rounded">
+                <div class="card-header bg-light border-0 p-0" id="faqHeading1">
+                  <h3 class="mb-0">
+                    <button
+                      class="btn btn-link btn-block text-left text-decoration-none text-dark font-weight-bold py-3 px-4"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#faqCollapse1"
+                      aria-expanded="true"
+                      aria-controls="faqCollapse1"
+                    >
+                      What age groups does Varbok accept?
+                    </button>
+                  </h3>
+                </div>
+                <div
+                  id="faqCollapse1"
+                  class="collapse show"
+                  aria-labelledby="faqHeading1"
+                  data-parent="#faqAccordion"
+                >
+                  <div class="card-body px-4">
+                    We welcome children from 1.5 to 5 years across three
+                    programmes: Playgroup (1.5-2.5 years), Nursery (2.5-3.5 years)
+                    and Kindergarten (3.5-5 years), with early-primary support
+                    available on request.
+                  </div>
+                </div>
+              </div>
+              <div class="card border-0 shadow-sm mb-3 rounded">
+                <div class="card-header bg-light border-0 p-0" id="faqHeading2">
+                  <h3 class="mb-0">
+                    <button
+                      class="btn btn-link btn-block text-left text-decoration-none text-dark font-weight-bold py-3 px-4 collapsed"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#faqCollapse2"
+                      aria-expanded="false"
+                      aria-controls="faqCollapse2"
+                    >
+                      How do I apply for admission?
+                    </button>
+                  </h3>
+                </div>
+                <div
+                  id="faqCollapse2"
+                  class="collapse"
+                  aria-labelledby="faqHeading2"
+                  data-parent="#faqAccordion"
+                >
+                  <div class="card-body px-4">
+                    Simply book a campus visit through our contact form or phone.
+                    After a warm tour and a short interaction with your child, we
+                    guide you through a quick, paperwork-light enrolment process.
+                  </div>
+                </div>
+              </div>
+              <div class="card border-0 shadow-sm mb-3 rounded">
+                <div class="card-header bg-light border-0 p-0" id="faqHeading3">
+                  <h3 class="mb-0">
+                    <button
+                      class="btn btn-link btn-block text-left text-decoration-none text-dark font-weight-bold py-3 px-4 collapsed"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#faqCollapse3"
+                      aria-expanded="false"
+                      aria-controls="faqCollapse3"
+                    >
+                      What are your timings and working days?
+                    </button>
+                  </h3>
+                </div>
+                <div
+                  id="faqCollapse3"
+                  class="collapse"
+                  aria-labelledby="faqHeading3"
+                  data-parent="#faqAccordion"
+                >
+                  <div class="card-body px-4">
+                    Varbok is open Monday to Friday, from 9:00 AM to 1:30 PM
+                    depending on your child's programme. We also offer an optional
+                    extended day-care till 5:30 PM for working parents.
+                  </div>
+                </div>
+              </div>
+              <div class="card border-0 shadow-sm mb-3 rounded">
+                <div class="card-header bg-light border-0 p-0" id="faqHeading4">
+                  <h3 class="mb-0">
+                    <button
+                      class="btn btn-link btn-block text-left text-decoration-none text-dark font-weight-bold py-3 px-4 collapsed"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#faqCollapse4"
+                      aria-expanded="false"
+                      aria-controls="faqCollapse4"
+                    >
+                      How does Varbok ensure my child's safety?
+                    </button>
+                  </h3>
+                </div>
+                <div
+                  id="faqCollapse4"
+                  class="collapse"
+                  aria-labelledby="faqHeading4"
+                  data-parent="#faqAccordion"
+                >
+                  <div class="card-body px-4">
+                    Our campuses are fully fenced and CCTV-monitored, with trained
+                    caregivers, secure pick-up verification, GPS-tracked transport
+                    and a strict visitor policy, so your child is always safe and
+                    supervised.
+                  </div>
+                </div>
+              </div>
+              <div class="card border-0 shadow-sm mb-3 rounded">
+                <div class="card-header bg-light border-0 p-0" id="faqHeading5">
+                  <h3 class="mb-0">
+                    <button
+                      class="btn btn-link btn-block text-left text-decoration-none text-dark font-weight-bold py-3 px-4 collapsed"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#faqCollapse5"
+                      aria-expanded="false"
+                      aria-controls="faqCollapse5"
+                    >
+                      Are meals and snacks provided?
+                    </button>
+                  </h3>
+                </div>
+                <div
+                  id="faqCollapse5"
+                  class="collapse"
+                  aria-labelledby="faqHeading5"
+                  data-parent="#faqAccordion"
+                >
+                  <div class="card-body px-4">
+                    Yes. We serve freshly cooked, home-style vegetarian meals and
+                    snacks planned by a nutritionist. Menus are shared with
+                    parents monthly, and we happily accommodate allergies and
+                    dietary needs.
+                  </div>
+                </div>
+              </div>
+              <div class="card border-0 shadow-sm mb-3 rounded">
+                <div class="card-header bg-light border-0 p-0" id="faqHeading6">
+                  <h3 class="mb-0">
+                    <button
+                      class="btn btn-link btn-block text-left text-decoration-none text-dark font-weight-bold py-3 px-4 collapsed"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#faqCollapse6"
+                      aria-expanded="false"
+                      aria-controls="faqCollapse6"
+                    >
+                      What are the fees and are there any extra charges?
+                    </button>
+                  </h3>
+                </div>
+                <div
+                  id="faqCollapse6"
+                  class="collapse"
+                  aria-labelledby="faqHeading6"
+                  data-parent="#faqAccordion"
+                >
+                  <div class="card-body px-4">
+                    Monthly fees range from ₹6,500 to ₹9,500 depending on the
+                    programme. A one-time admission fee applies, and transport and
+                    day-care are optional add-ons. There are no hidden charges.
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="col-lg-3 col-md-6 mb-5">
-          <h3 class="text-primary mb-4">Get In Touch</h3>
-          <div class="d-flex">
-            <h4 class="fa fa-map-marker-alt text-primary"></h4>
-            <div class="pl-3">
-              <h5 class="text-white">Address</h5>
-              <p>123 Street, New York, USA</p>
-            </div>
-          </div>
-          <div class="d-flex">
-            <h4 class="fa fa-envelope text-primary"></h4>
-            <div class="pl-3">
-              <h5 class="text-white">Email</h5>
-              <p>info@example.com</p>
-            </div>
-          </div>
-          <div class="d-flex">
-            <h4 class="fa fa-phone-alt text-primary"></h4>
-            <div class="pl-3">
-              <h5 class="text-white">Phone</h5>
-              <p>+012 345 67890</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 mb-5">
-          <h3 class="text-primary mb-4">Quick Links</h3>
-          <div class="d-flex flex-column justify-content-start">
-            <a class="text-white mb-2" href="#"
-              ><i class="fa fa-angle-right mr-2"></i>Home</a
-            >
-            <a class="text-white mb-2" href="#"
-              ><i class="fa fa-angle-right mr-2"></i>About Us</a
-            >
-            <a class="text-white mb-2" href="#"
-              ><i class="fa fa-angle-right mr-2"></i>Our Classes</a
-            >
-            <a class="text-white mb-2" href="#"
-              ><i class="fa fa-angle-right mr-2"></i>Our Teachers</a
-            >
-            <a class="text-white mb-2" href="#"
-              ><i class="fa fa-angle-right mr-2"></i>Our Blog</a
-            >
-            <a class="text-white" href="#"
-              ><i class="fa fa-angle-right mr-2"></i>Contact Us</a
-            >
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 mb-5">
-          <h3 class="text-primary mb-4">Newsletter</h3>
-          <form action="">
-            <div class="form-group">
-              <input
-                type="text"
-                class="form-control border-0 py-4"
-                placeholder="Your Name"
-                required="required"
-              />
-            </div>
-            <div class="form-group">
-              <input
-                type="email"
-                class="form-control border-0 py-4"
-                placeholder="Your Email"
-                required="required"
-              />
-            </div>
-            <div>
-              <button
-                class="btn btn-primary btn-block border-0 py-3"
-                type="submit"
-              >
-                Submit Now
-              </button>
-            </div>
-          </form>
-        </div>
-      </div>
-      <div
-        class="container-fluid pt-5"
-        style="border-top: 1px solid rgba(23, 162, 184, 0.2) ;"
-      >
-        <p class="m-0 text-center text-white">
-          &copy;
-          <a class="text-primary font-weight-bold" href="#">Varbok</a>.
-          All Rights Reserved.
-
-         
-          
-          
-          <br />Distributed By:
-          <a href="https://varbok.com" target="_blank">Varbok</a>
-        </p>
       </div>
     </div>
-    <!-- Footer End -->
+    <!-- FAQ End -->
+
+    <!-- CTA band -->
+    <section class="section">
+      <div class="container">
+        <div class="cta-band text-center reveal">
+          <div
+            class="blob-deco"
+            style="width: 300px; height: 300px; top: -110px; left: -60px;"
+          ></div>
+          <div
+            class="blob-deco"
+            style="width: 240px; height: 240px; bottom: -110px; right: -40px;"
+          ></div>
+          <div class="position-relative">
+            <span class="eyebrow justify-content-center" style="color: #fff;"
+              >Come say hello</span
+            >
+            <h2 class="mb-3">Give your child a joyful place to grow</h2>
+            <p class="mb-4 mx-auto" style="max-width: 560px;">
+              Book a warm campus visit and feel the Varbok difference for
+              yourself. We would love to meet you and your little one.
+            </p>
+            <div
+              class="d-flex flex-wrap justify-content-center"
+              style="gap: 0.8rem;"
+            >
+              <a href="class.html#book-a-seat" class="btn btn-light btn-lg"
+                >Book a visit</a
+              >
+              <a href="contact.html" class="btn btn-outline-light btn-lg"
+                >Contact us</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer (injected from partials/footer.html) -->
+    <div data-include="partials/footer.html"></div>
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-primary p-3 back-to-top"
+    <a href="#" class="btn btn-primary p-3 back-to-top" aria-label="Back to top"
       ><i class="fa fa-angle-double-up"></i
     ></a>
 
@@ -557,15 +727,7 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/isotope/isotope.pkgd.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
-
-    <!-- Contact Javascript File -->
-    <script src="mail/jqBootstrapValidation.min.js"></script>
-    <script src="mail/contact.js"></script>
-
-    <!-- Template Javascript -->
+    <script src="js/components.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

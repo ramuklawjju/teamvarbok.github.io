@@ -2,18 +2,31 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Varbok - Home of education</title>
+    <title>Varbok | Play-Based Early Learning in Bengaluru</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <meta content="Home of education" name="keywords" />
-    <meta content="Home of education" name="description" />
+    <meta
+      content="Varbok is a warm, play-based early-childhood learning centre in Bengaluru, nurturing curious, confident and kind children through playgroup, nursery and kindergarten."
+      name="description"
+    />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Varbok | Play-Based Early Learning in Bengaluru" />
+    <meta
+      property="og:description"
+      content="A warm, play-based early-childhood learning centre nurturing curious, confident and kind children across kindergarten and early primary."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="img/header.png" />
+    <meta property="og:url" content="https://teamvarbok.github.io/index.html" />
 
     <!-- Favicon -->
-    <link href="./img/logo.ico" rel="icon" />
+    <link href="img/favicon.ico" rel="icon" />
 
     <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Handlee&family=Nunito&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Handlee&family=Nunito:wght@400;600;700;800&display=swap"
       rel="stylesheet"
     />
 
@@ -28,443 +41,505 @@
 
     <!-- Libraries Stylesheet -->
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
 
-    <!-- Customized Bootstrap Stylesheet -->
+    <!-- Bootstrap base + Varbok "Joyful Premium" design system -->
     <link href="css/style.css" rel="stylesheet" />
+    <link href="css/varbok.css" rel="stylesheet" />
+
+    <!-- Enable progressive scroll-reveal only when JS is available -->
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
   </head>
 
   <body>
-    <!-- Navbar Start -->
-    <div class="container-fluid bg-light position-relative shadow">
-      <nav
-        class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0 px-lg-5"
-      >
-        <a
-          href=""
-          class="navbar-brand font-weight-bold text-secondary"
-          style="font-size: 50px"
-        >
-          <i class="icon-header"></i>
-          <span class="text-primary">Varbok</span>
-        </a>
-        <button
-          type="button"
-          class="navbar-toggler"
-          data-toggle="collapse"
-          data-target="#navbarCollapse"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="collapse navbar-collapse justify-content-between"
-          id="navbarCollapse"
-        >
-          <div class="navbar-nav font-weight-bold mx-auto py-0">
-            <a href="index.html" class="nav-item nav-link active">Home</a>
-            <a href="about.html" class="nav-item nav-link">About</a>
-            <a href="class.html" class="nav-item nav-link">Classes</a>
-            <a href="team.html" class="nav-item nav-link">Teachers</a>
-            <a href="gallery.html" class="nav-item nav-link">Gallery</a>
-            <div class="nav-item dropdown">
-              <a
-                href="#"
-                class="nav-link dropdown-toggle"
-                data-toggle="dropdown"
-                >Pages</a
+    <!-- Navbar (injected from partials/navbar.html) -->
+    <div data-include="partials/navbar.html"></div>
+
+    <!-- Hero -->
+    <header class="hero">
+      <div
+        class="blob-deco"
+        style="width: 360px; height: 360px; background: var(--coral-50); top: -90px; left: -100px;"
+      ></div>
+      <div
+        class="blob-deco"
+        style="width: 260px; height: 260px; background: var(--amber-50); bottom: -80px; right: 6%;"
+      ></div>
+      <div class="container position-relative">
+        <div class="row align-items-center">
+          <div class="col-lg-6 text-center text-lg-left reveal">
+            <span class="eyebrow">Where little hearts learn to bloom</span>
+            <h1>
+              Joyful beginnings for India's
+              <span class="hl">youngest learners</span>
+            </h1>
+            <p class="lead mb-4">
+              At Varbok, every day blends play, discovery and care, so your
+              child grows confident, curious and kind, one happy little step at
+              a time.
+            </p>
+            <div
+              class="d-flex flex-wrap justify-content-center justify-content-lg-start"
+              style="gap: 0.8rem;"
+            >
+              <a href="#book-a-seat" class="btn btn-primary btn-lg">Book a visit</a>
+              <a href="class.html" class="btn btn-outline-primary btn-lg"
+                >Explore classes</a
               >
-              <div class="dropdown-menu rounded-0 m-0">
-                <a href="blog.html" class="dropdown-item">Blog Grid</a>
-                <a href="single.html" class="dropdown-item">Blog Detail</a>
-              </div>
             </div>
-            <a href="contact.html" class="nav-item nav-link">Contact</a>
+            <div class="hero-trust">
+              <div class="avatars" aria-hidden="true">
+                <img src="img/testimonial-1.jpg" alt="" loading="lazy" />
+                <img src="img/testimonial-2.jpg" alt="" loading="lazy" />
+                <img src="img/testimonial-3.jpg" alt="" loading="lazy" />
+                <img src="img/testimonial-4.jpg" alt="" loading="lazy" />
+              </div>
+              <small>Loved by <strong>500+ families</strong><br />across Bengaluru</small>
+            </div>
           </div>
-          <a href="" class="btn btn-primary px-4">Join Class</a>
+          <div class="col-lg-6">
+            <div class="hero-art-wrap reveal d2">
+              <div class="hero-blob" aria-hidden="true"></div>
+              <img
+                class="img-fluid hero-art"
+                src="img/header1.png"
+                alt="Joyful illustration of a young learner reading and discovering at Varbok"
+                width="600"
+                height="600"
+              />
+              <span class="hero-chip c1" aria-hidden="true"
+                ><i class="fas fa-star"></i
+              ></span>
+              <span class="hero-chip c2" aria-hidden="true"
+                ><i class="fas fa-palette"></i
+              ></span>
+              <span class="hero-chip c3" aria-hidden="true"
+                ><i class="fas fa-music"></i
+              ></span>
+            </div>
+          </div>
         </div>
-      </nav>
-    </div>
-    <!-- Navbar End -->
+      </div>
+    </header>
 
-    <!-- Header Start -->
-    <div class="container-fluid bg-primary px-0 px-md-5 mb-5">
-      <div class="row align-items-center px-3">
-        <div class="col-lg-6 text-center text-lg-left">
-          <h4 class="text-white mb-4 mt-5 mt-lg-0">You Learning Center</h4>
-          <h1 class="display-3 font-weight-bold text-white">
-            New Approach to Your Education
-          </h1>
-          <p class="text-white mb-4">
-            Sea ipsum kasd eirmod kasd magna, est sea et diam ipsum est amet sed
-            sit. Ipsum dolor no justo dolor et, lorem ut dolor erat dolore sed
-            ipsum at ipsum nonumy amet. Clita lorem dolore sed stet et est justo
-            dolore.
+    <!-- Stats -->
+    <section class="section py-0" style="margin-top: -1.5rem;">
+      <div class="container">
+        <div
+          class="row text-center bg-soft section-rounded reveal"
+          style="padding: 2.6rem 1rem; box-shadow: var(--shadow-sm);"
+        >
+          <div class="col-6 col-lg-3 mb-4 mb-lg-0 stat">
+            <div class="num"><span class="count" data-target="12">12</span><span class="plus">+</span></div>
+            <div class="label">Years of joyful learning</div>
+          </div>
+          <div class="col-6 col-lg-3 mb-4 mb-lg-0 stat">
+            <div class="num"><span class="count" data-target="500">500</span><span class="plus">+</span></div>
+            <div class="label">Happy families</div>
+          </div>
+          <div class="col-6 col-lg-3 stat">
+            <div class="num"><span class="count" data-target="25">25</span><span class="plus">+</span></div>
+            <div class="label">Caring educators</div>
+          </div>
+          <div class="col-6 col-lg-3 stat">
+            <div class="num"><span class="count" data-target="15">15</span><span class="plus">+</span></div>
+            <div class="label">Activities each week</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Facilities -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head text-center mx-auto mb-5 reveal">
+          <span class="eyebrow justify-content-center">Everything under one roof</span>
+          <h2>A joyful world built around your child</h2>
+          <p>
+            Thoughtfully designed spaces and gentle care that help little ones
+            feel safe, seen and excited to learn every single day.
           </p>
-          <a href="" class="btn btn-secondary mt-1 py-3 px-5">Learn More</a>
         </div>
-        <div class="col-lg-6 text-center text-lg-right">
-          <img class="img-fluid mt-5" src="img/header.png" alt="" />
-        </div>
-      </div>
-    </div>
-    <!-- Header End -->
-
-    <!-- Facilities Start -->
-    <div class="container-fluid pt-5">
-      <div class="container pb-3">
         <div class="row">
-          <div class="col-lg-4 col-md-6 pb-1">
-            <div
-              class="d-flex bg-light shadow-sm border-top rounded mb-4"
-              style="padding: 30px"
-            >
-              <i
-                class="flaticon-050-fence h1 font-weight-normal text-primary mb-3"
-              ></i>
+          <div class="col-lg-4 col-md-6 pb-1 reveal">
+            <div class="facility d-flex">
+              <span class="icon-chip chip-teal">
+                <i class="flaticon-050-fence" aria-hidden="true"></i>
+              </span>
               <div class="pl-4">
-                <h4>Play Ground</h4>
+                <h3 class="h4">Safe Outdoor Play</h3>
                 <p class="m-0">
-                  Kasd labore kasd et dolor est rebum dolor ut, clita dolor vero
-                  lorem amet elitr vero...
+                  Fenced, soft-surface play gardens with age-appropriate climbers
+                  and swings, where children build strength, balance and
+                  confidence under the watchful eye of trained caregivers.
                 </p>
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 pb-1">
-            <div
-              class="d-flex bg-light shadow-sm border-top rounded mb-4"
-              style="padding: 30px"
-            >
-              <i
-                class="flaticon-022-drum h1 font-weight-normal text-primary mb-3"
-              ></i>
+          <div class="col-lg-4 col-md-6 pb-1 reveal d1">
+            <div class="facility d-flex">
+              <span class="icon-chip chip-coral">
+                <i class="flaticon-022-drum" aria-hidden="true"></i>
+              </span>
               <div class="pl-4">
-                <h4>Music and Dance</h4>
+                <h3 class="h4">Music &amp; Movement</h3>
                 <p class="m-0">
-                  Kasd labore kasd et dolor est rebum dolor ut, clita dolor vero
-                  lorem amet elitr vero...
+                  Daily rhythm circles with drums, shakers and song help little
+                  ones develop language, coordination and self-expression,
+                  turning every morning into a joyful celebration of sound.
                 </p>
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 pb-1">
-            <div
-              class="d-flex bg-light shadow-sm border-top rounded mb-4"
-              style="padding: 30px"
-            >
-              <i
-                class="flaticon-030-crayons h1 font-weight-normal text-primary mb-3"
-              ></i>
+          <div class="col-lg-4 col-md-6 pb-1 reveal d2">
+            <div class="facility d-flex">
+              <span class="icon-chip chip-amber">
+                <i class="flaticon-030-crayons" aria-hidden="true"></i>
+              </span>
               <div class="pl-4">
-                <h4>Arts and Crafts</h4>
+                <h3 class="h4">Arts &amp; Crafts Studio</h3>
                 <p class="m-0">
-                  Kasd labore kasd et dolor est rebum dolor ut, clita dolor vero
-                  lorem amet elitr vero...
+                  A colourful, mess-friendly studio where children paint, mould
+                  and create freely, strengthening fine-motor skills, imagination
+                  and the quiet pride of making something with their own hands.
                 </p>
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 pb-1">
-            <div
-              class="d-flex bg-light shadow-sm border-top rounded mb-4"
-              style="padding: 30px"
-            >
-              <i
-                class="flaticon-017-toy-car h1 font-weight-normal text-primary mb-3"
-              ></i>
+          <div class="col-lg-4 col-md-6 pb-1 reveal">
+            <div class="facility d-flex">
+              <span class="icon-chip chip-violet">
+                <i class="flaticon-017-toy-car" aria-hidden="true"></i>
+              </span>
               <div class="pl-4">
-                <h4>Safe Transportation</h4>
+                <h3 class="h4">Safe Transport</h3>
                 <p class="m-0">
-                  Kasd labore kasd et dolor est rebum dolor ut, clita dolor vero
-                  lorem amet elitr vero...
+                  GPS-tracked, attendant-supervised vans with trained drivers
+                  ferry children door to door, giving busy parents complete peace
+                  of mind on every single journey to and from Varbok.
                 </p>
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 pb-1">
-            <div
-              class="d-flex bg-light shadow-sm border-top rounded mb-4"
-              style="padding: 30px"
-            >
-              <i
-                class="flaticon-025-sandwich h1 font-weight-normal text-primary mb-3"
-              ></i>
+          <div class="col-lg-4 col-md-6 pb-1 reveal d1">
+            <div class="facility d-flex">
+              <span class="icon-chip chip-leaf">
+                <i class="flaticon-025-sandwich" aria-hidden="true"></i>
+              </span>
               <div class="pl-4">
-                <h4>Healthy food</h4>
+                <h3 class="h4">Healthy Meals</h3>
                 <p class="m-0">
-                  Kasd labore kasd et dolor est rebum dolor ut, clita dolor vero
-                  lorem amet elitr vero...
+                  Freshly cooked, home-style vegetarian meals and snacks, planned
+                  by a nutritionist, nourish growing bodies while gently teaching
+                  children healthy eating habits and happy mealtime manners.
                 </p>
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 pb-1">
-            <div
-              class="d-flex bg-light shadow-sm border-top rounded mb-4"
-              style="padding: 30px"
-            >
-              <i
-                class="flaticon-047-backpack h1 font-weight-normal text-primary mb-3"
-              ></i>
+          <div class="col-lg-4 col-md-6 pb-1 reveal d2">
+            <div class="facility d-flex">
+              <span class="icon-chip chip-coral">
+                <i class="flaticon-047-backpack" aria-hidden="true"></i>
+              </span>
               <div class="pl-4">
-                <h4>Educational Tour</h4>
+                <h3 class="h4">Learning Trips</h3>
                 <p class="m-0">
-                  Kasd labore kasd et dolor est rebum dolor ut, clita dolor vero
-                  lorem amet elitr vero...
+                  Guided outings to farms, parks and bakeries bring lessons to
+                  life, letting children explore the real world, build vocabulary
+                  and discover wonder far beyond the classroom walls.
                 </p>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <!-- Facilities Start -->
+    </section>
 
-    <!-- About Start -->
+    <!-- About -->
     <div class="container-fluid py-5">
       <div class="container">
-        <div class="row align-items-center">
+        <div class="row align-items-center reveal">
           <div class="col-lg-5">
             <img
-              class="img-fluid rounded mb-5 mb-lg-0"
+              class="img-fluid rounded-xl mb-5 mb-lg-0"
               src="img/about-1.jpg"
-              alt=""
+              alt="A Varbok caregiver reading a storybook to attentive young children"
+              loading="lazy"
             />
           </div>
           <div class="col-lg-7">
             <p class="section-title pr-5">
               <span class="pr-2">Learn About Us</span>
             </p>
-            <h1 class="mb-4">Best college For You</h1>
+            <h2 class="mb-4">A second home where childhood comes first</h2>
             <p>
-              Invidunt lorem justo sanctus clita. Erat lorem labore ea, justo
-              dolor lorem ipsum ut sed eos, ipsum et dolor kasd sit ea justo.
-              Erat justo sed sed diam. Ea et erat ut sed diam sea ipsum est
-              dolor
+              Varbok began in 2014 in a sunlit Bengaluru bungalow, founded by
+              three Indian educators who believed childhood should be felt before
+              it is measured. After years inside rigid classrooms, they dreamed
+              of a place where children could climb, paint, sing and ask a
+              hundred questions without ever being told to sit still and stay
+              quiet.
             </p>
             <div class="row pt-2 pb-4">
               <div class="col-6 col-md-4">
-                <img class="img-fluid rounded" src="img/about-2.jpg" alt="" />
+                <img
+                  class="img-fluid rounded-xl"
+                  src="img/about-2.jpg"
+                  alt="Toddlers exploring colourful learning toys at Varbok"
+                  loading="lazy"
+                />
               </div>
               <div class="col-6 col-md-8">
                 <ul class="list-inline m-0">
                   <li class="py-2 border-top border-bottom">
-                    <i class="fa fa-check text-primary mr-3"></i>Labore eos amet
-                    dolor amet diam
+                    <i class="fa fa-check text-primary mr-3"></i>Play-based
+                    learning that sparks curiosity
                   </li>
                   <li class="py-2 border-bottom">
-                    <i class="fa fa-check text-primary mr-3"></i>Etsea et sit
-                    dolor amet ipsum
+                    <i class="fa fa-check text-primary mr-3"></i>CCTV-monitored,
+                    fully fenced campuses
                   </li>
                   <li class="py-2 border-bottom">
-                    <i class="fa fa-check text-primary mr-3"></i>Diam dolor diam
-                    elitripsum vero.
+                    <i class="fa fa-check text-primary mr-3"></i>Trained, caring
+                    teachers who know every child
                   </li>
                 </ul>
               </div>
             </div>
-            <a href="" class="btn btn-primary mt-2 py-2 px-4">Learn More</a>
+            <a href="about.html" class="btn btn-primary mt-2 py-2 px-4">Learn More</a>
           </div>
         </div>
       </div>
     </div>
-    <!-- About End -->
 
-    <!-- Class Start -->
-    <div class="container-fluid pt-5">
+    <!-- Classes -->
+    <div class="container-fluid section bg-soft">
       <div class="container">
-        <div class="text-center pb-2">
-          <p class="section-title px-5">
-            <span class="px-2">Popular Classes</span>
+        <div class="section-head text-center mx-auto pb-2 reveal">
+          <span class="eyebrow justify-content-center">Popular programmes</span>
+          <h2 class="mb-2">Programmes for every little stage</h2>
+          <p>
+            Small groups and big hearts — a nurturing path from first steps to
+            school-ready, designed around how young children truly learn.
           </p>
-          <h1 class="mb-4">Classes for Yourself</h1>
         </div>
-        <div class="row">
+        <div class="row reveal">
           <div class="col-lg-4 mb-5">
-            <div class="card border-0 bg-light shadow-sm pb-2">
-              <img class="card-img-top mb-2" src="img/class-1.jpg" alt="" />
+            <div class="card card-hover border-0 bg-light shadow-sm pb-2">
+              <img
+                class="card-img-top mb-2"
+                src="img/class-1.jpg"
+                alt="Toddlers enjoying sensory play in the Little Explorers Playgroup"
+                loading="lazy"
+              />
               <div class="card-body text-center">
-                <h4 class="card-title">Drawing Class</h4>
+                <h3 class="card-title h4">Little Explorers Playgroup</h3>
                 <p class="card-text">
-                  Justo ea diam stet diam ipsum no sit, ipsum vero et et diam
-                  ipsum duo et no et, ipsum ipsum erat duo amet clita duo
+                  A gentle first step away from home, filled with sensory play,
+                  songs and cuddles. Tiny ones build comfort, curiosity and their
+                  very first friendships.
                 </p>
               </div>
               <div class="card-footer bg-transparent py-4 px-5">
                 <div class="row border-bottom">
                   <div class="col-6 py-1 text-right border-right">
-                    <strong>Age of Yourself</strong>
+                    <strong>Age Group</strong>
                   </div>
-                  <div class="col-6 py-1">3 - 6 Years</div>
+                  <div class="col-6 py-1">1.5 - 2.5 years</div>
                 </div>
                 <div class="row border-bottom">
                   <div class="col-6 py-1 text-right border-right">
                     <strong>Total Seats</strong>
                   </div>
-                  <div class="col-6 py-1">40 Seats</div>
+                  <div class="col-6 py-1">12 seats</div>
                 </div>
                 <div class="row border-bottom">
                   <div class="col-6 py-1 text-right border-right">
                     <strong>Class Time</strong>
                   </div>
-                  <div class="col-6 py-1">08:00 - 10:00</div>
+                  <div class="col-6 py-1">9:00 AM - 11:30 AM</div>
                 </div>
                 <div class="row">
                   <div class="col-6 py-1 text-right border-right">
-                    <strong>Tution Fee</strong>
+                    <strong>Tuition Fee</strong>
                   </div>
-                  <div class="col-6 py-1">$290 / Month</div>
+                  <div class="col-6 py-1">&#8377;6,500 / month</div>
                 </div>
               </div>
-              <a href="" class="btn btn-primary px-4 mx-auto mb-4">Join Now</a>
+              <a href="#book-a-seat" class="btn btn-primary btn-cta px-4 mx-auto mb-4">Join Now</a>
             </div>
           </div>
           <div class="col-lg-4 mb-5">
-            <div class="card border-0 bg-light shadow-sm pb-2">
-              <img class="card-img-top mb-2" src="img/class-2.jpg" alt="" />
+            <div class="card card-hover border-0 bg-light shadow-sm pb-2">
+              <img
+                class="card-img-top mb-2"
+                src="img/class-2.jpg"
+                alt="Children sharing stories and pretend play in the Curious Buds Nursery"
+                loading="lazy"
+              />
               <div class="card-body text-center">
-                <h4 class="card-title">Language Learning</h4>
+                <h3 class="card-title h4">Curious Buds Nursery</h3>
                 <p class="card-text">
-                  Justo ea diam stet diam ipsum no sit, ipsum vero et et diam
-                  ipsum duo et no et, ipsum ipsum erat duo amet clita duo
+                  Storytelling, art and pretend play spark language, sharing and
+                  imagination. Children grow more independent while learning
+                  routines, colours, numbers and the joy of discovery.
                 </p>
               </div>
               <div class="card-footer bg-transparent py-4 px-5">
                 <div class="row border-bottom">
                   <div class="col-6 py-1 text-right border-right">
-                    <strong>Age of Yourself</strong>
+                    <strong>Age Group</strong>
                   </div>
-                  <div class="col-6 py-1">3 - 6 Years</div>
+                  <div class="col-6 py-1">2.5 - 3.5 years</div>
                 </div>
                 <div class="row border-bottom">
                   <div class="col-6 py-1 text-right border-right">
                     <strong>Total Seats</strong>
                   </div>
-                  <div class="col-6 py-1">40 Seats</div>
+                  <div class="col-6 py-1">16 seats</div>
                 </div>
                 <div class="row border-bottom">
                   <div class="col-6 py-1 text-right border-right">
                     <strong>Class Time</strong>
                   </div>
-                  <div class="col-6 py-1">08:00 - 10:00</div>
+                  <div class="col-6 py-1">9:00 AM - 12:30 PM</div>
                 </div>
                 <div class="row">
                   <div class="col-6 py-1 text-right border-right">
-                    <strong>Tution Fee</strong>
+                    <strong>Tuition Fee</strong>
                   </div>
-                  <div class="col-6 py-1">$290 / Month</div>
+                  <div class="col-6 py-1">&#8377;8,000 / month</div>
                 </div>
               </div>
-              <a href="" class="btn btn-primary px-4 mx-auto mb-4">Join Now</a>
+              <a href="#book-a-seat" class="btn btn-primary btn-cta px-4 mx-auto mb-4">Join Now</a>
             </div>
           </div>
           <div class="col-lg-4 mb-5">
-            <div class="card border-0 bg-light shadow-sm pb-2">
-              <img class="card-img-top mb-2" src="img/class-3.jpg" alt="" />
+            <div class="card card-hover border-0 bg-light shadow-sm pb-2">
+              <img
+                class="card-img-top mb-2"
+                src="img/class-3.jpg"
+                alt="Kindergarten children working on hands-on learning projects"
+                loading="lazy"
+              />
               <div class="card-body text-center">
-                <h4 class="card-title">Basic Science</h4>
+                <h3 class="card-title h4">Bright Minds Kindergarten</h3>
                 <p class="card-text">
-                  Justo ea diam stet diam ipsum no sit, ipsum vero et et diam
-                  ipsum duo et no et, ipsum ipsum erat duo amet clita duo
+                  Phonics, early numbers and hands-on projects prepare confident,
+                  school-ready learners. Through guided play, children build
+                  reading, writing and thinking skills at their own happy pace.
                 </p>
               </div>
               <div class="card-footer bg-transparent py-4 px-5">
                 <div class="row border-bottom">
                   <div class="col-6 py-1 text-right border-right">
-                    <strong>Age of Yourself</strong>
+                    <strong>Age Group</strong>
                   </div>
-                  <div class="col-6 py-1">3 - 6 Years</div>
+                  <div class="col-6 py-1">3.5 - 5 years</div>
                 </div>
                 <div class="row border-bottom">
                   <div class="col-6 py-1 text-right border-right">
                     <strong>Total Seats</strong>
                   </div>
-                  <div class="col-6 py-1">40 Seats</div>
+                  <div class="col-6 py-1">20 seats</div>
                 </div>
                 <div class="row border-bottom">
                   <div class="col-6 py-1 text-right border-right">
                     <strong>Class Time</strong>
                   </div>
-                  <div class="col-6 py-1">08:00 - 10:00</div>
+                  <div class="col-6 py-1">9:00 AM - 1:30 PM</div>
                 </div>
                 <div class="row">
                   <div class="col-6 py-1 text-right border-right">
-                    <strong>Tution Fee</strong>
+                    <strong>Tuition Fee</strong>
                   </div>
-                  <div class="col-6 py-1">$290 / Month</div>
+                  <div class="col-6 py-1">&#8377;9,500 / month</div>
                 </div>
               </div>
-              <a href="" class="btn btn-primary px-4 mx-auto mb-4">Join Now</a>
+              <a href="#book-a-seat" class="btn btn-primary btn-cta px-4 mx-auto mb-4">Join Now</a>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- Class End -->
 
-    <!-- Registration Start -->
-    <div class="container-fluid py-5">
+    <!-- Book A Seat -->
+    <div class="container-fluid py-5" id="book-a-seat">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-7 mb-5 mb-lg-0">
             <p class="section-title pr-5">
               <span class="pr-2">Book A Seat</span>
             </p>
-            <h1 class="mb-4">Book A Seat For Your Kid</h1>
+            <h2 class="mb-4">Book a seat for your little one</h2>
             <p>
-              Invidunt lorem justo sanctus clita. Erat lorem labore ea, justo
-              dolor lorem ipsum ut sed eos, ipsum et dolor kasd sit ea justo.
-              Erat justo sed sed diam. Ea et erat ut sed diam sea ipsum est
-              dolor
+              Ready to give your child a joyful, play-filled start? Share a few
+              details and our team will reach out to arrange a warm campus visit,
+              answer your questions and guide you through our simple,
+              paperwork-light enrolment process.
             </p>
             <ul class="list-inline m-0">
               <li class="py-2">
-                <i class="fa fa-check text-success mr-3"></i>Labore eos amet
-                dolor amet diam
+                <i class="fa fa-check text-success mr-3"></i>A friendly campus
+                tour with your child
               </li>
               <li class="py-2">
-                <i class="fa fa-check text-success mr-3"></i>Etsea et sit dolor
-                amet ipsum
+                <i class="fa fa-check text-success mr-3"></i>Quick, stress-free
+                enrolment guidance
               </li>
               <li class="py-2">
-                <i class="fa fa-check text-success mr-3"></i>Diam dolor diam
-                elitripsum vero.
+                <i class="fa fa-check text-success mr-3"></i>Honest answers on
+                fees, timings and safety
               </li>
             </ul>
-            <a href="" class="btn btn-primary mt-4 py-2 px-4">Book Now</a>
           </div>
           <div class="col-lg-5">
             <div class="card border-0">
               <div class="card-header bg-secondary text-center p-4">
-                <h1 class="text-white m-0">Book A Seat</h1>
+                <h3 class="text-white m-0">Book A Seat</h3>
               </div>
               <div class="card-body rounded-bottom bg-primary p-5">
-                <form>
+                <form
+                  data-formspree
+                  action="https://formspree.io/f/YOUR_FORM_ID"
+                  method="post"
+                >
                   <div class="form-group">
+                    <label for="booking-name" class="text-white">Your Name</label>
                     <input
                       type="text"
+                      id="booking-name"
+                      name="name"
                       class="form-control border-0 p-4"
                       placeholder="Your Name"
-                      required="required"
+                      required
                     />
                   </div>
                   <div class="form-group">
+                    <label for="booking-email" class="text-white">Your Email</label>
                     <input
                       type="email"
+                      id="booking-email"
+                      name="email"
                       class="form-control border-0 p-4"
                       placeholder="Your Email"
-                      required="required"
+                      required
                     />
                   </div>
                   <div class="form-group">
+                    <label for="booking-class" class="text-white">Select A Class</label>
                     <select
+                      id="booking-class"
+                      name="class"
                       class="custom-select border-0 px-4"
                       style="height: 47px"
+                      required
                     >
-                      <option selected>Select A Class</option>
-                      <option value="1">Class 1</option>
-                      <option value="2">Class 1</option>
-                      <option value="3">Class 1</option>
+                      <option value="" selected disabled>Select A Class</option>
+                      <option value="Little Explorers Playgroup">Little Explorers Playgroup</option>
+                      <option value="Curious Buds Nursery">Curious Buds Nursery</option>
+                      <option value="Bright Minds Kindergarten">Bright Minds Kindergarten</option>
                     </select>
                   </div>
                   <div>
@@ -475,6 +550,7 @@
                       Book Now
                     </button>
                   </div>
+                  <div class="form-status mt-3 text-white" role="status" aria-live="polite"></div>
                 </form>
               </div>
             </div>
@@ -482,328 +558,434 @@
         </div>
       </div>
     </div>
-    <!-- Registration End -->
 
-    <!-- Team Start -->
+    <!-- Team -->
     <div class="container-fluid pt-5">
       <div class="container">
         <div class="text-center pb-2">
           <p class="section-title px-5">
             <span class="px-2">Our Teachers</span>
           </p>
-          <h1 class="mb-4">Meet Our Teachers</h1>
+          <h2 class="mb-4">Meet the people behind the smiles</h2>
         </div>
         <div class="row">
           <div class="col-md-6 col-lg-3 text-center team mb-5">
+            <div class="card-hover h-100 p-3 rounded">
             <div
               class="position-relative overflow-hidden mb-4"
               style="border-radius: 100%"
             >
-              <img class="img-fluid w-100" src="img/team-1.jpg" alt="" />
+              <img
+                class="img-fluid w-100"
+                src="img/team-1.jpg"
+                alt="Portrait of Ananya Krishnan, Founder and Lead Educator at Varbok"
+                loading="lazy"
+              />
               <div
                 class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute"
               >
                 <a
-                  class="btn btn-outline-light text-center mr-2 px-0"
+                  class="coming-soon btn btn-outline-light text-center mr-2 px-0"
                   style="width: 38px; height: 38px"
                   href="#"
+                  role="button"
+                  aria-label="Twitter (coming soon)"
+                  title="Coming soon"
                   ><i class="fab fa-twitter"></i
                 ></a>
                 <a
-                  class="btn btn-outline-light text-center mr-2 px-0"
+                  class="coming-soon btn btn-outline-light text-center mr-2 px-0"
                   style="width: 38px; height: 38px"
                   href="#"
+                  role="button"
+                  aria-label="Facebook (coming soon)"
+                  title="Coming soon"
                   ><i class="fab fa-facebook-f"></i
                 ></a>
                 <a
-                  class="btn btn-outline-light text-center px-0"
+                  class="coming-soon btn btn-outline-light text-center px-0"
                   style="width: 38px; height: 38px"
                   href="#"
+                  role="button"
+                  aria-label="LinkedIn (coming soon)"
+                  title="Coming soon"
                   ><i class="fab fa-linkedin-in"></i
                 ></a>
               </div>
             </div>
-            <h4>Julia Smith</h4>
-            <i>Music Teacher</i>
+            <h3 class="h4">Ananya Krishnan</h3>
+            <i>Founder &amp; Lead Educator</i>
+            </div>
           </div>
           <div class="col-md-6 col-lg-3 text-center team mb-5">
+            <div class="card-hover h-100 p-3 rounded">
             <div
               class="position-relative overflow-hidden mb-4"
               style="border-radius: 100%"
             >
-              <img class="img-fluid w-100" src="img/team-2.jpg" alt="" />
+              <img
+                class="img-fluid w-100"
+                src="img/team-2.jpg"
+                alt="Portrait of Rohan Mehta, Co-Founder and Curriculum Head at Varbok"
+                loading="lazy"
+              />
               <div
                 class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute"
               >
                 <a
-                  class="btn btn-outline-light text-center mr-2 px-0"
+                  class="coming-soon btn btn-outline-light text-center mr-2 px-0"
                   style="width: 38px; height: 38px"
                   href="#"
+                  role="button"
+                  aria-label="Twitter (coming soon)"
+                  title="Coming soon"
                   ><i class="fab fa-twitter"></i
                 ></a>
                 <a
-                  class="btn btn-outline-light text-center mr-2 px-0"
+                  class="coming-soon btn btn-outline-light text-center mr-2 px-0"
                   style="width: 38px; height: 38px"
                   href="#"
+                  role="button"
+                  aria-label="Facebook (coming soon)"
+                  title="Coming soon"
                   ><i class="fab fa-facebook-f"></i
                 ></a>
                 <a
-                  class="btn btn-outline-light text-center px-0"
+                  class="coming-soon btn btn-outline-light text-center px-0"
                   style="width: 38px; height: 38px"
                   href="#"
+                  role="button"
+                  aria-label="LinkedIn (coming soon)"
+                  title="Coming soon"
                   ><i class="fab fa-linkedin-in"></i
                 ></a>
               </div>
             </div>
-            <h4>Jhon Doe</h4>
-            <i>Language Teacher</i>
+            <h3 class="h4">Rohan Mehta</h3>
+            <i>Co-Founder &amp; Curriculum Head</i>
+            </div>
           </div>
           <div class="col-md-6 col-lg-3 text-center team mb-5">
+            <div class="card-hover h-100 p-3 rounded">
             <div
               class="position-relative overflow-hidden mb-4"
               style="border-radius: 100%"
             >
-              <img class="img-fluid w-100" src="img/team-3.jpg" alt="" />
+              <img
+                class="img-fluid w-100"
+                src="img/team-3.jpg"
+                alt="Portrait of Priya Nair, Kindergarten Coordinator at Varbok"
+                loading="lazy"
+              />
               <div
                 class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute"
               >
                 <a
-                  class="btn btn-outline-light text-center mr-2 px-0"
+                  class="coming-soon btn btn-outline-light text-center mr-2 px-0"
                   style="width: 38px; height: 38px"
                   href="#"
+                  role="button"
+                  aria-label="Twitter (coming soon)"
+                  title="Coming soon"
                   ><i class="fab fa-twitter"></i
                 ></a>
                 <a
-                  class="btn btn-outline-light text-center mr-2 px-0"
+                  class="coming-soon btn btn-outline-light text-center mr-2 px-0"
                   style="width: 38px; height: 38px"
                   href="#"
+                  role="button"
+                  aria-label="Facebook (coming soon)"
+                  title="Coming soon"
                   ><i class="fab fa-facebook-f"></i
                 ></a>
                 <a
-                  class="btn btn-outline-light text-center px-0"
+                  class="coming-soon btn btn-outline-light text-center px-0"
                   style="width: 38px; height: 38px"
                   href="#"
+                  role="button"
+                  aria-label="LinkedIn (coming soon)"
+                  title="Coming soon"
                   ><i class="fab fa-linkedin-in"></i
                 ></a>
               </div>
             </div>
-            <h4>Mollie Ross</h4>
-            <i>Dance Teacher</i>
+            <h3 class="h4">Priya Nair</h3>
+            <i>Kindergarten Coordinator</i>
+            </div>
           </div>
           <div class="col-md-6 col-lg-3 text-center team mb-5">
+            <div class="card-hover h-100 p-3 rounded">
             <div
               class="position-relative overflow-hidden mb-4"
               style="border-radius: 100%"
             >
-              <img class="img-fluid w-100" src="img/team-4.jpg" alt="" />
+              <img
+                class="img-fluid w-100"
+                src="img/team-4.jpg"
+                alt="Portrait of Aditya Sharma, Music and Movement Teacher at Varbok"
+                loading="lazy"
+              />
               <div
                 class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute"
               >
                 <a
-                  class="btn btn-outline-light text-center mr-2 px-0"
+                  class="coming-soon btn btn-outline-light text-center mr-2 px-0"
                   style="width: 38px; height: 38px"
                   href="#"
+                  role="button"
+                  aria-label="Twitter (coming soon)"
+                  title="Coming soon"
                   ><i class="fab fa-twitter"></i
                 ></a>
                 <a
-                  class="btn btn-outline-light text-center mr-2 px-0"
+                  class="coming-soon btn btn-outline-light text-center mr-2 px-0"
                   style="width: 38px; height: 38px"
                   href="#"
+                  role="button"
+                  aria-label="Facebook (coming soon)"
+                  title="Coming soon"
                   ><i class="fab fa-facebook-f"></i
                 ></a>
                 <a
-                  class="btn btn-outline-light text-center px-0"
+                  class="coming-soon btn btn-outline-light text-center px-0"
                   style="width: 38px; height: 38px"
                   href="#"
+                  role="button"
+                  aria-label="LinkedIn (coming soon)"
+                  title="Coming soon"
                   ><i class="fab fa-linkedin-in"></i
                 ></a>
               </div>
             </div>
-            <h4>Donald John</h4>
-            <i>Art Teacher</i>
+            <h3 class="h4">Aditya Sharma</h3>
+            <i>Music &amp; Movement Teacher</i>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- Team End -->
 
-    <!-- Testimonial Start -->
+    <!-- Testimonial -->
     <div class="container-fluid py-5">
       <div class="container p-0">
         <div class="text-center pb-2">
           <p class="section-title px-5">
             <span class="px-2">Testimonial</span>
           </p>
-          <h1 class="mb-4">What Parents Say!</h1>
+          <h2 class="mb-4">What parents say about Varbok</h2>
         </div>
-        <div class="owl-carousel testimonial-carousel">
+        <div
+          class="owl-carousel testimonial-carousel"
+          aria-label="Parent testimonials"
+          aria-roledescription="carousel"
+        >
           <div class="testimonial-item px-3">
             <div class="bg-light shadow-sm rounded mb-4 p-4">
-              <h3 class="fas fa-quote-left text-primary mr-3"></h3>
-              Sed ea amet kasd elitr stet, stet rebum et ipsum est duo elitr
-              eirmod clita lorem. Dolor tempor ipsum clita
+              <i class="fas fa-quote-left text-primary mr-3" aria-hidden="true"></i>
+              My daughter cried every morning at her old school. At Varbok, she
+              runs in smiling. The teachers truly know each child, and she has
+              blossomed into a confident, chatty little girl.
             </div>
             <div class="d-flex align-items-center">
               <img
                 class="rounded-circle"
                 src="img/testimonial-1.jpg"
                 style="width: 70px; height: 70px"
-                alt="Image"
+                alt="Deepika Rao, mother of a Varbok nursery child"
+                loading="lazy"
+                width="70"
+                height="70"
               />
               <div class="pl-3">
-                <h5>Parent Name</h5>
-                <i>Profession</i>
+                <h4 class="h5 mb-0">Deepika Rao</h4>
+                <i>Mother of Aarav, Nursery</i>
               </div>
             </div>
           </div>
           <div class="testimonial-item px-3">
             <div class="bg-light shadow-sm rounded mb-4 p-4">
-              <h3 class="fas fa-quote-left text-primary mr-3"></h3>
-              Sed ea amet kasd elitr stet, stet rebum et ipsum est duo elitr
-              eirmod clita lorem. Dolor tempor ipsum clita
+              <i class="fas fa-quote-left text-primary mr-3" aria-hidden="true"></i>
+              What I love most is the safety and communication. Daily updates,
+              photos, CCTV access and warm teachers who genuinely care. As a
+              working father, Varbok gives me complete peace of mind every day.
             </div>
             <div class="d-flex align-items-center">
               <img
                 class="rounded-circle"
                 src="img/testimonial-2.jpg"
                 style="width: 70px; height: 70px"
-                alt="Image"
+                alt="Sandeep Kulkarni, father of a Varbok kindergarten child"
+                loading="lazy"
+                width="70"
+                height="70"
               />
               <div class="pl-3">
-                <h5>Parent Name</h5>
-                <i>Profession</i>
+                <h4 class="h5 mb-0">Sandeep Kulkarni</h4>
+                <i>Father of Anika, Kindergarten</i>
               </div>
             </div>
           </div>
           <div class="testimonial-item px-3">
             <div class="bg-light shadow-sm rounded mb-4 p-4">
-              <h3 class="fas fa-quote-left text-primary mr-3"></h3>
-              Sed ea amet kasd elitr stet, stet rebum et ipsum est duo elitr
-              eirmod clita lorem. Dolor tempor ipsum clita
+              <i class="fas fa-quote-left text-primary mr-3" aria-hidden="true"></i>
+              Varbok is not just a school, it is a second family. My son learns
+              through play, eats his vegetables happily, and comes home singing
+              new songs. We could not have asked for more.
             </div>
             <div class="d-flex align-items-center">
               <img
                 class="rounded-circle"
                 src="img/testimonial-3.jpg"
                 style="width: 70px; height: 70px"
-                alt="Image"
+                alt="Fatima Sheikh, mother of a Varbok playgroup child"
+                loading="lazy"
+                width="70"
+                height="70"
               />
               <div class="pl-3">
-                <h5>Parent Name</h5>
-                <i>Profession</i>
+                <h4 class="h5 mb-0">Fatima Sheikh</h4>
+                <i>Mother of Zayan, Playgroup</i>
               </div>
             </div>
           </div>
           <div class="testimonial-item px-3">
             <div class="bg-light shadow-sm rounded mb-4 p-4">
-              <h3 class="fas fa-quote-left text-primary mr-3"></h3>
-              Sed ea amet kasd elitr stet, stet rebum et ipsum est duo elitr
-              eirmod clita lorem. Dolor tempor ipsum clita
+              <i class="fas fa-quote-left text-primary mr-3" aria-hidden="true"></i>
+              The play-based approach is wonderful. My twins are curious,
+              independent and so excited to learn. The teachers are patient and
+              loving, treating every child as if they were their own.
             </div>
             <div class="d-flex align-items-center">
               <img
                 class="rounded-circle"
                 src="img/testimonial-4.jpg"
                 style="width: 70px; height: 70px"
-                alt="Image"
+                alt="Arjun Menon, father of Varbok kindergarten twins"
+                loading="lazy"
+                width="70"
+                height="70"
               />
               <div class="pl-3">
-                <h5>Parent Name</h5>
-                <i>Profession</i>
+                <h4 class="h5 mb-0">Arjun Menon</h4>
+                <i>Father of Ira and Vivaan, Kindergarten</i>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- Testimonial End -->
 
-    <!-- Blog Start -->
+    <!-- Blog -->
     <div class="container-fluid pt-5">
       <div class="container">
         <div class="text-center pb-2">
           <p class="section-title px-5">
             <span class="px-2">Latest Blog</span>
           </p>
-          <h1 class="mb-4">Latest Articles From Blog</h1>
+          <h2 class="mb-4">Stories &amp; tips from our classrooms</h2>
         </div>
         <div class="row pb-3">
           <div class="col-lg-4 mb-4">
-            <div class="card border-0 shadow-sm mb-2">
-              <img class="card-img-top mb-2" src="img/blog-1.jpg" alt="" />
+            <div class="card card-hover border-0 shadow-sm mb-2">
+              <img
+                class="card-img-top mb-2"
+                src="img/blog-1.jpg"
+                alt="Young children building with wooden blocks during play-based learning"
+                loading="lazy"
+              />
               <div class="card-body bg-light text-center p-4">
-                <h4 class="">Diam amet eos at no eos</h4>
+                <h3 class="h4">
+                  Why Play Is Serious Learning for Young Children
+                  <span class="demo-badge">Demo</span>
+                </h3>
                 <div class="d-flex justify-content-center mb-3">
                   <small class="mr-3"
-                    ><i class="fa fa-user text-primary"></i> Admin</small
+                    ><i class="fa fa-user text-primary"></i> Ananya Krishnan</small
                   >
                   <small class="mr-3"
-                    ><i class="fa fa-folder text-primary"></i> Web Design</small
+                    ><i class="fa fa-folder text-primary"></i> Learning</small
                   >
                   <small class="mr-3"
-                    ><i class="fa fa-comments text-primary"></i> 15</small
+                    ><i class="fa fa-comments text-primary"></i> 12</small
                   >
                 </div>
                 <p>
-                  Sed kasd sea sed at elitr sed ipsum justo, sit nonumy diam
-                  eirmod, duo et sed sit eirmod kasd clita tempor dolor stet
-                  lorem. Tempor ipsum justo amet stet...
+                  Children learn maths, language and empathy not from worksheets
+                  but through play. Here is why building blocks and pretend
+                  kitchens are powerful classrooms for growing little minds.
                 </p>
-                <a href="" class="btn btn-primary px-4 mx-auto my-2"
+                <a href="single.html" class="btn btn-primary px-4 mx-auto my-2"
                   >Read More</a
                 >
               </div>
             </div>
           </div>
           <div class="col-lg-4 mb-4">
-            <div class="card border-0 shadow-sm mb-2">
-              <img class="card-img-top mb-2" src="img/blog-2.jpg" alt="" />
+            <div class="card card-hover border-0 shadow-sm mb-2">
+              <img
+                class="card-img-top mb-2"
+                src="img/blog-2.jpg"
+                alt="A parent gently saying goodbye to a child on their first school day"
+                loading="lazy"
+              />
               <div class="card-body bg-light text-center p-4">
-                <h4 class="">Diam amet eos at no eos</h4>
+                <h3 class="h4">
+                  Easing the First-Day Tears: A Parent's Survival Guide
+                  <span class="demo-badge">Demo</span>
+                </h3>
                 <div class="d-flex justify-content-center mb-3">
                   <small class="mr-3"
-                    ><i class="fa fa-user text-primary"></i> Admin</small
+                    ><i class="fa fa-user text-primary"></i> Kavya Pillai</small
                   >
                   <small class="mr-3"
-                    ><i class="fa fa-folder text-primary"></i> Web Design</small
+                    ><i class="fa fa-folder text-primary"></i> Parenting</small
                   >
                   <small class="mr-3"
-                    ><i class="fa fa-comments text-primary"></i> 15</small
+                    ><i class="fa fa-comments text-primary"></i> 9</small
                   >
                 </div>
                 <p>
-                  Sed kasd sea sed at elitr sed ipsum justo, sit nonumy diam
-                  eirmod, duo et sed sit eirmod kasd clita tempor dolor stet
-                  lorem. Tempor ipsum justo amet stet...
+                  Starting school is big for tiny hearts. These gentle, practical
+                  tips help your child, and you, navigate those first goodbyes
+                  with more confidence and far fewer tears.
                 </p>
-                <a href="" class="btn btn-primary px-4 mx-auto my-2"
+                <a href="single.html" class="btn btn-primary px-4 mx-auto my-2"
                   >Read More</a
                 >
               </div>
             </div>
           </div>
           <div class="col-lg-4 mb-4">
-            <div class="card border-0 shadow-sm mb-2">
-              <img class="card-img-top mb-2" src="img/blog-3.jpg" alt="" />
+            <div class="card card-hover border-0 shadow-sm mb-2">
+              <img
+                class="card-img-top mb-2"
+                src="img/blog-3.jpg"
+                alt="A toddler and parent reading a picture book together at home"
+                loading="lazy"
+              />
               <div class="card-body bg-light text-center p-4">
-                <h4 class="">Diam amet eos at no eos</h4>
+                <h3 class="h4">
+                  Five Easy Ways to Build Your Child's Vocabulary at Home
+                  <span class="demo-badge">Demo</span>
+                </h3>
                 <div class="d-flex justify-content-center mb-3">
                   <small class="mr-3"
-                    ><i class="fa fa-user text-primary"></i> Admin</small
+                    ><i class="fa fa-user text-primary"></i> Priya Nair</small
                   >
                   <small class="mr-3"
-                    ><i class="fa fa-folder text-primary"></i> Web Design</small
+                    ><i class="fa fa-folder text-primary"></i> Development</small
                   >
                   <small class="mr-3"
                     ><i class="fa fa-comments text-primary"></i> 15</small
                   >
                 </div>
                 <p>
-                  Sed kasd sea sed at elitr sed ipsum justo, sit nonumy diam
-                  eirmod, duo et sed sit eirmod kasd clita tempor dolor stet
-                  lorem. Tempor ipsum justo amet stet...
+                  From narrating your day to bedtime stories, small daily habits
+                  dramatically grow your toddler's vocabulary. Discover simple,
+                  joyful activities that turn everyday moments into rich language
+                  learning.
                 </p>
-                <a href="" class="btn btn-primary px-4 mx-auto my-2"
+                <a href="single.html" class="btn btn-primary px-4 mx-auto my-2"
                   >Read More</a
                 >
               </div>
@@ -812,152 +994,47 @@
         </div>
       </div>
     </div>
-    <!-- Blog End -->
 
-    <!-- Footer Start -->
-    <div
-      class="container-fluid bg-secondary text-white mt-5 py-5 px-sm-3 px-md-5"
-    >
-      <div class="row pt-5">
-        <div class="col-lg-3 col-md-6 mb-5">
-          <a
-            href=""
-            class="navbar-brand font-weight-bold text-primary m-0 mb-4 p-0"
-            style="font-size: 40px; line-height: 40px"
-          >
-            <i  class="icon-footer"></i>
-            <span class="text-white">Varbok</span>
-          </a>
-          <p>
-            Labore dolor amet ipsum ea, erat sit ipsum duo eos. Volup amet ea
-            dolor et magna dolor, elitr rebum duo est sed diam elitr. Stet elitr
-            stet diam duo eos rebum ipsum diam ipsum elitr.
-          </p>
-          <div class="d-flex justify-content-start mt-4">
-            <a
-              class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
-              style="width: 38px; height: 38px"
-              href="#"
-              ><i class="fab fa-twitter"></i
-            ></a>
-            <a
-              class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
-              style="width: 38px; height: 38px"
-              href="#"
-              ><i class="fab fa-facebook-f"></i
-            ></a>
-            <a
-              class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
-              style="width: 38px; height: 38px"
-              href="#"
-              ><i class="fab fa-linkedin-in"></i
-            ></a>
-            <a
-              class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
-              style="width: 38px; height: 38px"
-              href="#"
-              ><i class="fab fa-instagram"></i
-            ></a>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 mb-5">
-          <h3 class="text-primary mb-4">Get In Touch</h3>
-          <div class="d-flex">
-            <h4 class="fa fa-map-marker-alt text-primary"></h4>
-            <div class="pl-3">
-              <h5 class="text-white">Address</h5>
-              <p>123 Street, New York, USA</p>
-            </div>
-          </div>
-          <div class="d-flex">
-            <h4 class="fa fa-envelope text-primary"></h4>
-            <div class="pl-3">
-              <h5 class="text-white">Email</h5>
-              <p>info@example.com</p>
-            </div>
-          </div>
-          <div class="d-flex">
-            <h4 class="fa fa-phone-alt text-primary"></h4>
-            <div class="pl-3">
-              <h5 class="text-white">Phone</h5>
-              <p>+012 345 67890</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 mb-5">
-          <h3 class="text-primary mb-4">Quick Links</h3>
-          <div class="d-flex flex-column justify-content-start">
-            <a class="text-white mb-2" href="#"
-              ><i class="fa fa-angle-right mr-2"></i>Home</a
+    <!-- CTA band -->
+    <section class="section">
+      <div class="container">
+        <div class="cta-band text-center reveal">
+          <div
+            class="blob-deco"
+            style="width: 300px; height: 300px; top: -110px; left: -60px;"
+          ></div>
+          <div
+            class="blob-deco"
+            style="width: 240px; height: 240px; bottom: -110px; right: -40px;"
+          ></div>
+          <div class="position-relative">
+            <span class="eyebrow justify-content-center" style="color: #fff;"
+              >Come say hello</span
             >
-            <a class="text-white mb-2" href="#"
-              ><i class="fa fa-angle-right mr-2"></i>About Us</a
+            <h2 class="mb-3">Give your child a joyful place to grow</h2>
+            <p class="mb-4 mx-auto" style="max-width: 560px;">
+              Book a warm campus visit and feel the Varbok difference for
+              yourself. We would love to meet you and your little one.
+            </p>
+            <div
+              class="d-flex flex-wrap justify-content-center"
+              style="gap: 0.8rem;"
             >
-            <a class="text-white mb-2" href="#"
-              ><i class="fa fa-angle-right mr-2"></i>Our Classes</a
-            >
-            <a class="text-white mb-2" href="#"
-              ><i class="fa fa-angle-right mr-2"></i>Our Teachers</a
-            >
-            <a class="text-white mb-2" href="#"
-              ><i class="fa fa-angle-right mr-2"></i>Our Blog</a
-            >
-            <a class="text-white" href="#"
-              ><i class="fa fa-angle-right mr-2"></i>Contact Us</a
-            >
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 mb-5">
-          <h3 class="text-primary mb-4">Newsletter</h3>
-          <form action="">
-            <div class="form-group">
-              <input
-                type="text"
-                class="form-control border-0 py-4"
-                placeholder="Your Name"
-                required="required"
-              />
-            </div>
-            <div class="form-group">
-              <input
-                type="email"
-                class="form-control border-0 py-4"
-                placeholder="Your Email"
-                required="required"
-              />
-            </div>
-            <div>
-              <button
-                class="btn btn-primary btn-block border-0 py-3"
-                type="submit"
+              <a href="#book-a-seat" class="btn btn-light btn-lg">Book a visit</a>
+              <a href="contact.html" class="btn btn-outline-light btn-lg"
+                >Contact us</a
               >
-                Submit Now
-              </button>
             </div>
-          </form>
+          </div>
         </div>
       </div>
-      <div
-        class="container-fluid pt-5"
-        style="border-top: 1px solid rgba(23, 162, 184, 0.2) ;"
-      >
-        <p class="m-0 text-center text-white">
-          &copy;
-          <a class="text-primary font-weight-bold" href="#">Varbok</a>.
-          All Rights Reserved.
+    </section>
 
-         
-          
-          
-          <br />Distributed By:
-          <a href="https://varbok.com" target="_blank">Varbok</a>
-        </p>
-      </div>
-    </div>
-    <!-- Footer End -->
+    <!-- Footer (injected from partials/footer.html) -->
+    <div data-include="partials/footer.html"></div>
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-primary p-3 back-to-top"
+    <a href="#" class="btn btn-primary p-3 back-to-top" aria-label="Back to top"
       ><i class="fa fa-angle-double-up"></i
     ></a>
 
@@ -966,11 +1043,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/isotope/isotope.pkgd.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="js/components.js"></script>
 
     <!-- Contact Javascript File -->
-    <script src="mail/jqBootstrapValidation.min.js"></script>
     <script src="mail/contact.js"></script>
 
     <!-- Template Javascript -->

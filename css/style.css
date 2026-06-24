@@ -9882,3 +9882,226 @@ a.text-dark:hover, a.text-dark:focus {
   padding: 0;
   list-style-type: none;
 }
+
+/* =========================================================================
+   VARBOK DESIGN SYSTEM  —  custom styling layer
+   -------------------------------------------------------------------------
+   Everything ABOVE this banner is vendored Bootstrap 4.4.1 (compiled from
+   scss/bootstrap/) plus the original template's "Custom CSS" block. Do not
+   edit that. Everything BELOW is hand-authored Varbok styling — the single
+   source of design decisions for this site. The SCSS original lives in
+   scss/style.scss; this compiled css/style.css is what every page links.
+
+   THEME
+     - Primary teal ...... #17a2b8   (hover/darker #138496, deep ink #00394f)
+     - Surface / cards ... #ffffff on a soft neutral page
+     - Text body ......... #555 at line-height 1.6 for relaxed reading
+     - Accent rule ....... 2px teal underline used by .section-title
+
+   TYPE
+     - Body  : "Nunito", sans-serif  — friendly, highly legible
+     - Accent: "Handlee", cursive    — warm, hand-written early-childhood feel
+     - Headings run a touch tighter (line-height 1.25) with bold weight.
+
+   SPACING RHYTHM
+     - Base unit 0.5rem; components step in multiples (8 / 16 / 24 / 32px).
+     - Radius scale: 8px (pills/badges) · 10px (cards, controls).
+     - Shadow scale: rest 0 .25rem .75rem rgba(0,0,0,.06);
+                     lift 0 .75rem 1.75rem rgba(0,0,0,.12).
+     - Motion: 0.3s ease for hovers/focus; 0.5s for reveal overlays.
+
+   This section is purely ADDITIVE: it refines and extends Bootstrap without
+   overriding layout primitives, so existing pages keep working unchanged.
+   ========================================================================= */
+
+/* ---- Foundations: typography & rhythm ---------------------------------- */
+body {
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  line-height: 1.25;
+  font-weight: 700;
+}
+
+/* Refined accent label — slightly more breathing room + softer underline. */
+.section-title {
+  font-weight: 700;
+}
+
+.section-title span {
+  padding-right: 0.5rem;
+}
+
+.section-title.text-center {
+  display: block;
+}
+
+.section-title.text-center span {
+  padding: 0 0.5rem;
+}
+
+/* ---- Motion & focus: consistent transitions across interactive bits ---- */
+.btn,
+.card,
+.nav-link,
+.form-control,
+.custom-select,
+a.coming-soon {
+  transition: color 0.3s ease, background-color 0.3s ease,
+    border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+/* Visible, on-brand keyboard focus ring (mouse clicks stay clean). */
+a:focus-visible,
+.btn:focus-visible,
+.nav-link:focus-visible,
+.form-control:focus-visible,
+.custom-select:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible,
+button:focus-visible,
+[tabindex]:focus-visible {
+  outline: 3px solid rgba(23, 162, 184, 0.55);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Roomy teal focus ring on form fields (paired with the outline above). */
+.form-control:focus,
+.custom-select:focus,
+textarea.form-control:focus {
+  border-color: #17a2b8;
+  box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, 0.2);
+}
+
+/* ---- Cards: one consistent radius + soft shadow site-wide -------------- */
+.card {
+  border-radius: 10px;
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.06);
+}
+
+/* .card-hover — lift + deepen shadow on hover (facility/class/blog cards).
+   Applied to the card element OR a wrapper around an image/card. */
+.card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  will-change: transform;
+}
+
+.card-hover:hover,
+.card-hover:focus-within {
+  transform: translateY(-8px);
+  box-shadow: 0 0.75rem 1.75rem rgba(0, 0, 0, 0.12);
+}
+
+/* ---- .btn-cta — the navbar "Join Class" call-to-action ----------------- */
+/* Reads clearly as the primary action: subtle shadow at rest, gentle scale
+   and a deeper teal on hover so it stands apart from plain .nav-link items. */
+.btn-cta {
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  box-shadow: 0 0.25rem 0.65rem rgba(23, 162, 184, 0.35);
+  transition: transform 0.3s ease, box-shadow 0.3s ease,
+    background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-cta:hover,
+.btn-cta:focus {
+  transform: scale(1.05);
+  box-shadow: 0 0.5rem 1rem rgba(23, 162, 184, 0.45);
+}
+
+.btn-cta:active {
+  transform: scale(1.02);
+}
+
+/* ---- .demo-badge — tiny pill marking placeholder/demo content ---------- */
+.demo-badge {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0.15em 0.6em;
+  border-radius: 8px;
+  background: rgba(23, 162, 184, 0.12);
+  color: #117a8b;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  line-height: 1.4;
+}
+
+/* ---- .coming-soon — muted, non-actionable placeholder link ------------- */
+/* main.js prevents default on these; styling signals "not yet available". */
+a.coming-soon,
+.coming-soon {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+a.coming-soon:hover,
+a.coming-soon:focus,
+.coming-soon:hover,
+.coming-soon:focus {
+  opacity: 0.85;
+}
+
+/* ---- Form status messages (Book A Seat / newsletter / contact) -------- */
+/* Hidden until the Formspree handler writes a message + state class. */
+.form-status {
+  margin-top: 0.75rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.form-status:empty {
+  display: none;
+}
+
+.form-status.is-success {
+  color: #1e7e34;
+}
+
+.form-status.is-error {
+  color: #c82333;
+}
+
+/* ---- Small refinements that tie the system together ------------------- */
+/* Carousel nav buttons honour the focus ring without a doubled outline. */
+.testimonial-carousel .owl-dot:focus-visible,
+.post-carousel .owl-nav .owl-prev:focus-visible,
+.post-carousel .owl-nav .owl-next:focus-visible {
+  outline: 3px solid rgba(23, 162, 184, 0.55);
+  outline-offset: 2px;
+}
+
+/* Back-to-top: keep the gentle bob but add a clear hover/focus affordance. */
+.back-to-top .btn:hover,
+.back-to-top .btn:focus {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+/* Respect users who prefer reduced motion. */
+@media (prefers-reduced-motion: reduce) {
+  .back-to-top {
+    animation: none;
+  }
+
+  .card-hover,
+  .btn,
+  .btn-cta,
+  .card,
+  .nav-link {
+    transition: none;
+  }
+
+  .card-hover:hover,
+  .card-hover:focus-within,
+  .btn-cta:hover,
+  .btn-cta:focus {
+    transform: none;
+  }
+}
