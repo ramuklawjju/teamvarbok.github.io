@@ -1,1054 +1,665 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Varbok | Play-Based Early Learning in Bengaluru</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <meta
-      content="Varbok is a warm, play-based early-childhood learning centre in Bengaluru, nurturing curious, confident and kind children through playgroup, nursery and kindergarten."
-      name="description"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Varbok — Learn What Doesn't Exist Yet</title>
+  <meta name="description" content="Varbok is the first university where your credential is a Proof-of-Learning — verified on-chain, built on real projects, never purchased and never expired." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
 
-    <!-- Open Graph -->
-    <meta property="og:title" content="Varbok | Play-Based Early Learning in Bengaluru" />
-    <meta
-      property="og:description"
-      content="A warm, play-based early-childhood learning centre nurturing curious, confident and kind children across kindergarten and early primary."
-    />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="img/header.png" />
-    <meta property="og:url" content="https://teamvarbok.github.io/index.html" />
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">VARBOK</a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#streams" class="nav-link">Streams</a>
+        <a href="#how-it-works" class="nav-link">How It Works</a>
+        <a href="#employers" class="nav-link">Employers</a>
+        <a href="#apply" class="nav-link">Apply</a>
+      </nav>
+      <a href="#apply" class="btn btn-ghost btn-sm nav-cta">Apply as Seeker</a>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
 
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon" />
+  <!-- MOBILE MENU OVERLAY -->
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <button class="mobile-menu-close" id="mobile-menu-close" aria-label="Close menu">&times;</button>
+    <nav class="mobile-nav">
+      <a href="#streams" class="mobile-nav-link">Streams</a>
+      <a href="#how-it-works" class="mobile-nav-link">How It Works</a>
+      <a href="#employers" class="mobile-nav-link">Employers</a>
+      <a href="#apply" class="mobile-nav-link">Apply</a>
+      <a href="#apply" class="btn btn-primary" style="margin-top:1.5rem;">Apply as Seeker</a>
+    </nav>
+  </div>
 
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Handlee&family=Nunito:wght@400;600;700;800&display=swap"
-      rel="stylesheet"
-    />
+  <main>
 
-    <!-- Font Awesome -->
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
-      rel="stylesheet"
-    />
-
-    <!-- Flaticon Font -->
-    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet" />
-
-    <!-- Libraries Stylesheet -->
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
-
-    <!-- Bootstrap base + Varbok "Joyful Premium" design system -->
-    <link href="css/style.css" rel="stylesheet" />
-    <link href="css/varbok.css" rel="stylesheet" />
-
-    <!-- Enable progressive scroll-reveal only when JS is available -->
-    <script>
-      document.documentElement.classList.add("js");
-    </script>
-  </head>
-
-  <body>
-    <!-- Navbar (injected from partials/navbar.html) -->
-    <div data-include="partials/navbar.html"></div>
-
-    <!-- Hero -->
-    <header class="hero">
-      <div
-        class="blob-deco"
-        style="width: 360px; height: 360px; background: var(--coral-50); top: -90px; left: -100px;"
-      ></div>
-      <div
-        class="blob-deco"
-        style="width: 260px; height: 260px; background: var(--amber-50); bottom: -80px; right: 6%;"
-      ></div>
-      <div class="container position-relative">
-        <div class="row align-items-center">
-          <div class="col-lg-6 text-center text-lg-left reveal">
-            <span class="eyebrow">Where little hearts learn to bloom</span>
-            <h1>
-              Joyful beginnings for India's
-              <span class="hl">youngest learners</span>
-            </h1>
-            <p class="lead mb-4">
-              At Varbok, every day blends play, discovery and care, so your
-              child grows confident, curious and kind, one happy little step at
-              a time.
-            </p>
-            <div
-              class="d-flex flex-wrap justify-content-center justify-content-lg-start"
-              style="gap: 0.8rem;"
-            >
-              <a href="#book-a-seat" class="btn btn-primary btn-lg">Book a visit</a>
-              <a href="class.html" class="btn btn-outline-primary btn-lg"
-                >Explore classes</a
-              >
-            </div>
-            <div class="hero-trust">
-              <div class="avatars" aria-hidden="true">
-                <img src="img/testimonial-1.jpg" alt="" loading="lazy" />
-                <img src="img/testimonial-2.jpg" alt="" loading="lazy" />
-                <img src="img/testimonial-3.jpg" alt="" loading="lazy" />
-                <img src="img/testimonial-4.jpg" alt="" loading="lazy" />
-              </div>
-              <small>Loved by <strong>500+ families</strong><br />across Bengaluru</small>
-            </div>
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="hero-grid-overlay"></div>
+      <div class="hero-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+      </div>
+      <div class="container hero-content">
+        <div class="hero-badge fade-in">
+          <span class="badge-dot"></span>
+          Proof-of-Learning &nbsp;·&nbsp; On-Chain Credentials &nbsp;·&nbsp; Futuristic Streams
+        </div>
+        <h1 class="hero-h1 fade-in">Learn what doesn't<br />exist yet.</h1>
+        <h2 class="hero-h2 fade-in">Earn what can't be faked.</h2>
+        <p class="hero-desc fade-in">
+          Varbok is the first university where your credential is a Proof-of-Learning —
+          verified on-chain, built on real projects, never purchased and never expired.
+        </p>
+        <div class="hero-cta fade-in">
+          <a href="#apply" class="btn btn-primary">Apply as Seeker</a>
+          <a href="#streams" class="btn btn-ghost">Explore Streams</a>
+        </div>
+        <div class="hero-stats fade-in">
+          <div class="stat-item">
+            <span class="stat-num" data-target="6">0</span>
+            <span class="stat-label">Streams</span>
           </div>
-          <div class="col-lg-6">
-            <div class="hero-art-wrap reveal d2">
-              <div class="hero-blob" aria-hidden="true"></div>
-              <img
-                class="img-fluid hero-art"
-                src="img/header1.png"
-                alt="Joyful illustration of a young learner reading and discovering at Varbok"
-                width="600"
-                height="600"
-              />
-              <span class="hero-chip c1" aria-hidden="true"
-                ><i class="fas fa-star"></i
-              ></span>
-              <span class="hero-chip c2" aria-hidden="true"
-                ><i class="fas fa-palette"></i
-              ></span>
-              <span class="hero-chip c3" aria-hidden="true"
-                ><i class="fas fa-music"></i
-              ></span>
-            </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-num" data-target="2000" data-suffix="+">0</span>
+            <span class="stat-label">Applicants</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-num" data-target="0">0</span>
+            <span class="stat-label">Degrees Sold</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-num stat-infinity">&infin;</span>
+            <span class="stat-label">Potential</span>
           </div>
         </div>
       </div>
-    </header>
+      <a href="#problem" class="scroll-indicator" aria-label="Scroll down">
+        <div class="scroll-arrow"></div>
+      </a>
+    </section>
 
-    <!-- Stats -->
-    <section class="section py-0" style="margin-top: -1.5rem;">
+    <!-- THE PROBLEM -->
+    <section class="problem" id="problem">
       <div class="container">
-        <div
-          class="row text-center bg-soft section-rounded reveal"
-          style="padding: 2.6rem 1rem; box-shadow: var(--shadow-sm);"
-        >
-          <div class="col-6 col-lg-3 mb-4 mb-lg-0 stat">
-            <div class="num"><span class="count" data-target="12">12</span><span class="plus">+</span></div>
-            <div class="label">Years of joyful learning</div>
+        <div class="problem-header fade-in">
+          <h2 class="section-title">The university is broken.</h2>
+          <p class="section-sub">
+            Four years. $200,000. A degree that graduates you into a world that moved on while you studied.
+            Employers don't trust it. Skills are already obsolete. The system was designed for a different century.
+          </p>
+        </div>
+        <div class="problem-stats">
+          <div class="problem-stat-card glass-card fade-in">
+            <span class="problem-num">43%</span>
+            <p class="problem-stat-label">of graduates work outside their field</p>
+            <span class="problem-source">— Gallup Research</span>
           </div>
-          <div class="col-6 col-lg-3 mb-4 mb-lg-0 stat">
-            <div class="num"><span class="count" data-target="500">500</span><span class="plus">+</span></div>
-            <div class="label">Happy families</div>
+          <div class="problem-stat-card glass-card fade-in">
+            <span class="problem-num">18 months</span>
+            <p class="problem-stat-label">curriculum lag behind the industry</p>
+            <span class="problem-source">— World Economic Forum</span>
           </div>
-          <div class="col-6 col-lg-3 stat">
-            <div class="num"><span class="count" data-target="25">25</span><span class="plus">+</span></div>
-            <div class="label">Caring educators</div>
+          <div class="problem-stat-card glass-card fade-in">
+            <span class="problem-num">$1.7T</span>
+            <p class="problem-stat-label">student loan debt outstanding</p>
+            <span class="problem-source">— Federal Reserve</span>
           </div>
-          <div class="col-6 col-lg-3 stat">
-            <div class="num"><span class="count" data-target="15">15</span><span class="plus">+</span></div>
-            <div class="label">Activities each week</div>
+        </div>
+        <p class="problem-close fade-in">We built something different.</p>
+      </div>
+    </section>
+
+    <!-- PROOF OF LEARNING -->
+    <section class="how-it-works" id="how-it-works">
+      <div class="container">
+        <div class="section-header fade-in">
+          <div class="section-eyebrow">The Method</div>
+          <h2 class="section-title">Proof-of-Learning</h2>
+          <p class="section-sub">Not exams. Not grades. Real projects, live defense, on-chain verification.</p>
+        </div>
+        <div class="steps-flow">
+          <div class="step-card glass-card fade-in">
+            <div class="step-number">01</div>
+            <div class="step-icon">&#127919;</div>
+            <h3 class="step-title">Choose Your Stream</h3>
+            <p class="step-desc">Browse six frontier streams. Pick what calls to you. No prerequisites — just proof you can build.</p>
+          </div>
+          <div class="step-arrow fade-in">&#8594;</div>
+          <div class="step-card glass-card fade-in">
+            <div class="step-number">02</div>
+            <div class="step-icon">&#128736;</div>
+            <h3 class="step-title">Build Real Projects</h3>
+            <p class="step-desc">Every module ends in a deployed artifact — code, models, experiments, protocols. No busywork.</p>
+          </div>
+          <div class="step-arrow fade-in">&#8594;</div>
+          <div class="step-card glass-card fade-in">
+            <div class="step-number">03</div>
+            <div class="step-icon">&#129504;</div>
+            <h3 class="step-title">AI + Peer Defense</h3>
+            <p class="step-desc">Live AI assessment probes your decisions. Two peer validators and a domain expert sign off. No shortcuts.</p>
+          </div>
+          <div class="step-arrow fade-in">&#8594;</div>
+          <div class="step-card glass-card fade-in">
+            <div class="step-number">04</div>
+            <div class="step-icon">&#128279;</div>
+            <h3 class="step-title">On-Chain Credential</h3>
+            <p class="step-desc">Your Varbok Skill Token (VBKS) is minted. Soulbound. Permanent. Query-able by any employer, forever.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Facilities -->
-    <section class="section">
+    <!-- STREAMS -->
+    <section class="streams" id="streams">
       <div class="container">
-        <div class="section-head text-center mx-auto mb-5 reveal">
-          <span class="eyebrow justify-content-center">Everything under one roof</span>
-          <h2>A joyful world built around your child</h2>
-          <p>
-            Thoughtfully designed spaces and gentle care that help little ones
-            feel safe, seen and excited to learn every single day.
-          </p>
+        <div class="section-header fade-in">
+          <div class="section-eyebrow">Curriculum</div>
+          <h2 class="section-title">6 Futuristic Streams</h2>
+          <p class="section-sub">Skills that matter in 2030 and beyond.</p>
         </div>
-        <div class="row">
-          <div class="col-lg-4 col-md-6 pb-1 reveal">
-            <div class="facility d-flex">
-              <span class="icon-chip chip-teal">
-                <i class="flaticon-050-fence" aria-hidden="true"></i>
-              </span>
-              <div class="pl-4">
-                <h3 class="h4">Safe Outdoor Play</h3>
-                <p class="m-0">
-                  Fenced, soft-surface play gardens with age-appropriate climbers
-                  and swings, where children build strength, balance and
-                  confidence under the watchful eye of trained caregivers.
-                </p>
+        <div class="streams-grid">
+
+          <!-- Stream 1: AI Infrastructure -->
+          <article class="stream-card glass-card fade-in" style="--stream-color:#00d4ff;">
+            <div class="stream-img-wrap">
+              <img src="https://picsum.photos/seed/stream-ai/400/200" alt="AI Infrastructure" loading="lazy" />
+              <div class="stream-img-overlay"></div>
+            </div>
+            <div class="stream-body">
+              <div class="stream-top">
+                <span class="stream-icon">&#9889;</span>
+                <div class="stream-badges">
+                  <span class="badge badge-level">Advanced</span>
+                  <span class="badge badge-weeks">16 weeks</span>
+                </div>
+              </div>
+              <h3 class="stream-name">AI Infrastructure Engineering</h3>
+              <p class="stream-tagline">&ldquo;AI is the new electricity. Learn to wire it.&rdquo;</p>
+              <p class="stream-desc">Design and deploy production-grade AI systems — from LLM architecture to edge deployment at scale.</p>
+              <div class="stream-modules">
+                <span class="module-tag">LLM Architecture</span>
+                <span class="module-tag">Agent Systems</span>
+                <span class="module-tag">AI Ops</span>
+                <span class="module-tag">Evaluation Eng.</span>
+                <span class="module-tag">Fine-tuning</span>
+                <span class="module-tag">Edge AI</span>
+              </div>
+              <div class="stream-footer">
+                <span class="vbk-reward">&#9670; 500 VBK</span>
+                <a href="#apply" class="stream-link">View Curriculum &#8599;</a>
               </div>
             </div>
-          </div>
-          <div class="col-lg-4 col-md-6 pb-1 reveal d1">
-            <div class="facility d-flex">
-              <span class="icon-chip chip-coral">
-                <i class="flaticon-022-drum" aria-hidden="true"></i>
-              </span>
-              <div class="pl-4">
-                <h3 class="h4">Music &amp; Movement</h3>
-                <p class="m-0">
-                  Daily rhythm circles with drums, shakers and song help little
-                  ones develop language, coordination and self-expression,
-                  turning every morning into a joyful celebration of sound.
-                </p>
+          </article>
+
+          <!-- Stream 2: Biocomputing -->
+          <article class="stream-card glass-card fade-in" style="--stream-color:#10b981;">
+            <div class="stream-img-wrap">
+              <img src="https://picsum.photos/seed/stream-bio/400/200" alt="Biocomputing" loading="lazy" />
+              <div class="stream-img-overlay"></div>
+            </div>
+            <div class="stream-body">
+              <div class="stream-top">
+                <span class="stream-icon">&#129516;</span>
+                <div class="stream-badges">
+                  <span class="badge badge-level">Expert</span>
+                  <span class="badge badge-weeks">20 weeks</span>
+                </div>
+              </div>
+              <h3 class="stream-name">Biocomputing and Synthetic Biology</h3>
+              <p class="stream-tagline">&ldquo;Programming life itself.&rdquo;</p>
+              <p class="stream-desc">Merge computer science with molecular biology. Design biological circuits, model proteins, build lab-on-chip systems.</p>
+              <div class="stream-modules">
+                <span class="module-tag">DNA Computing</span>
+                <span class="module-tag">CRISPR Systems</span>
+                <span class="module-tag">Bioinformatics</span>
+                <span class="module-tag">Lab-on-Chip</span>
+                <span class="module-tag">Protein Folding</span>
+                <span class="module-tag">Bio-Digital</span>
+              </div>
+              <div class="stream-footer">
+                <span class="vbk-reward">&#9670; 650 VBK</span>
+                <a href="#apply" class="stream-link">View Curriculum &#8599;</a>
               </div>
             </div>
-          </div>
-          <div class="col-lg-4 col-md-6 pb-1 reveal d2">
-            <div class="facility d-flex">
-              <span class="icon-chip chip-amber">
-                <i class="flaticon-030-crayons" aria-hidden="true"></i>
-              </span>
-              <div class="pl-4">
-                <h3 class="h4">Arts &amp; Crafts Studio</h3>
-                <p class="m-0">
-                  A colourful, mess-friendly studio where children paint, mould
-                  and create freely, strengthening fine-motor skills, imagination
-                  and the quiet pride of making something with their own hands.
-                </p>
+          </article>
+
+          <!-- Stream 3: Climate -->
+          <article class="stream-card glass-card fade-in" style="--stream-color:#10b981;">
+            <div class="stream-img-wrap">
+              <img src="https://picsum.photos/seed/stream-climate/400/200" alt="Climate Systems" loading="lazy" />
+              <div class="stream-img-overlay"></div>
+            </div>
+            <div class="stream-body">
+              <div class="stream-top">
+                <span class="stream-icon">&#127758;</span>
+                <div class="stream-badges">
+                  <span class="badge badge-level">Advanced</span>
+                  <span class="badge badge-weeks">18 weeks</span>
+                </div>
+              </div>
+              <h3 class="stream-name">Climate Systems Engineering</h3>
+              <p class="stream-tagline">&ldquo;Terraforming Earth before we need to terraform Mars.&rdquo;</p>
+              <p class="stream-desc">Engineer real solutions: carbon capture, grid optimization, ocean systems, and the circular economy of tomorrow.</p>
+              <div class="stream-modules">
+                <span class="module-tag">Carbon Capture</span>
+                <span class="module-tag">Grid Optimization</span>
+                <span class="module-tag">Climate Modeling</span>
+                <span class="module-tag">Ocean Engineering</span>
+                <span class="module-tag">Circular Economy</span>
+                <span class="module-tag">Carbon Markets</span>
+              </div>
+              <div class="stream-footer">
+                <span class="vbk-reward">&#9670; 580 VBK</span>
+                <a href="#apply" class="stream-link">View Curriculum &#8599;</a>
               </div>
             </div>
-          </div>
-          <div class="col-lg-4 col-md-6 pb-1 reveal">
-            <div class="facility d-flex">
-              <span class="icon-chip chip-violet">
-                <i class="flaticon-017-toy-car" aria-hidden="true"></i>
-              </span>
-              <div class="pl-4">
-                <h3 class="h4">Safe Transport</h3>
-                <p class="m-0">
-                  GPS-tracked, attendant-supervised vans with trained drivers
-                  ferry children door to door, giving busy parents complete peace
-                  of mind on every single journey to and from Varbok.
-                </p>
+          </article>
+
+          <!-- Stream 4: On-Chain Protocol -->
+          <article class="stream-card glass-card fade-in" style="--stream-color:#7c3aed;">
+            <div class="stream-img-wrap">
+              <img src="https://picsum.photos/seed/stream-defi/400/200" alt="On-Chain Protocol" loading="lazy" />
+              <div class="stream-img-overlay"></div>
+            </div>
+            <div class="stream-body">
+              <div class="stream-top">
+                <span class="stream-icon">&#128279;</span>
+                <div class="stream-badges">
+                  <span class="badge badge-level">Advanced</span>
+                  <span class="badge badge-weeks">16 weeks</span>
+                </div>
+              </div>
+              <h3 class="stream-name">On-Chain Protocol Design</h3>
+              <p class="stream-tagline">&ldquo;Build the financial internet.&rdquo;</p>
+              <p class="stream-desc">Design, audit, and deploy next-generation protocols — from ZK proof systems to DAO governance frameworks.</p>
+              <div class="stream-modules">
+                <span class="module-tag">Smart Contracts</span>
+                <span class="module-tag">Tokenomics</span>
+                <span class="module-tag">ZK Proofs</span>
+                <span class="module-tag">DeFi Protocols</span>
+                <span class="module-tag">DAO Governance</span>
+                <span class="module-tag">Cross-Chain</span>
+              </div>
+              <div class="stream-footer">
+                <span class="vbk-reward">&#9670; 520 VBK</span>
+                <a href="#apply" class="stream-link">View Curriculum &#8599;</a>
               </div>
             </div>
-          </div>
-          <div class="col-lg-4 col-md-6 pb-1 reveal d1">
-            <div class="facility d-flex">
-              <span class="icon-chip chip-leaf">
-                <i class="flaticon-025-sandwich" aria-hidden="true"></i>
-              </span>
-              <div class="pl-4">
-                <h3 class="h4">Healthy Meals</h3>
-                <p class="m-0">
-                  Freshly cooked, home-style vegetarian meals and snacks, planned
-                  by a nutritionist, nourish growing bodies while gently teaching
-                  children healthy eating habits and happy mealtime manners.
-                </p>
+          </article>
+
+          <!-- Stream 5: Space -->
+          <article class="stream-card glass-card fade-in" style="--stream-color:#00d4ff;">
+            <div class="stream-img-wrap">
+              <img src="https://picsum.photos/seed/stream-space/400/200" alt="Space Operations" loading="lazy" />
+              <div class="stream-img-overlay"></div>
+            </div>
+            <div class="stream-body">
+              <div class="stream-top">
+                <span class="stream-icon">&#128640;</span>
+                <div class="stream-badges">
+                  <span class="badge badge-level">Expert</span>
+                  <span class="badge badge-weeks">22 weeks</span>
+                </div>
+              </div>
+              <h3 class="stream-name">Space Operations and In-Orbit Systems</h3>
+              <p class="stream-tagline">&ldquo;Beyond Earth is not a metaphor.&rdquo;</p>
+              <p class="stream-desc">Master orbital mechanics, design life support systems, and learn the legal and engineering frontier of space industrialization.</p>
+              <div class="stream-modules">
+                <span class="module-tag">Orbital Mechanics</span>
+                <span class="module-tag">Life Support</span>
+                <span class="module-tag">In-Orbit Mfg.</span>
+                <span class="module-tag">Space Comms</span>
+                <span class="module-tag">Space Law</span>
+                <span class="module-tag">Planetary Resources</span>
+              </div>
+              <div class="stream-footer">
+                <span class="vbk-reward">&#9670; 800 VBK</span>
+                <a href="#apply" class="stream-link">View Curriculum &#8599;</a>
               </div>
             </div>
-          </div>
-          <div class="col-lg-4 col-md-6 pb-1 reveal d2">
-            <div class="facility d-flex">
-              <span class="icon-chip chip-coral">
-                <i class="flaticon-047-backpack" aria-hidden="true"></i>
-              </span>
-              <div class="pl-4">
-                <h3 class="h4">Learning Trips</h3>
-                <p class="m-0">
-                  Guided outings to farms, parks and bakeries bring lessons to
-                  life, letting children explore the real world, build vocabulary
-                  and discover wonder far beyond the classroom walls.
-                </p>
+          </article>
+
+          <!-- Stream 6: Neuro-Interface -->
+          <article class="stream-card glass-card fade-in" style="--stream-color:#7c3aed;">
+            <div class="stream-img-wrap">
+              <img src="https://picsum.photos/seed/stream-neuro/400/200" alt="Neuro-Interface" loading="lazy" />
+              <div class="stream-img-overlay"></div>
+            </div>
+            <div class="stream-body">
+              <div class="stream-top">
+                <span class="stream-icon">&#129504;</span>
+                <div class="stream-badges">
+                  <span class="badge badge-level">Expert</span>
+                  <span class="badge badge-weeks">18 weeks</span>
+                </div>
+              </div>
+              <h3 class="stream-name">Neuro-Interface Engineering</h3>
+              <p class="stream-tagline">&ldquo;The boundary between mind and machine is dissolving.&rdquo;</p>
+              <p class="stream-desc">Engineer brain-computer interfaces, decode neural signals, and wrestle with the ethics of cognitive augmentation.</p>
+              <div class="stream-modules">
+                <span class="module-tag">Neural Signal Processing</span>
+                <span class="module-tag">BCI Hardware</span>
+                <span class="module-tag">Cognitive Enhancement</span>
+                <span class="module-tag">Haptics</span>
+                <span class="module-tag">Ethics of Augmentation</span>
+                <span class="module-tag">Clinical BCI</span>
+              </div>
+              <div class="stream-footer">
+                <span class="vbk-reward">&#9670; 720 VBK</span>
+                <a href="#apply" class="stream-link">View Curriculum &#8599;</a>
               </div>
             </div>
-          </div>
+          </article>
+
         </div>
       </div>
     </section>
 
-    <!-- About -->
-    <div class="container-fluid py-5">
+    <!-- VBK COIN -->
+    <section class="vbk" id="vbk">
       <div class="container">
-        <div class="row align-items-center reveal">
-          <div class="col-lg-5">
-            <img
-              class="img-fluid rounded-xl mb-5 mb-lg-0"
-              src="img/about-1.jpg"
-              alt="A Varbok caregiver reading a storybook to attentive young children"
-              loading="lazy"
-            />
-          </div>
-          <div class="col-lg-7">
-            <p class="section-title pr-5">
-              <span class="pr-2">Learn About Us</span>
-            </p>
-            <h2 class="mb-4">A second home where childhood comes first</h2>
-            <p>
-              Varbok began in 2014 in a sunlit Bengaluru bungalow, founded by
-              three Indian educators who believed childhood should be felt before
-              it is measured. After years inside rigid classrooms, they dreamed
-              of a place where children could climb, paint, sing and ask a
-              hundred questions without ever being told to sit still and stay
-              quiet.
-            </p>
-            <div class="row pt-2 pb-4">
-              <div class="col-6 col-md-4">
-                <img
-                  class="img-fluid rounded-xl"
-                  src="img/about-2.jpg"
-                  alt="Toddlers exploring colourful learning toys at Varbok"
-                  loading="lazy"
-                />
-              </div>
-              <div class="col-6 col-md-8">
-                <ul class="list-inline m-0">
-                  <li class="py-2 border-top border-bottom">
-                    <i class="fa fa-check text-primary mr-3"></i>Play-based
-                    learning that sparks curiosity
-                  </li>
-                  <li class="py-2 border-bottom">
-                    <i class="fa fa-check text-primary mr-3"></i>CCTV-monitored,
-                    fully fenced campuses
-                  </li>
-                  <li class="py-2 border-bottom">
-                    <i class="fa fa-check text-primary mr-3"></i>Trained, caring
-                    teachers who know every child
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <a href="about.html" class="btn btn-primary mt-2 py-2 px-4">Learn More</a>
-          </div>
+        <div class="section-header fade-in">
+          <div class="section-eyebrow">Token Economy</div>
+          <h2 class="section-title">Varbok Coin <span class="vbk-ticker">(VBK)</span></h2>
+          <p class="section-sub">A currency for a university built on proof, not prestige.</p>
         </div>
-      </div>
-    </div>
-
-    <!-- Classes -->
-    <div class="container-fluid section bg-soft">
-      <div class="container">
-        <div class="section-head text-center mx-auto pb-2 reveal">
-          <span class="eyebrow justify-content-center">Popular programmes</span>
-          <h2 class="mb-2">Programmes for every little stage</h2>
-          <p>
-            Small groups and big hearts — a nurturing path from first steps to
-            school-ready, designed around how young children truly learn.
-          </p>
-        </div>
-        <div class="row reveal">
-          <div class="col-lg-4 mb-5">
-            <div class="card card-hover border-0 bg-light shadow-sm pb-2">
-              <img
-                class="card-img-top mb-2"
-                src="img/class-1.jpg"
-                alt="Toddlers enjoying sensory play in the Little Explorers Playgroup"
-                loading="lazy"
-              />
-              <div class="card-body text-center">
-                <h3 class="card-title h4">Little Explorers Playgroup</h3>
-                <p class="card-text">
-                  A gentle first step away from home, filled with sensory play,
-                  songs and cuddles. Tiny ones build comfort, curiosity and their
-                  very first friendships.
-                </p>
-              </div>
-              <div class="card-footer bg-transparent py-4 px-5">
-                <div class="row border-bottom">
-                  <div class="col-6 py-1 text-right border-right">
-                    <strong>Age Group</strong>
-                  </div>
-                  <div class="col-6 py-1">1.5 - 2.5 years</div>
-                </div>
-                <div class="row border-bottom">
-                  <div class="col-6 py-1 text-right border-right">
-                    <strong>Total Seats</strong>
-                  </div>
-                  <div class="col-6 py-1">12 seats</div>
-                </div>
-                <div class="row border-bottom">
-                  <div class="col-6 py-1 text-right border-right">
-                    <strong>Class Time</strong>
-                  </div>
-                  <div class="col-6 py-1">9:00 AM - 11:30 AM</div>
-                </div>
-                <div class="row">
-                  <div class="col-6 py-1 text-right border-right">
-                    <strong>Tuition Fee</strong>
-                  </div>
-                  <div class="col-6 py-1">&#8377;6,500 / month</div>
-                </div>
-              </div>
-              <a href="#book-a-seat" class="btn btn-primary btn-cta px-4 mx-auto mb-4">Join Now</a>
+        <div class="vbk-split">
+          <div class="vbk-col glass-card fade-in">
+            <div class="vbk-col-header">
+              <span class="vbk-col-icon">&#11014;</span>
+              <h3 class="vbk-col-title">Earn VBK</h3>
             </div>
-          </div>
-          <div class="col-lg-4 mb-5">
-            <div class="card card-hover border-0 bg-light shadow-sm pb-2">
-              <img
-                class="card-img-top mb-2"
-                src="img/class-2.jpg"
-                alt="Children sharing stories and pretend play in the Curious Buds Nursery"
-                loading="lazy"
-              />
-              <div class="card-body text-center">
-                <h3 class="card-title h4">Curious Buds Nursery</h3>
-                <p class="card-text">
-                  Storytelling, art and pretend play spark language, sharing and
-                  imagination. Children grow more independent while learning
-                  routines, colours, numbers and the joy of discovery.
-                </p>
-              </div>
-              <div class="card-footer bg-transparent py-4 px-5">
-                <div class="row border-bottom">
-                  <div class="col-6 py-1 text-right border-right">
-                    <strong>Age Group</strong>
-                  </div>
-                  <div class="col-6 py-1">2.5 - 3.5 years</div>
+            <ul class="vbk-list">
+              <li class="vbk-list-item">
+                <span class="vbk-bullet">&#9670;</span>
+                <div>
+                  <strong>Complete Projects</strong>
+                  <p>Every passed module and stream completion earns VBK proportional to difficulty.</p>
                 </div>
-                <div class="row border-bottom">
-                  <div class="col-6 py-1 text-right border-right">
-                    <strong>Total Seats</strong>
-                  </div>
-                  <div class="col-6 py-1">16 seats</div>
-                </div>
-                <div class="row border-bottom">
-                  <div class="col-6 py-1 text-right border-right">
-                    <strong>Class Time</strong>
-                  </div>
-                  <div class="col-6 py-1">9:00 AM - 12:30 PM</div>
-                </div>
-                <div class="row">
-                  <div class="col-6 py-1 text-right border-right">
-                    <strong>Tuition Fee</strong>
-                  </div>
-                  <div class="col-6 py-1">&#8377;8,000 / month</div>
-                </div>
-              </div>
-              <a href="#book-a-seat" class="btn btn-primary btn-cta px-4 mx-auto mb-4">Join Now</a>
-            </div>
-          </div>
-          <div class="col-lg-4 mb-5">
-            <div class="card card-hover border-0 bg-light shadow-sm pb-2">
-              <img
-                class="card-img-top mb-2"
-                src="img/class-3.jpg"
-                alt="Kindergarten children working on hands-on learning projects"
-                loading="lazy"
-              />
-              <div class="card-body text-center">
-                <h3 class="card-title h4">Bright Minds Kindergarten</h3>
-                <p class="card-text">
-                  Phonics, early numbers and hands-on projects prepare confident,
-                  school-ready learners. Through guided play, children build
-                  reading, writing and thinking skills at their own happy pace.
-                </p>
-              </div>
-              <div class="card-footer bg-transparent py-4 px-5">
-                <div class="row border-bottom">
-                  <div class="col-6 py-1 text-right border-right">
-                    <strong>Age Group</strong>
-                  </div>
-                  <div class="col-6 py-1">3.5 - 5 years</div>
-                </div>
-                <div class="row border-bottom">
-                  <div class="col-6 py-1 text-right border-right">
-                    <strong>Total Seats</strong>
-                  </div>
-                  <div class="col-6 py-1">20 seats</div>
-                </div>
-                <div class="row border-bottom">
-                  <div class="col-6 py-1 text-right border-right">
-                    <strong>Class Time</strong>
-                  </div>
-                  <div class="col-6 py-1">9:00 AM - 1:30 PM</div>
-                </div>
-                <div class="row">
-                  <div class="col-6 py-1 text-right border-right">
-                    <strong>Tuition Fee</strong>
-                  </div>
-                  <div class="col-6 py-1">&#8377;9,500 / month</div>
-                </div>
-              </div>
-              <a href="#book-a-seat" class="btn btn-primary btn-cta px-4 mx-auto mb-4">Join Now</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Book A Seat -->
-    <div class="container-fluid py-5" id="book-a-seat">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-7 mb-5 mb-lg-0">
-            <p class="section-title pr-5">
-              <span class="pr-2">Book A Seat</span>
-            </p>
-            <h2 class="mb-4">Book a seat for your little one</h2>
-            <p>
-              Ready to give your child a joyful, play-filled start? Share a few
-              details and our team will reach out to arrange a warm campus visit,
-              answer your questions and guide you through our simple,
-              paperwork-light enrolment process.
-            </p>
-            <ul class="list-inline m-0">
-              <li class="py-2">
-                <i class="fa fa-check text-success mr-3"></i>A friendly campus
-                tour with your child
               </li>
-              <li class="py-2">
-                <i class="fa fa-check text-success mr-3"></i>Quick, stress-free
-                enrolment guidance
+              <li class="vbk-list-item">
+                <span class="vbk-bullet">&#9670;</span>
+                <div>
+                  <strong>Contribute Courses</strong>
+                  <p>Publish curriculum modules that pass peer review and earn ongoing rewards.</p>
+                </div>
               </li>
-              <li class="py-2">
-                <i class="fa fa-check text-success mr-3"></i>Honest answers on
-                fees, timings and safety
+              <li class="vbk-list-item">
+                <span class="vbk-bullet">&#9670;</span>
+                <div>
+                  <strong>Mentor Peers</strong>
+                  <p>Verified mentors earn VBK for each Seeker who reaches stream completion.</p>
+                </div>
+              </li>
+              <li class="vbk-list-item">
+                <span class="vbk-bullet">&#9670;</span>
+                <div>
+                  <strong>Vouch for Graduates</strong>
+                  <p>Stake your reputation on someone's ability. If they deliver, you both earn.</p>
+                </div>
               </li>
             </ul>
           </div>
-          <div class="col-lg-5">
-            <div class="card border-0">
-              <div class="card-header bg-secondary text-center p-4">
-                <h3 class="text-white m-0">Book A Seat</h3>
-              </div>
-              <div class="card-body rounded-bottom bg-primary p-5">
-                <form
-                  data-formspree
-                  action="https://formspree.io/f/YOUR_FORM_ID"
-                  method="post"
-                >
-                  <div class="form-group">
-                    <label for="booking-name" class="text-white">Your Name</label>
-                    <input
-                      type="text"
-                      id="booking-name"
-                      name="name"
-                      class="form-control border-0 p-4"
-                      placeholder="Your Name"
-                      required
-                    />
-                  </div>
-                  <div class="form-group">
-                    <label for="booking-email" class="text-white">Your Email</label>
-                    <input
-                      type="email"
-                      id="booking-email"
-                      name="email"
-                      class="form-control border-0 p-4"
-                      placeholder="Your Email"
-                      required
-                    />
-                  </div>
-                  <div class="form-group">
-                    <label for="booking-class" class="text-white">Select A Class</label>
-                    <select
-                      id="booking-class"
-                      name="class"
-                      class="custom-select border-0 px-4"
-                      style="height: 47px"
-                      required
-                    >
-                      <option value="" selected disabled>Select A Class</option>
-                      <option value="Little Explorers Playgroup">Little Explorers Playgroup</option>
-                      <option value="Curious Buds Nursery">Curious Buds Nursery</option>
-                      <option value="Bright Minds Kindergarten">Bright Minds Kindergarten</option>
-                    </select>
-                  </div>
-                  <div>
-                    <button
-                      class="btn btn-secondary btn-block border-0 py-3"
-                      type="submit"
-                    >
-                      Book Now
-                    </button>
-                  </div>
-                  <div class="form-status mt-3 text-white" role="status" aria-live="polite"></div>
-                </form>
-              </div>
+          <div class="vbk-col glass-card fade-in">
+            <div class="vbk-col-header">
+              <span class="vbk-col-icon spend">&#11015;</span>
+              <h3 class="vbk-col-title">Spend VBK</h3>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Team -->
-    <div class="container-fluid pt-5">
-      <div class="container">
-        <div class="text-center pb-2">
-          <p class="section-title px-5">
-            <span class="px-2">Our Teachers</span>
-          </p>
-          <h2 class="mb-4">Meet the people behind the smiles</h2>
-        </div>
-        <div class="row">
-          <div class="col-md-6 col-lg-3 text-center team mb-5">
-            <div class="card-hover h-100 p-3 rounded">
-            <div
-              class="position-relative overflow-hidden mb-4"
-              style="border-radius: 100%"
-            >
-              <img
-                class="img-fluid w-100"
-                src="img/team-1.jpg"
-                alt="Portrait of Ananya Krishnan, Founder and Lead Educator at Varbok"
-                loading="lazy"
-              />
-              <div
-                class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute"
-              >
-                <a
-                  class="coming-soon btn btn-outline-light text-center mr-2 px-0"
-                  style="width: 38px; height: 38px"
-                  href="#"
-                  role="button"
-                  aria-label="Twitter (coming soon)"
-                  title="Coming soon"
-                  ><i class="fab fa-twitter"></i
-                ></a>
-                <a
-                  class="coming-soon btn btn-outline-light text-center mr-2 px-0"
-                  style="width: 38px; height: 38px"
-                  href="#"
-                  role="button"
-                  aria-label="Facebook (coming soon)"
-                  title="Coming soon"
-                  ><i class="fab fa-facebook-f"></i
-                ></a>
-                <a
-                  class="coming-soon btn btn-outline-light text-center px-0"
-                  style="width: 38px; height: 38px"
-                  href="#"
-                  role="button"
-                  aria-label="LinkedIn (coming soon)"
-                  title="Coming soon"
-                  ><i class="fab fa-linkedin-in"></i
-                ></a>
-              </div>
-            </div>
-            <h3 class="h4">Ananya Krishnan</h3>
-            <i>Founder &amp; Lead Educator</i>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3 text-center team mb-5">
-            <div class="card-hover h-100 p-3 rounded">
-            <div
-              class="position-relative overflow-hidden mb-4"
-              style="border-radius: 100%"
-            >
-              <img
-                class="img-fluid w-100"
-                src="img/team-2.jpg"
-                alt="Portrait of Rohan Mehta, Co-Founder and Curriculum Head at Varbok"
-                loading="lazy"
-              />
-              <div
-                class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute"
-              >
-                <a
-                  class="coming-soon btn btn-outline-light text-center mr-2 px-0"
-                  style="width: 38px; height: 38px"
-                  href="#"
-                  role="button"
-                  aria-label="Twitter (coming soon)"
-                  title="Coming soon"
-                  ><i class="fab fa-twitter"></i
-                ></a>
-                <a
-                  class="coming-soon btn btn-outline-light text-center mr-2 px-0"
-                  style="width: 38px; height: 38px"
-                  href="#"
-                  role="button"
-                  aria-label="Facebook (coming soon)"
-                  title="Coming soon"
-                  ><i class="fab fa-facebook-f"></i
-                ></a>
-                <a
-                  class="coming-soon btn btn-outline-light text-center px-0"
-                  style="width: 38px; height: 38px"
-                  href="#"
-                  role="button"
-                  aria-label="LinkedIn (coming soon)"
-                  title="Coming soon"
-                  ><i class="fab fa-linkedin-in"></i
-                ></a>
-              </div>
-            </div>
-            <h3 class="h4">Rohan Mehta</h3>
-            <i>Co-Founder &amp; Curriculum Head</i>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3 text-center team mb-5">
-            <div class="card-hover h-100 p-3 rounded">
-            <div
-              class="position-relative overflow-hidden mb-4"
-              style="border-radius: 100%"
-            >
-              <img
-                class="img-fluid w-100"
-                src="img/team-3.jpg"
-                alt="Portrait of Priya Nair, Kindergarten Coordinator at Varbok"
-                loading="lazy"
-              />
-              <div
-                class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute"
-              >
-                <a
-                  class="coming-soon btn btn-outline-light text-center mr-2 px-0"
-                  style="width: 38px; height: 38px"
-                  href="#"
-                  role="button"
-                  aria-label="Twitter (coming soon)"
-                  title="Coming soon"
-                  ><i class="fab fa-twitter"></i
-                ></a>
-                <a
-                  class="coming-soon btn btn-outline-light text-center mr-2 px-0"
-                  style="width: 38px; height: 38px"
-                  href="#"
-                  role="button"
-                  aria-label="Facebook (coming soon)"
-                  title="Coming soon"
-                  ><i class="fab fa-facebook-f"></i
-                ></a>
-                <a
-                  class="coming-soon btn btn-outline-light text-center px-0"
-                  style="width: 38px; height: 38px"
-                  href="#"
-                  role="button"
-                  aria-label="LinkedIn (coming soon)"
-                  title="Coming soon"
-                  ><i class="fab fa-linkedin-in"></i
-                ></a>
-              </div>
-            </div>
-            <h3 class="h4">Priya Nair</h3>
-            <i>Kindergarten Coordinator</i>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3 text-center team mb-5">
-            <div class="card-hover h-100 p-3 rounded">
-            <div
-              class="position-relative overflow-hidden mb-4"
-              style="border-radius: 100%"
-            >
-              <img
-                class="img-fluid w-100"
-                src="img/team-4.jpg"
-                alt="Portrait of Aditya Sharma, Music and Movement Teacher at Varbok"
-                loading="lazy"
-              />
-              <div
-                class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute"
-              >
-                <a
-                  class="coming-soon btn btn-outline-light text-center mr-2 px-0"
-                  style="width: 38px; height: 38px"
-                  href="#"
-                  role="button"
-                  aria-label="Twitter (coming soon)"
-                  title="Coming soon"
-                  ><i class="fab fa-twitter"></i
-                ></a>
-                <a
-                  class="coming-soon btn btn-outline-light text-center mr-2 px-0"
-                  style="width: 38px; height: 38px"
-                  href="#"
-                  role="button"
-                  aria-label="Facebook (coming soon)"
-                  title="Coming soon"
-                  ><i class="fab fa-facebook-f"></i
-                ></a>
-                <a
-                  class="coming-soon btn btn-outline-light text-center px-0"
-                  style="width: 38px; height: 38px"
-                  href="#"
-                  role="button"
-                  aria-label="LinkedIn (coming soon)"
-                  title="Coming soon"
-                  ><i class="fab fa-linkedin-in"></i
-                ></a>
-              </div>
-            </div>
-            <h3 class="h4">Aditya Sharma</h3>
-            <i>Music &amp; Movement Teacher</i>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Testimonial -->
-    <div class="container-fluid py-5">
-      <div class="container p-0">
-        <div class="text-center pb-2">
-          <p class="section-title px-5">
-            <span class="px-2">Testimonial</span>
-          </p>
-          <h2 class="mb-4">What parents say about Varbok</h2>
-        </div>
-        <div
-          class="owl-carousel testimonial-carousel"
-          aria-label="Parent testimonials"
-          aria-roledescription="carousel"
-        >
-          <div class="testimonial-item px-3">
-            <div class="bg-light shadow-sm rounded mb-4 p-4">
-              <i class="fas fa-quote-left text-primary mr-3" aria-hidden="true"></i>
-              My daughter cried every morning at her old school. At Varbok, she
-              runs in smiling. The teachers truly know each child, and she has
-              blossomed into a confident, chatty little girl.
-            </div>
-            <div class="d-flex align-items-center">
-              <img
-                class="rounded-circle"
-                src="img/testimonial-1.jpg"
-                style="width: 70px; height: 70px"
-                alt="Deepika Rao, mother of a Varbok nursery child"
-                loading="lazy"
-                width="70"
-                height="70"
-              />
-              <div class="pl-3">
-                <h4 class="h5 mb-0">Deepika Rao</h4>
-                <i>Mother of Aarav, Nursery</i>
-              </div>
-            </div>
-          </div>
-          <div class="testimonial-item px-3">
-            <div class="bg-light shadow-sm rounded mb-4 p-4">
-              <i class="fas fa-quote-left text-primary mr-3" aria-hidden="true"></i>
-              What I love most is the safety and communication. Daily updates,
-              photos, CCTV access and warm teachers who genuinely care. As a
-              working father, Varbok gives me complete peace of mind every day.
-            </div>
-            <div class="d-flex align-items-center">
-              <img
-                class="rounded-circle"
-                src="img/testimonial-2.jpg"
-                style="width: 70px; height: 70px"
-                alt="Sandeep Kulkarni, father of a Varbok kindergarten child"
-                loading="lazy"
-                width="70"
-                height="70"
-              />
-              <div class="pl-3">
-                <h4 class="h5 mb-0">Sandeep Kulkarni</h4>
-                <i>Father of Anika, Kindergarten</i>
-              </div>
-            </div>
-          </div>
-          <div class="testimonial-item px-3">
-            <div class="bg-light shadow-sm rounded mb-4 p-4">
-              <i class="fas fa-quote-left text-primary mr-3" aria-hidden="true"></i>
-              Varbok is not just a school, it is a second family. My son learns
-              through play, eats his vegetables happily, and comes home singing
-              new songs. We could not have asked for more.
-            </div>
-            <div class="d-flex align-items-center">
-              <img
-                class="rounded-circle"
-                src="img/testimonial-3.jpg"
-                style="width: 70px; height: 70px"
-                alt="Fatima Sheikh, mother of a Varbok playgroup child"
-                loading="lazy"
-                width="70"
-                height="70"
-              />
-              <div class="pl-3">
-                <h4 class="h5 mb-0">Fatima Sheikh</h4>
-                <i>Mother of Zayan, Playgroup</i>
-              </div>
-            </div>
-          </div>
-          <div class="testimonial-item px-3">
-            <div class="bg-light shadow-sm rounded mb-4 p-4">
-              <i class="fas fa-quote-left text-primary mr-3" aria-hidden="true"></i>
-              The play-based approach is wonderful. My twins are curious,
-              independent and so excited to learn. The teachers are patient and
-              loving, treating every child as if they were their own.
-            </div>
-            <div class="d-flex align-items-center">
-              <img
-                class="rounded-circle"
-                src="img/testimonial-4.jpg"
-                style="width: 70px; height: 70px"
-                alt="Arjun Menon, father of Varbok kindergarten twins"
-                loading="lazy"
-                width="70"
-                height="70"
-              />
-              <div class="pl-3">
-                <h4 class="h5 mb-0">Arjun Menon</h4>
-                <i>Father of Ira and Vivaan, Kindergarten</i>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Blog -->
-    <div class="container-fluid pt-5">
-      <div class="container">
-        <div class="text-center pb-2">
-          <p class="section-title px-5">
-            <span class="px-2">Latest Blog</span>
-          </p>
-          <h2 class="mb-4">Stories &amp; tips from our classrooms</h2>
-        </div>
-        <div class="row pb-3">
-          <div class="col-lg-4 mb-4">
-            <div class="card card-hover border-0 shadow-sm mb-2">
-              <img
-                class="card-img-top mb-2"
-                src="img/blog-1.jpg"
-                alt="Young children building with wooden blocks during play-based learning"
-                loading="lazy"
-              />
-              <div class="card-body bg-light text-center p-4">
-                <h3 class="h4">
-                  Why Play Is Serious Learning for Young Children
-                  <span class="demo-badge">Demo</span>
-                </h3>
-                <div class="d-flex justify-content-center mb-3">
-                  <small class="mr-3"
-                    ><i class="fa fa-user text-primary"></i> Ananya Krishnan</small
-                  >
-                  <small class="mr-3"
-                    ><i class="fa fa-folder text-primary"></i> Learning</small
-                  >
-                  <small class="mr-3"
-                    ><i class="fa fa-comments text-primary"></i> 12</small
-                  >
+            <ul class="vbk-list">
+              <li class="vbk-list-item">
+                <span class="vbk-bullet spend">&#9670;</span>
+                <div>
+                  <strong>Unlock Advanced Streams</strong>
+                  <p>Stake VBK to access premium streams and specialist content before public release.</p>
                 </div>
-                <p>
-                  Children learn maths, language and empathy not from worksheets
-                  but through play. Here is why building blocks and pretend
-                  kitchens are powerful classrooms for growing little minds.
-                </p>
-                <a href="single.html" class="btn btn-primary px-4 mx-auto my-2"
-                  >Read More</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 mb-4">
-            <div class="card card-hover border-0 shadow-sm mb-2">
-              <img
-                class="card-img-top mb-2"
-                src="img/blog-2.jpg"
-                alt="A parent gently saying goodbye to a child on their first school day"
-                loading="lazy"
-              />
-              <div class="card-body bg-light text-center p-4">
-                <h3 class="h4">
-                  Easing the First-Day Tears: A Parent's Survival Guide
-                  <span class="demo-badge">Demo</span>
-                </h3>
-                <div class="d-flex justify-content-center mb-3">
-                  <small class="mr-3"
-                    ><i class="fa fa-user text-primary"></i> Kavya Pillai</small
-                  >
-                  <small class="mr-3"
-                    ><i class="fa fa-folder text-primary"></i> Parenting</small
-                  >
-                  <small class="mr-3"
-                    ><i class="fa fa-comments text-primary"></i> 9</small
-                  >
+              </li>
+              <li class="vbk-list-item">
+                <span class="vbk-bullet spend">&#9670;</span>
+                <div>
+                  <strong>Stake on Course Quality</strong>
+                  <p>Signal your belief in a curriculum module. High-staked modules get priority resources.</p>
                 </div>
-                <p>
-                  Starting school is big for tiny hearts. These gentle, practical
-                  tips help your child, and you, navigate those first goodbyes
-                  with more confidence and far fewer tears.
-                </p>
-                <a href="single.html" class="btn btn-primary px-4 mx-auto my-2"
-                  >Read More</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 mb-4">
-            <div class="card card-hover border-0 shadow-sm mb-2">
-              <img
-                class="card-img-top mb-2"
-                src="img/blog-3.jpg"
-                alt="A toddler and parent reading a picture book together at home"
-                loading="lazy"
-              />
-              <div class="card-body bg-light text-center p-4">
-                <h3 class="h4">
-                  Five Easy Ways to Build Your Child's Vocabulary at Home
-                  <span class="demo-badge">Demo</span>
-                </h3>
-                <div class="d-flex justify-content-center mb-3">
-                  <small class="mr-3"
-                    ><i class="fa fa-user text-primary"></i> Priya Nair</small
-                  >
-                  <small class="mr-3"
-                    ><i class="fa fa-folder text-primary"></i> Development</small
-                  >
-                  <small class="mr-3"
-                    ><i class="fa fa-comments text-primary"></i> 15</small
-                  >
+              </li>
+              <li class="vbk-list-item">
+                <span class="vbk-bullet spend">&#9670;</span>
+                <div>
+                  <strong>Governance Voting</strong>
+                  <p>Vote on new streams, assessment standards, and protocol upgrades that shape Varbok.</p>
                 </div>
-                <p>
-                  From narrating your day to bedtime stories, small daily habits
-                  dramatically grow your toddler's vocabulary. Discover simple,
-                  joyful activities that turn everyday moments into rich language
-                  learning.
-                </p>
-                <a href="single.html" class="btn btn-primary px-4 mx-auto my-2"
-                  >Read More</a
-                >
-              </div>
-            </div>
+              </li>
+              <li class="vbk-list-item">
+                <span class="vbk-bullet spend">&#9670;</span>
+                <div>
+                  <strong>Sponsor a Seeker</strong>
+                  <p>Fund talented learners from underserved regions and earn a share of their future contributions.</p>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
-      </div>
-    </div>
-
-    <!-- CTA band -->
-    <section class="section">
-      <div class="container">
-        <div class="cta-band text-center reveal">
-          <div
-            class="blob-deco"
-            style="width: 300px; height: 300px; top: -110px; left: -60px;"
-          ></div>
-          <div
-            class="blob-deco"
-            style="width: 240px; height: 240px; bottom: -110px; right: -40px;"
-          ></div>
-          <div class="position-relative">
-            <span class="eyebrow justify-content-center" style="color: #fff;"
-              >Come say hello</span
-            >
-            <h2 class="mb-3">Give your child a joyful place to grow</h2>
-            <p class="mb-4 mx-auto" style="max-width: 560px;">
-              Book a warm campus visit and feel the Varbok difference for
-              yourself. We would love to meet you and your little one.
-            </p>
-            <div
-              class="d-flex flex-wrap justify-content-center"
-              style="gap: 0.8rem;"
-            >
-              <a href="#book-a-seat" class="btn btn-light btn-lg">Book a visit</a>
-              <a href="contact.html" class="btn btn-outline-light btn-lg"
-                >Contact us</a
-              >
+        <div class="vbk-emission fade-in">
+          <span class="emission-icon">&#9889;</span>
+          Early learners earn the most. Emission decays over time like Bitcoin. The sooner you start, the higher the yield.
+        </div>
+        <div class="vbks-callout glass-card fade-in">
+          <div class="vbks-left">
+            <span class="vbks-badge">VBKS</span>
+            <h3 class="vbks-title">Varbok Skill Token (Soulbound)</h3>
+            <p class="vbks-desc">Separate from VBK. The VBKS is your Proof-of-Learning credential — minted at stream completion, permanently bound to your wallet. It cannot be bought, sold, or transferred. It is not an investment. It is simply proof that you can do the work.</p>
+          </div>
+          <div class="vbks-right">
+            <div class="vbks-prop">
+              <span class="vbks-prop-label">Transferable</span>
+              <span class="vbks-prop-val no">No</span>
+            </div>
+            <div class="vbks-prop">
+              <span class="vbks-prop-label">Purchasable</span>
+              <span class="vbks-prop-val no">No</span>
+            </div>
+            <div class="vbks-prop">
+              <span class="vbks-prop-label">Expires</span>
+              <span class="vbks-prop-val no">Never</span>
+            </div>
+            <div class="vbks-prop">
+              <span class="vbks-prop-label">On-Chain</span>
+              <span class="vbks-prop-val yes">Always</span>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Footer (injected from partials/footer.html) -->
-    <div data-include="partials/footer.html"></div>
+    <!-- FOR EMPLOYERS -->
+    <section class="employers" id="employers">
+      <div class="container">
+        <div class="section-header fade-in">
+          <div class="section-eyebrow">Partnerships</div>
+          <h2 class="section-title">For Employers</h2>
+          <p class="section-sub">The first talent pool where the portfolio IS the credential.</p>
+        </div>
+        <div class="employers-grid">
+          <div class="employer-card glass-card fade-in">
+            <div class="employer-icon">&#128270;</div>
+            <h3 class="employer-card-title">Talent Search</h3>
+            <p class="employer-card-desc">Query verified graduates on-chain by any skill combination. Filter by stream, project type, assessment score, and credential date. Hire based on what they built, not where they studied.</p>
+            <a href="#apply" class="employer-link">Learn more &#8599;</a>
+          </div>
+          <div class="employer-card glass-card fade-in">
+            <div class="employer-icon">&#128200;</div>
+            <h3 class="employer-card-title">Stream Sponsorship</h3>
+            <p class="employer-card-desc">Stake VBK to co-fund an entire stream. Get priority access to graduates, embed your real problems into curriculum projects, and shape the skills your future team builds.</p>
+            <a href="#apply" class="employer-link">Learn more &#8599;</a>
+          </div>
+          <div class="employer-card glass-card fade-in">
+            <div class="employer-icon">&#127919;</div>
+            <h3 class="employer-card-title">Live Bounties</h3>
+            <p class="employer-card-desc">Post real engineering challenges as curriculum projects. When a Seeker solves your problem, you get direct access to the person who did it — along with their full verified project record.</p>
+            <a href="#apply" class="employer-link">Learn more &#8599;</a>
+          </div>
+        </div>
+        <div class="employer-cta fade-in">
+          <a href="#apply" class="btn btn-primary">Partner with Varbok</a>
+        </div>
+      </div>
+    </section>
 
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-primary p-3 back-to-top" aria-label="Back to top"
-      ><i class="fa fa-angle-double-up"></i
-    ></a>
+    <!-- TESTIMONIALS -->
+    <section class="testimonials" id="testimonials">
+      <div class="container">
+        <div class="section-header fade-in">
+          <div class="section-eyebrow">Early Seekers</div>
+          <h2 class="section-title">Voices from the frontier.</h2>
+        </div>
+        <div class="testimonials-grid">
+          <div class="testimonial-card glass-card fade-in">
+            <div class="testimonial-quote">&#8220;</div>
+            <p class="testimonial-text">I've shipped models in production, but I never had a way to prove it that anyone could verify. My VBKS changed that. The first time a recruiter queried my credential on-chain, I got an offer before we finished the call.</p>
+            <div class="testimonial-author">
+              <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Arjun Mehta" class="testimonial-avatar" loading="lazy" />
+              <div class="testimonial-info">
+                <strong>Arjun Mehta</strong>
+                <span>AI Platform Engineer &mdash; Stream: AI Infrastructure</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card glass-card fade-in">
+            <div class="testimonial-quote">&#8220;</div>
+            <p class="testimonial-text">Academia moves in decades. Industry moves in quarters. Varbok moves in weeks. The Biocomputing curriculum covered things my PhD supervisor hadn't heard of. The live defense with the AI assessor was genuinely harder than my thesis viva.</p>
+            <div class="testimonial-author">
+              <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sara Chen" class="testimonial-avatar" loading="lazy" />
+              <div class="testimonial-info">
+                <strong>Sara Chen</strong>
+                <span>Synthetic Biology Researcher &mdash; Stream: Biocomputing</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card glass-card fade-in">
+            <div class="testimonial-quote">&#8220;</div>
+            <p class="testimonial-text">I've done every DeFi course on the internet. Nothing touched the On-Chain Protocol stream. The DAO governance module alone involved deploying a real governance system that two other protocols forked. That's a credential no exam can replicate.</p>
+            <div class="testimonial-author">
+              <img src="https://randomuser.me/api/portraits/men/76.jpg" alt="Kwame Asante" class="testimonial-avatar" loading="lazy" />
+              <div class="testimonial-info">
+                <strong>Kwame Asante</strong>
+                <span>Protocol Engineer &mdash; Stream: On-Chain Protocol Design</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="js/components.js"></script>
+    <!-- APPLY -->
+    <section class="apply" id="apply">
+      <div class="container">
+        <div class="apply-inner">
+          <div class="apply-header fade-in">
+            <div class="section-eyebrow">Ready?</div>
+            <h2 class="section-title">Apply as Seeker</h2>
+            <p class="section-sub">No wallet required. No VBK needed. Just curiosity.</p>
+          </div>
+          <form class="apply-form glass-card fade-in" id="apply-form" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="name">Full Name</label>
+                <input class="form-input" type="text" id="name" name="name" placeholder="Your name" required />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="email">Email Address</label>
+                <input class="form-input" type="email" id="email" name="email" placeholder="you@domain.com" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="stream">Choose Your Stream</label>
+              <select class="form-input form-select" id="stream" name="stream" required>
+                <option value="" disabled selected>Select a stream&hellip;</option>
+                <option value="ai">&#9889; AI Infrastructure Engineering</option>
+                <option value="bio">&#129516; Biocomputing and Synthetic Biology</option>
+                <option value="climate">&#127758; Climate Systems Engineering</option>
+                <option value="onchain">&#128279; On-Chain Protocol Design</option>
+                <option value="space">&#128640; Space Operations and In-Orbit Systems</option>
+                <option value="neuro">&#129504; Neuro-Interface Engineering</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="why">Why now?</label>
+              <textarea class="form-input form-textarea" id="why" name="why" placeholder="What's pulling you toward this? What have you already built or broken? What are you trying to solve?" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Begin Your Path</button>
+            <div class="form-success" id="form-success" aria-live="polite">
+              <span class="success-icon">&#10003;</span>
+              Application received. We review weekly. You'll hear from us soon.
+            </div>
+          </form>
+          <p class="apply-note fade-in">We review weekly. Cohorts form when 8&ndash;12 Seekers align on stream, pace, and intent.</p>
+        </div>
+      </div>
+    </section>
 
-    <!-- Contact Javascript File -->
-    <script src="mail/contact.js"></script>
+  </main>
 
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
-  </body>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#" class="footer-logo">VARBOK</a>
+          <p class="footer-tagline">Learn what doesn't exist yet.<br />Earn what can't be faked.</p>
+          <div class="footer-socials">
+            <a href="#" class="social-link" aria-label="Twitter">&#120143;</a>
+            <a href="#" class="social-link" aria-label="GitHub">&#9654;</a>
+            <a href="#" class="social-link" aria-label="Discord">&#9671;</a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <div class="footer-col">
+            <h4 class="footer-col-title">Streams</h4>
+            <a href="#streams" class="footer-link">AI Infrastructure</a>
+            <a href="#streams" class="footer-link">Biocomputing</a>
+            <a href="#streams" class="footer-link">Climate Systems</a>
+            <a href="#streams" class="footer-link">On-Chain Protocol</a>
+            <a href="#streams" class="footer-link">Space Operations</a>
+            <a href="#streams" class="footer-link">Neuro-Interface</a>
+          </div>
+          <div class="footer-col">
+            <h4 class="footer-col-title">Platform</h4>
+            <a href="#how-it-works" class="footer-link">Proof-of-Learning</a>
+            <a href="#vbk" class="footer-link">VBK Coin</a>
+            <a href="#vbk" class="footer-link">Soulbound Credentials</a>
+            <a href="#employers" class="footer-link">For Employers</a>
+            <a href="#apply" class="footer-link">Apply</a>
+          </div>
+          <div class="footer-col">
+            <h4 class="footer-col-title">Company</h4>
+            <a href="#" class="footer-link">About</a>
+            <a href="#" class="footer-link">Blog</a>
+            <a href="#" class="footer-link">Governance</a>
+            <a href="#" class="footer-link">Whitepaper</a>
+            <a href="#" class="footer-link">Contact</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-legal">Varbok credentials are on-chain skill proofs, not accredited academic degrees. VBK and VBKS are utility tokens, not securities. Participation in Varbok does not constitute enrollment in an accredited institution.</p>
+        <p class="footer-copy">&copy; 2026 Varbok. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
