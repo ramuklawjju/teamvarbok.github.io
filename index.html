@@ -1,665 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Varbok — Learn What Doesn't Exist Yet</title>
-  <meta name="description" content="Varbok is the first university where your credential is a Proof-of-Learning — verified on-chain, built on real projects, never purchased and never expired." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
+  <head>
+    <meta charset="utf-8" />
+    <title>Varbok | Play-Based Early Learning in Bengaluru</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta
+      content="Varbok is a warm, play-based early-childhood learning centre in Bengaluru, nurturing curious, confident and kind children through playgroup, nursery and kindergarten."
+      name="description"
+    />
 
-  <!-- NAV -->
-  <header class="nav" id="nav">
-    <div class="nav-inner">
-      <a href="#" class="nav-logo">VARBOK</a>
-      <nav class="nav-links" aria-label="Main navigation">
-        <a href="#streams" class="nav-link">Streams</a>
-        <a href="#how-it-works" class="nav-link">How It Works</a>
-        <a href="#employers" class="nav-link">Employers</a>
-        <a href="#apply" class="nav-link">Apply</a>
-      </nav>
-      <a href="#apply" class="btn btn-ghost btn-sm nav-cta">Apply as Seeker</a>
-      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </header>
+    <!-- Open Graph -->
+    <meta property="og:title" content="Varbok | Play-Based Early Learning in Bengaluru" />
+    <meta
+      property="og:description"
+      content="A warm, play-based early-childhood learning centre nurturing curious, confident and kind children across kindergarten and early primary."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="img/header.png" />
+    <meta property="og:url" content="https://teamvarbok.github.io/index.html" />
 
-  <!-- MOBILE MENU OVERLAY -->
-  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
-    <button class="mobile-menu-close" id="mobile-menu-close" aria-label="Close menu">&times;</button>
-    <nav class="mobile-nav">
-      <a href="#streams" class="mobile-nav-link">Streams</a>
-      <a href="#how-it-works" class="mobile-nav-link">How It Works</a>
-      <a href="#employers" class="mobile-nav-link">Employers</a>
-      <a href="#apply" class="mobile-nav-link">Apply</a>
-      <a href="#apply" class="btn btn-primary" style="margin-top:1.5rem;">Apply as Seeker</a>
-    </nav>
-  </div>
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon" />
 
-  <main>
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Handlee&family=Nunito:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
 
-    <!-- HERO -->
-    <section class="hero" id="hero">
-      <div class="hero-grid-overlay"></div>
-      <div class="hero-blobs">
-        <div class="blob blob-1"></div>
-        <div class="blob blob-2"></div>
-        <div class="blob blob-3"></div>
-      </div>
-      <div class="container hero-content">
-        <div class="hero-badge fade-in">
-          <span class="badge-dot"></span>
-          Proof-of-Learning &nbsp;·&nbsp; On-Chain Credentials &nbsp;·&nbsp; Futuristic Streams
-        </div>
-        <h1 class="hero-h1 fade-in">Learn what doesn't<br />exist yet.</h1>
-        <h2 class="hero-h2 fade-in">Earn what can't be faked.</h2>
-        <p class="hero-desc fade-in">
-          Varbok is the first university where your credential is a Proof-of-Learning —
-          verified on-chain, built on real projects, never purchased and never expired.
-        </p>
-        <div class="hero-cta fade-in">
-          <a href="#apply" class="btn btn-primary">Apply as Seeker</a>
-          <a href="#streams" class="btn btn-ghost">Explore Streams</a>
-        </div>
-        <div class="hero-stats fade-in">
-          <div class="stat-item">
-            <span class="stat-num" data-target="6">0</span>
-            <span class="stat-label">Streams</span>
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Flaticon Font -->
+    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet" />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+
+    <!-- Bootstrap base + Varbok "Joyful Premium" design system -->
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/varbok.css" rel="stylesheet" />
+
+    <!-- Enable progressive scroll-reveal only when JS is available -->
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
+  </head>
+
+  <body>
+    <!-- Navbar (injected from partials/navbar.html) -->
+    <div data-include="partials/navbar.html"></div>
+
+    <!-- Hero -->
+    <header class="hero">
+      <div
+        class="blob-deco"
+        style="width: 360px; height: 360px; background: var(--coral-50); top: -90px; left: -100px;"
+      ></div>
+      <div
+        class="blob-deco"
+        style="width: 260px; height: 260px; background: var(--amber-50); bottom: -80px; right: 6%;"
+      ></div>
+      <div class="container position-relative">
+        <div class="row align-items-center">
+          <div class="col-lg-6 text-center text-lg-left reveal">
+            <span class="eyebrow">Where little hearts learn to bloom</span>
+            <h1>
+              Joyful beginnings for India's
+              <span class="hl">youngest learners</span>
+            </h1>
+            <p class="lead mb-4">
+              At Varbok, every day blends play, discovery and care, so your
+              child grows confident, curious and kind, one happy little step at
+              a time.
+            </p>
+            <div
+              class="d-flex flex-wrap justify-content-center justify-content-lg-start"
+              style="gap: 0.8rem;"
+            >
+              <a href="#book-a-seat" class="btn btn-primary btn-lg">Book a visit</a>
+              <a href="class.html" class="btn btn-outline-primary btn-lg"
+                >Explore classes</a
+              >
+            </div>
+            <div class="hero-trust">
+              <div class="avatars" aria-hidden="true">
+                <img src="img/testimonial-1.jpg" alt="" loading="lazy" />
+                <img src="img/testimonial-2.jpg" alt="" loading="lazy" />
+                <img src="img/testimonial-3.jpg" alt="" loading="lazy" />
+                <img src="img/testimonial-4.jpg" alt="" loading="lazy" />
+              </div>
+              <small>Loved by <strong>500+ families</strong><br />across Bengaluru</small>
+            </div>
           </div>
-          <div class="stat-divider"></div>
-          <div class="stat-item">
-            <span class="stat-num" data-target="2000" data-suffix="+">0</span>
-            <span class="stat-label">Applicants</span>
-          </div>
-          <div class="stat-divider"></div>
-          <div class="stat-item">
-            <span class="stat-num" data-target="0">0</span>
-            <span class="stat-label">Degrees Sold</span>
-          </div>
-          <div class="stat-divider"></div>
-          <div class="stat-item">
-            <span class="stat-num stat-infinity">&infin;</span>
-            <span class="stat-label">Potential</span>
-          </div>
-        </div>
-      </div>
-      <a href="#problem" class="scroll-indicator" aria-label="Scroll down">
-        <div class="scroll-arrow"></div>
-      </a>
-    </section>
-
-    <!-- THE PROBLEM -->
-    <section class="problem" id="problem">
-      <div class="container">
-        <div class="problem-header fade-in">
-          <h2 class="section-title">The university is broken.</h2>
-          <p class="section-sub">
-            Four years. $200,000. A degree that graduates you into a world that moved on while you studied.
-            Employers don't trust it. Skills are already obsolete. The system was designed for a different century.
-          </p>
-        </div>
-        <div class="problem-stats">
-          <div class="problem-stat-card glass-card fade-in">
-            <span class="problem-num">43%</span>
-            <p class="problem-stat-label">of graduates work outside their field</p>
-            <span class="problem-source">— Gallup Research</span>
-          </div>
-          <div class="problem-stat-card glass-card fade-in">
-            <span class="problem-num">18 months</span>
-            <p class="problem-stat-label">curriculum lag behind the industry</p>
-            <span class="problem-source">— World Economic Forum</span>
-          </div>
-          <div class="problem-stat-card glass-card fade-in">
-            <span class="problem-num">$1.7T</span>
-            <p class="problem-stat-label">student loan debt outstanding</p>
-            <span class="problem-source">— Federal Reserve</span>
-          </div>
-        </div>
-        <p class="problem-close fade-in">We built something different.</p>
-      </div>
-    </section>
-
-    <!-- PROOF OF LEARNING -->
-    <section class="how-it-works" id="how-it-works">
-      <div class="container">
-        <div class="section-header fade-in">
-          <div class="section-eyebrow">The Method</div>
-          <h2 class="section-title">Proof-of-Learning</h2>
-          <p class="section-sub">Not exams. Not grades. Real projects, live defense, on-chain verification.</p>
-        </div>
-        <div class="steps-flow">
-          <div class="step-card glass-card fade-in">
-            <div class="step-number">01</div>
-            <div class="step-icon">&#127919;</div>
-            <h3 class="step-title">Choose Your Stream</h3>
-            <p class="step-desc">Browse six frontier streams. Pick what calls to you. No prerequisites — just proof you can build.</p>
-          </div>
-          <div class="step-arrow fade-in">&#8594;</div>
-          <div class="step-card glass-card fade-in">
-            <div class="step-number">02</div>
-            <div class="step-icon">&#128736;</div>
-            <h3 class="step-title">Build Real Projects</h3>
-            <p class="step-desc">Every module ends in a deployed artifact — code, models, experiments, protocols. No busywork.</p>
-          </div>
-          <div class="step-arrow fade-in">&#8594;</div>
-          <div class="step-card glass-card fade-in">
-            <div class="step-number">03</div>
-            <div class="step-icon">&#129504;</div>
-            <h3 class="step-title">AI + Peer Defense</h3>
-            <p class="step-desc">Live AI assessment probes your decisions. Two peer validators and a domain expert sign off. No shortcuts.</p>
-          </div>
-          <div class="step-arrow fade-in">&#8594;</div>
-          <div class="step-card glass-card fade-in">
-            <div class="step-number">04</div>
-            <div class="step-icon">&#128279;</div>
-            <h3 class="step-title">On-Chain Credential</h3>
-            <p class="step-desc">Your Varbok Skill Token (VBKS) is minted. Soulbound. Permanent. Query-able by any employer, forever.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- STREAMS -->
-    <section class="streams" id="streams">
-      <div class="container">
-        <div class="section-header fade-in">
-          <div class="section-eyebrow">Curriculum</div>
-          <h2 class="section-title">6 Futuristic Streams</h2>
-          <p class="section-sub">Skills that matter in 2030 and beyond.</p>
-        </div>
-        <div class="streams-grid">
-
-          <!-- Stream 1: AI Infrastructure -->
-          <article class="stream-card glass-card fade-in" style="--stream-color:#00d4ff;">
-            <div class="stream-img-wrap">
-              <img src="https://picsum.photos/seed/stream-ai/400/200" alt="AI Infrastructure" loading="lazy" />
-              <div class="stream-img-overlay"></div>
-            </div>
-            <div class="stream-body">
-              <div class="stream-top">
-                <span class="stream-icon">&#9889;</span>
-                <div class="stream-badges">
-                  <span class="badge badge-level">Advanced</span>
-                  <span class="badge badge-weeks">16 weeks</span>
-                </div>
-              </div>
-              <h3 class="stream-name">AI Infrastructure Engineering</h3>
-              <p class="stream-tagline">&ldquo;AI is the new electricity. Learn to wire it.&rdquo;</p>
-              <p class="stream-desc">Design and deploy production-grade AI systems — from LLM architecture to edge deployment at scale.</p>
-              <div class="stream-modules">
-                <span class="module-tag">LLM Architecture</span>
-                <span class="module-tag">Agent Systems</span>
-                <span class="module-tag">AI Ops</span>
-                <span class="module-tag">Evaluation Eng.</span>
-                <span class="module-tag">Fine-tuning</span>
-                <span class="module-tag">Edge AI</span>
-              </div>
-              <div class="stream-footer">
-                <span class="vbk-reward">&#9670; 500 VBK</span>
-                <a href="#apply" class="stream-link">View Curriculum &#8599;</a>
-              </div>
-            </div>
-          </article>
-
-          <!-- Stream 2: Biocomputing -->
-          <article class="stream-card glass-card fade-in" style="--stream-color:#10b981;">
-            <div class="stream-img-wrap">
-              <img src="https://picsum.photos/seed/stream-bio/400/200" alt="Biocomputing" loading="lazy" />
-              <div class="stream-img-overlay"></div>
-            </div>
-            <div class="stream-body">
-              <div class="stream-top">
-                <span class="stream-icon">&#129516;</span>
-                <div class="stream-badges">
-                  <span class="badge badge-level">Expert</span>
-                  <span class="badge badge-weeks">20 weeks</span>
-                </div>
-              </div>
-              <h3 class="stream-name">Biocomputing and Synthetic Biology</h3>
-              <p class="stream-tagline">&ldquo;Programming life itself.&rdquo;</p>
-              <p class="stream-desc">Merge computer science with molecular biology. Design biological circuits, model proteins, build lab-on-chip systems.</p>
-              <div class="stream-modules">
-                <span class="module-tag">DNA Computing</span>
-                <span class="module-tag">CRISPR Systems</span>
-                <span class="module-tag">Bioinformatics</span>
-                <span class="module-tag">Lab-on-Chip</span>
-                <span class="module-tag">Protein Folding</span>
-                <span class="module-tag">Bio-Digital</span>
-              </div>
-              <div class="stream-footer">
-                <span class="vbk-reward">&#9670; 650 VBK</span>
-                <a href="#apply" class="stream-link">View Curriculum &#8599;</a>
-              </div>
-            </div>
-          </article>
-
-          <!-- Stream 3: Climate -->
-          <article class="stream-card glass-card fade-in" style="--stream-color:#10b981;">
-            <div class="stream-img-wrap">
-              <img src="https://picsum.photos/seed/stream-climate/400/200" alt="Climate Systems" loading="lazy" />
-              <div class="stream-img-overlay"></div>
-            </div>
-            <div class="stream-body">
-              <div class="stream-top">
-                <span class="stream-icon">&#127758;</span>
-                <div class="stream-badges">
-                  <span class="badge badge-level">Advanced</span>
-                  <span class="badge badge-weeks">18 weeks</span>
-                </div>
-              </div>
-              <h3 class="stream-name">Climate Systems Engineering</h3>
-              <p class="stream-tagline">&ldquo;Terraforming Earth before we need to terraform Mars.&rdquo;</p>
-              <p class="stream-desc">Engineer real solutions: carbon capture, grid optimization, ocean systems, and the circular economy of tomorrow.</p>
-              <div class="stream-modules">
-                <span class="module-tag">Carbon Capture</span>
-                <span class="module-tag">Grid Optimization</span>
-                <span class="module-tag">Climate Modeling</span>
-                <span class="module-tag">Ocean Engineering</span>
-                <span class="module-tag">Circular Economy</span>
-                <span class="module-tag">Carbon Markets</span>
-              </div>
-              <div class="stream-footer">
-                <span class="vbk-reward">&#9670; 580 VBK</span>
-                <a href="#apply" class="stream-link">View Curriculum &#8599;</a>
-              </div>
-            </div>
-          </article>
-
-          <!-- Stream 4: On-Chain Protocol -->
-          <article class="stream-card glass-card fade-in" style="--stream-color:#7c3aed;">
-            <div class="stream-img-wrap">
-              <img src="https://picsum.photos/seed/stream-defi/400/200" alt="On-Chain Protocol" loading="lazy" />
-              <div class="stream-img-overlay"></div>
-            </div>
-            <div class="stream-body">
-              <div class="stream-top">
-                <span class="stream-icon">&#128279;</span>
-                <div class="stream-badges">
-                  <span class="badge badge-level">Advanced</span>
-                  <span class="badge badge-weeks">16 weeks</span>
-                </div>
-              </div>
-              <h3 class="stream-name">On-Chain Protocol Design</h3>
-              <p class="stream-tagline">&ldquo;Build the financial internet.&rdquo;</p>
-              <p class="stream-desc">Design, audit, and deploy next-generation protocols — from ZK proof systems to DAO governance frameworks.</p>
-              <div class="stream-modules">
-                <span class="module-tag">Smart Contracts</span>
-                <span class="module-tag">Tokenomics</span>
-                <span class="module-tag">ZK Proofs</span>
-                <span class="module-tag">DeFi Protocols</span>
-                <span class="module-tag">DAO Governance</span>
-                <span class="module-tag">Cross-Chain</span>
-              </div>
-              <div class="stream-footer">
-                <span class="vbk-reward">&#9670; 520 VBK</span>
-                <a href="#apply" class="stream-link">View Curriculum &#8599;</a>
-              </div>
-            </div>
-          </article>
-
-          <!-- Stream 5: Space -->
-          <article class="stream-card glass-card fade-in" style="--stream-color:#00d4ff;">
-            <div class="stream-img-wrap">
-              <img src="https://picsum.photos/seed/stream-space/400/200" alt="Space Operations" loading="lazy" />
-              <div class="stream-img-overlay"></div>
-            </div>
-            <div class="stream-body">
-              <div class="stream-top">
-                <span class="stream-icon">&#128640;</span>
-                <div class="stream-badges">
-                  <span class="badge badge-level">Expert</span>
-                  <span class="badge badge-weeks">22 weeks</span>
-                </div>
-              </div>
-              <h3 class="stream-name">Space Operations and In-Orbit Systems</h3>
-              <p class="stream-tagline">&ldquo;Beyond Earth is not a metaphor.&rdquo;</p>
-              <p class="stream-desc">Master orbital mechanics, design life support systems, and learn the legal and engineering frontier of space industrialization.</p>
-              <div class="stream-modules">
-                <span class="module-tag">Orbital Mechanics</span>
-                <span class="module-tag">Life Support</span>
-                <span class="module-tag">In-Orbit Mfg.</span>
-                <span class="module-tag">Space Comms</span>
-                <span class="module-tag">Space Law</span>
-                <span class="module-tag">Planetary Resources</span>
-              </div>
-              <div class="stream-footer">
-                <span class="vbk-reward">&#9670; 800 VBK</span>
-                <a href="#apply" class="stream-link">View Curriculum &#8599;</a>
-              </div>
-            </div>
-          </article>
-
-          <!-- Stream 6: Neuro-Interface -->
-          <article class="stream-card glass-card fade-in" style="--stream-color:#7c3aed;">
-            <div class="stream-img-wrap">
-              <img src="https://picsum.photos/seed/stream-neuro/400/200" alt="Neuro-Interface" loading="lazy" />
-              <div class="stream-img-overlay"></div>
-            </div>
-            <div class="stream-body">
-              <div class="stream-top">
-                <span class="stream-icon">&#129504;</span>
-                <div class="stream-badges">
-                  <span class="badge badge-level">Expert</span>
-                  <span class="badge badge-weeks">18 weeks</span>
-                </div>
-              </div>
-              <h3 class="stream-name">Neuro-Interface Engineering</h3>
-              <p class="stream-tagline">&ldquo;The boundary between mind and machine is dissolving.&rdquo;</p>
-              <p class="stream-desc">Engineer brain-computer interfaces, decode neural signals, and wrestle with the ethics of cognitive augmentation.</p>
-              <div class="stream-modules">
-                <span class="module-tag">Neural Signal Processing</span>
-                <span class="module-tag">BCI Hardware</span>
-                <span class="module-tag">Cognitive Enhancement</span>
-                <span class="module-tag">Haptics</span>
-                <span class="module-tag">Ethics of Augmentation</span>
-                <span class="module-tag">Clinical BCI</span>
-              </div>
-              <div class="stream-footer">
-                <span class="vbk-reward">&#9670; 720 VBK</span>
-                <a href="#apply" class="stream-link">View Curriculum &#8599;</a>
-              </div>
-            </div>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- VBK COIN -->
-    <section class="vbk" id="vbk">
-      <div class="container">
-        <div class="section-header fade-in">
-          <div class="section-eyebrow">Token Economy</div>
-          <h2 class="section-title">Varbok Coin <span class="vbk-ticker">(VBK)</span></h2>
-          <p class="section-sub">A currency for a university built on proof, not prestige.</p>
-        </div>
-        <div class="vbk-split">
-          <div class="vbk-col glass-card fade-in">
-            <div class="vbk-col-header">
-              <span class="vbk-col-icon">&#11014;</span>
-              <h3 class="vbk-col-title">Earn VBK</h3>
-            </div>
-            <ul class="vbk-list">
-              <li class="vbk-list-item">
-                <span class="vbk-bullet">&#9670;</span>
-                <div>
-                  <strong>Complete Projects</strong>
-                  <p>Every passed module and stream completion earns VBK proportional to difficulty.</p>
-                </div>
-              </li>
-              <li class="vbk-list-item">
-                <span class="vbk-bullet">&#9670;</span>
-                <div>
-                  <strong>Contribute Courses</strong>
-                  <p>Publish curriculum modules that pass peer review and earn ongoing rewards.</p>
-                </div>
-              </li>
-              <li class="vbk-list-item">
-                <span class="vbk-bullet">&#9670;</span>
-                <div>
-                  <strong>Mentor Peers</strong>
-                  <p>Verified mentors earn VBK for each Seeker who reaches stream completion.</p>
-                </div>
-              </li>
-              <li class="vbk-list-item">
-                <span class="vbk-bullet">&#9670;</span>
-                <div>
-                  <strong>Vouch for Graduates</strong>
-                  <p>Stake your reputation on someone's ability. If they deliver, you both earn.</p>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <div class="vbk-col glass-card fade-in">
-            <div class="vbk-col-header">
-              <span class="vbk-col-icon spend">&#11015;</span>
-              <h3 class="vbk-col-title">Spend VBK</h3>
-            </div>
-            <ul class="vbk-list">
-              <li class="vbk-list-item">
-                <span class="vbk-bullet spend">&#9670;</span>
-                <div>
-                  <strong>Unlock Advanced Streams</strong>
-                  <p>Stake VBK to access premium streams and specialist content before public release.</p>
-                </div>
-              </li>
-              <li class="vbk-list-item">
-                <span class="vbk-bullet spend">&#9670;</span>
-                <div>
-                  <strong>Stake on Course Quality</strong>
-                  <p>Signal your belief in a curriculum module. High-staked modules get priority resources.</p>
-                </div>
-              </li>
-              <li class="vbk-list-item">
-                <span class="vbk-bullet spend">&#9670;</span>
-                <div>
-                  <strong>Governance Voting</strong>
-                  <p>Vote on new streams, assessment standards, and protocol upgrades that shape Varbok.</p>
-                </div>
-              </li>
-              <li class="vbk-list-item">
-                <span class="vbk-bullet spend">&#9670;</span>
-                <div>
-                  <strong>Sponsor a Seeker</strong>
-                  <p>Fund talented learners from underserved regions and earn a share of their future contributions.</p>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="vbk-emission fade-in">
-          <span class="emission-icon">&#9889;</span>
-          Early learners earn the most. Emission decays over time like Bitcoin. The sooner you start, the higher the yield.
-        </div>
-        <div class="vbks-callout glass-card fade-in">
-          <div class="vbks-left">
-            <span class="vbks-badge">VBKS</span>
-            <h3 class="vbks-title">Varbok Skill Token (Soulbound)</h3>
-            <p class="vbks-desc">Separate from VBK. The VBKS is your Proof-of-Learning credential — minted at stream completion, permanently bound to your wallet. It cannot be bought, sold, or transferred. It is not an investment. It is simply proof that you can do the work.</p>
-          </div>
-          <div class="vbks-right">
-            <div class="vbks-prop">
-              <span class="vbks-prop-label">Transferable</span>
-              <span class="vbks-prop-val no">No</span>
-            </div>
-            <div class="vbks-prop">
-              <span class="vbks-prop-label">Purchasable</span>
-              <span class="vbks-prop-val no">No</span>
-            </div>
-            <div class="vbks-prop">
-              <span class="vbks-prop-label">Expires</span>
-              <span class="vbks-prop-val no">Never</span>
-            </div>
-            <div class="vbks-prop">
-              <span class="vbks-prop-label">On-Chain</span>
-              <span class="vbks-prop-val yes">Always</span>
+          <div class="col-lg-6">
+            <div class="hero-art-wrap reveal d2">
+              <div class="hero-blob" aria-hidden="true"></div>
+              <img
+                class="img-fluid hero-art"
+                src="img/header1.png"
+                alt="Joyful illustration of a young learner reading and discovering at Varbok"
+                width="600"
+                height="600"
+              />
+              <span class="hero-chip c1" aria-hidden="true"
+                ><i class="fas fa-star"></i
+              ></span>
+              <span class="hero-chip c2" aria-hidden="true"
+                ><i class="fas fa-palette"></i
+              ></span>
+              <span class="hero-chip c3" aria-hidden="true"
+                ><i class="fas fa-music"></i
+              ></span>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </header>
 
-    <!-- FOR EMPLOYERS -->
-    <section class="employers" id="employers">
-      <div class="container">
-        <div class="section-header fade-in">
-          <div class="section-eyebrow">Partnerships</div>
-          <h2 class="section-title">For Employers</h2>
-          <p class="section-sub">The first talent pool where the portfolio IS the credential.</p>
-        </div>
-        <div class="employers-grid">
-          <div class="employer-card glass-card fade-in">
-            <div class="employer-icon">&#128270;</div>
-            <h3 class="employer-card-title">Talent Search</h3>
-            <p class="employer-card-desc">Query verified graduates on-chain by any skill combination. Filter by stream, project type, assessment score, and credential date. Hire based on what they built, not where they studied.</p>
-            <a href="#apply" class="employer-link">Learn more &#8599;</a>
-          </div>
-          <div class="employer-card glass-card fade-in">
-            <div class="employer-icon">&#128200;</div>
-            <h3 class="employer-card-title">Stream Sponsorship</h3>
-            <p class="employer-card-desc">Stake VBK to co-fund an entire stream. Get priority access to graduates, embed your real problems into curriculum projects, and shape the skills your future team builds.</p>
-            <a href="#apply" class="employer-link">Learn more &#8599;</a>
-          </div>
-          <div class="employer-card glass-card fade-in">
-            <div class="employer-icon">&#127919;</div>
-            <h3 class="employer-card-title">Live Bounties</h3>
-            <p class="employer-card-desc">Post real engineering challenges as curriculum projects. When a Seeker solves your problem, you get direct access to the person who did it — along with their full verified project record.</p>
-            <a href="#apply" class="employer-link">Learn more &#8599;</a>
-          </div>
-        </div>
-        <div class="employer-cta fade-in">
-          <a href="#apply" class="btn btn-primary">Partner with Varbok</a>
-        </div>
-      </div>
-    </section>
+    <!-- Footer (injected from partials/footer.html) -->
+    <div data-include="partials/footer.html"></div>
 
-    <!-- TESTIMONIALS -->
-    <section class="testimonials" id="testimonials">
-      <div class="container">
-        <div class="section-header fade-in">
-          <div class="section-eyebrow">Early Seekers</div>
-          <h2 class="section-title">Voices from the frontier.</h2>
-        </div>
-        <div class="testimonials-grid">
-          <div class="testimonial-card glass-card fade-in">
-            <div class="testimonial-quote">&#8220;</div>
-            <p class="testimonial-text">I've shipped models in production, but I never had a way to prove it that anyone could verify. My VBKS changed that. The first time a recruiter queried my credential on-chain, I got an offer before we finished the call.</p>
-            <div class="testimonial-author">
-              <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Arjun Mehta" class="testimonial-avatar" loading="lazy" />
-              <div class="testimonial-info">
-                <strong>Arjun Mehta</strong>
-                <span>AI Platform Engineer &mdash; Stream: AI Infrastructure</span>
-              </div>
-            </div>
-          </div>
-          <div class="testimonial-card glass-card fade-in">
-            <div class="testimonial-quote">&#8220;</div>
-            <p class="testimonial-text">Academia moves in decades. Industry moves in quarters. Varbok moves in weeks. The Biocomputing curriculum covered things my PhD supervisor hadn't heard of. The live defense with the AI assessor was genuinely harder than my thesis viva.</p>
-            <div class="testimonial-author">
-              <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sara Chen" class="testimonial-avatar" loading="lazy" />
-              <div class="testimonial-info">
-                <strong>Sara Chen</strong>
-                <span>Synthetic Biology Researcher &mdash; Stream: Biocomputing</span>
-              </div>
-            </div>
-          </div>
-          <div class="testimonial-card glass-card fade-in">
-            <div class="testimonial-quote">&#8220;</div>
-            <p class="testimonial-text">I've done every DeFi course on the internet. Nothing touched the On-Chain Protocol stream. The DAO governance module alone involved deploying a real governance system that two other protocols forked. That's a credential no exam can replicate.</p>
-            <div class="testimonial-author">
-              <img src="https://randomuser.me/api/portraits/men/76.jpg" alt="Kwame Asante" class="testimonial-avatar" loading="lazy" />
-              <div class="testimonial-info">
-                <strong>Kwame Asante</strong>
-                <span>Protocol Engineer &mdash; Stream: On-Chain Protocol Design</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- APPLY -->
-    <section class="apply" id="apply">
-      <div class="container">
-        <div class="apply-inner">
-          <div class="apply-header fade-in">
-            <div class="section-eyebrow">Ready?</div>
-            <h2 class="section-title">Apply as Seeker</h2>
-            <p class="section-sub">No wallet required. No VBK needed. Just curiosity.</p>
-          </div>
-          <form class="apply-form glass-card fade-in" id="apply-form" novalidate>
-            <div class="form-row">
-              <div class="form-group">
-                <label class="form-label" for="name">Full Name</label>
-                <input class="form-input" type="text" id="name" name="name" placeholder="Your name" required />
-              </div>
-              <div class="form-group">
-                <label class="form-label" for="email">Email Address</label>
-                <input class="form-input" type="email" id="email" name="email" placeholder="you@domain.com" required />
-              </div>
-            </div>
-            <div class="form-group">
-              <label class="form-label" for="stream">Choose Your Stream</label>
-              <select class="form-input form-select" id="stream" name="stream" required>
-                <option value="" disabled selected>Select a stream&hellip;</option>
-                <option value="ai">&#9889; AI Infrastructure Engineering</option>
-                <option value="bio">&#129516; Biocomputing and Synthetic Biology</option>
-                <option value="climate">&#127758; Climate Systems Engineering</option>
-                <option value="onchain">&#128279; On-Chain Protocol Design</option>
-                <option value="space">&#128640; Space Operations and In-Orbit Systems</option>
-                <option value="neuro">&#129504; Neuro-Interface Engineering</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label class="form-label" for="why">Why now?</label>
-              <textarea class="form-input form-textarea" id="why" name="why" placeholder="What's pulling you toward this? What have you already built or broken? What are you trying to solve?" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary btn-full">Begin Your Path</button>
-            <div class="form-success" id="form-success" aria-live="polite">
-              <span class="success-icon">&#10003;</span>
-              Application received. We review weekly. You'll hear from us soon.
-            </div>
-          </form>
-          <p class="apply-note fade-in">We review weekly. Cohorts form when 8&ndash;12 Seekers align on stream, pace, and intent.</p>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-top">
-        <div class="footer-brand">
-          <a href="#" class="footer-logo">VARBOK</a>
-          <p class="footer-tagline">Learn what doesn't exist yet.<br />Earn what can't be faked.</p>
-          <div class="footer-socials">
-            <a href="#" class="social-link" aria-label="Twitter">&#120143;</a>
-            <a href="#" class="social-link" aria-label="GitHub">&#9654;</a>
-            <a href="#" class="social-link" aria-label="Discord">&#9671;</a>
-          </div>
-        </div>
-        <div class="footer-links">
-          <div class="footer-col">
-            <h4 class="footer-col-title">Streams</h4>
-            <a href="#streams" class="footer-link">AI Infrastructure</a>
-            <a href="#streams" class="footer-link">Biocomputing</a>
-            <a href="#streams" class="footer-link">Climate Systems</a>
-            <a href="#streams" class="footer-link">On-Chain Protocol</a>
-            <a href="#streams" class="footer-link">Space Operations</a>
-            <a href="#streams" class="footer-link">Neuro-Interface</a>
-          </div>
-          <div class="footer-col">
-            <h4 class="footer-col-title">Platform</h4>
-            <a href="#how-it-works" class="footer-link">Proof-of-Learning</a>
-            <a href="#vbk" class="footer-link">VBK Coin</a>
-            <a href="#vbk" class="footer-link">Soulbound Credentials</a>
-            <a href="#employers" class="footer-link">For Employers</a>
-            <a href="#apply" class="footer-link">Apply</a>
-          </div>
-          <div class="footer-col">
-            <h4 class="footer-col-title">Company</h4>
-            <a href="#" class="footer-link">About</a>
-            <a href="#" class="footer-link">Blog</a>
-            <a href="#" class="footer-link">Governance</a>
-            <a href="#" class="footer-link">Whitepaper</a>
-            <a href="#" class="footer-link">Contact</a>
-          </div>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p class="footer-legal">Varbok credentials are on-chain skill proofs, not accredited academic degrees. VBK and VBKS are utility tokens, not securities. Participation in Varbok does not constitute enrollment in an accredited institution.</p>
-        <p class="footer-copy">&copy; 2026 Varbok. All rights reserved.</p>
-      </div>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="js/components.js"></script>
+    <script src="mail/contact.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
